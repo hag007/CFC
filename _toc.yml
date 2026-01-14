@@ -224,3 +224,5 @@ parts:
             title: "בדיקות ל־OOP"
           - file: course/weeks/week_12/12_4_physicsl_unittesting
             title: "בדיקות לקוד נומרי בפיזיקה"
+          - file: course/weeks/week_12/12_5_Pandas_tutorial
+            title: "תרגול מסכם"
