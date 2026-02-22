@@ -48,6 +48,7 @@ jobs:
       # Build the book
       - name: Build the book
         run: |
+          jupyter-book clean .
           jupyter-book build .
   
       # Upload the book's HTML as an artifact
@@ -57,7 +58,6 @@ jobs:
           path: "_build/html"
           name: github-pages-${{ github.run_attempt }}
           
-  
   
       # Deploy the book's HTML to GitHub Pages
       - name: Deploy to GitHub Pages
