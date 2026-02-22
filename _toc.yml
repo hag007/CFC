@@ -40,6 +40,8 @@ parts:
         sections:
           - file: vendor/virtual-pyprog/2_0_intro-conditions
             title: "מבוא לתנאים"
+          - file: vendor/virtual-pyprog/2_1_if-else-statements
+            title: "פקודות if ו־else"
           - file: vendor/virtual-pyprog/2_2_nested-ifs
             title: "תנאים מקוננים"
           - file: vendor/virtual-pyprog/2_3_elif
