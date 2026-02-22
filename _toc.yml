@@ -18,4 +18,8 @@ parts:
         sections:
           - file: course/weeks/week_11/11_1_physical_consts
             title: "קבועים פיזיקליים ויחידות"
+          - file: course/weeks/week_11/11_2_integration
+            title: "אינטגרציה נומרית"
+          - file: course/weeks/week_11/11_3_optimization
+            title: "אופטימיזציה"
 
