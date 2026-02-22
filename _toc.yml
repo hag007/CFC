@@ -13,14 +13,21 @@ parts:
   - caption: "שבועות הלמידה"
     numbered: true
     chapters:
-      - file: course/weeks/week_9
-        title: "שבוע 9 — Matplotlib, Probabilities & Histograms"
+      - file: course/weeks/week_10
+        title: "שבוע 10 — Numpy מתקדם"
         sections:
-          - file: course/weeks/week_9/9_1_matplotlib
-            title: "Matplotlib — Basics"
-          - file: course/weeks/week_9/9_2_example_matplotlib
-            title: "דוגמה מסכמת — Matplotlib"
-          - file: course/weeks/week_9/9_3_prob_hists
-            title: "Probabilities & Histograms"
-
+          - file: course/weeks/week_10/10_1_matrix_operations
+            title: "פעולות מטריציוניות מתקדמות"
+          - file: course/weeks/week_10/10_2_linear_system
+            title: "פתרון מערכות ליניאריות"
+          - file: course/weeks/week_10/10_3_eigen_values
+            title: "ערכים ווקטורים עצמיים"
+          - file: course/weeks/week_10/10_4_SVD
+            title: "SVD"
+          - file: course/weeks/week_10/10_7_exercises
+            title: "תרגול עצמי"
+          - file: course/weeks/week_10/10_5_example_image_SVD
+            title: "תרגול: דחיסת תמונה באמצעות SVD"
+          - file: course/weeks/week_10/10_6_example_PI_MC
+            title: "תרגול: הערכת π בשיטת מונטה־קרלו"
 
