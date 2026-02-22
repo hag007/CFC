@@ -64,4 +64,7 @@ parts:
         sections:
           - file: vendor/virtual-pyprog/4_0_intro-list
             title: "מבוא לרשימות"
-
+          - file: vendor/virtual-pyprog/4_1_list-operators-indices
+            title: "אופרטורים ואינדקסים"
+          - file: vendor/virtual-pyprog/4_2_built-in-functions-in-list
+            title: "פונקציות מובנות לרשימות"
