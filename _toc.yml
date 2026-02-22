@@ -22,4 +22,6 @@ parts:
             title: "אינטגרציה נומרית"
           - file: course/weeks/week_11/11_3_optimization
             title: "אופטימיזציה"
+          - file: course/weeks/week_11/11_5_example_MB.ipynb
+            title: "תרגול: התפלגות Maxwell-Boltzmann" 
 
