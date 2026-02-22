@@ -1,2 +1,0 @@
-Avia:['Good', 'Luck']
-Maor:['Tel', 'Aviv', 'University']
