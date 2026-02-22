@@ -40,6 +40,8 @@ parts:
         sections:
           - file: vendor/virtual-pyprog/2_0_intro-conditions
             title: "מבוא לתנאים"
+          - file: vendor/virtual-pyprog/4_0_intro-list
+            title: "פקודות if ו-else"
           - file: vendor/virtual-pyprog/2_2_nested-ifs
             title: "תנאים מקוננים"
           - file: vendor/virtual-pyprog/2_3_elif
@@ -58,9 +60,3 @@ parts:
             title: "קריאה הדדית בין פונקציות"
           - file: vendor/virtual-pyprog/3_4_advanced-examples
             title: "דוגמאות מתקדמות"
-
-      - file: course/weeks/week_3
-        title: "שבוע 3 — רשימות ולולאות"
-        sections:
-          - file: vendor/virtual-pyprog/4_0_intro-list
-            title: "מבוא לרשימות"
