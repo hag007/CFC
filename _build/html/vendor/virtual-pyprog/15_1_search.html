@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -632,8 +612,8 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="DuenHMBdczYX" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#DuenHMBdczYX {
+<div class="output text_html"><div id="wllFeHwdxHVT" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#wllFeHwdxHVT {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -850,7 +830,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsDuenHMBdczYX=[{"question": "\u05de\u05d4 \u05d0\u05e4\u05e9\u05e8 \u05dc\u05de\u05ea\u05d7\u05e8\u05d4 \u05d4\u05de\u05ea\u05d5\u05d7\u05db\u05dd \u05dc\u05de\u05e6\u05d5\u05d0 \u05d0\u05ea \u05de\u05d4 \u05e9\u05d7\u05d9\u05e4\u05e9 \u05de\u05d4\u05e8 \u05d9\u05d5\u05ea\u05e8?", "type": "many_choice", "answers": [{"answer": "\u05d4\u05d5\u05d0 \u05e0\u05d9\u05e6\u05dc \u05d0\u05ea \u05d4\u05e2\u05d5\u05d1\u05d3\u05d4 \u05e9\u05e1\u05e4\u05e8 \u05d4\u05d8\u05dc\u05e4\u05d5\u05e0\u05d9\u05dd \u05de\u05de\u05d5\u05d9\u05df \u05de-\u05d0 \u05d5\u05e2\u05d3 \u05ea", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "\u05d4\u05d9\u05d4 \u05dc\u05d5 \u05de\u05d6\u05dc \u05d5\u05d4\u05d5\u05d0 \u05d1\u05de\u05e7\u05e8\u05d4 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05e9\u05dd \u05e9\u05d7\u05d9\u05e4\u05e9", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d5\u05d0 \u05e2\u05d1\u05e8 \u05e2\u05dc \u05d4\u05e9\u05de\u05d5\u05ea \u05d1\u05d0\u05d5\u05ea\u05d5 \u05e1\u05d3\u05e8 \u05db\u05de\u05d5 \u05d4\u05de\u05ea\u05d7\u05e8\u05d4 \u05d4\u05e9\u05e0\u05d9, \u05d0\u05d1\u05dc \u05de\u05d4\u05e8 \u05d9\u05d5\u05ea\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionswllFeHwdxHVT=[{"question": "\u05de\u05d4 \u05d0\u05e4\u05e9\u05e8 \u05dc\u05de\u05ea\u05d7\u05e8\u05d4 \u05d4\u05de\u05ea\u05d5\u05d7\u05db\u05dd \u05dc\u05de\u05e6\u05d5\u05d0 \u05d0\u05ea \u05de\u05d4 \u05e9\u05d7\u05d9\u05e4\u05e9 \u05de\u05d4\u05e8 \u05d9\u05d5\u05ea\u05e8?", "type": "many_choice", "answers": [{"answer": "\u05d4\u05d5\u05d0 \u05e0\u05d9\u05e6\u05dc \u05d0\u05ea \u05d4\u05e2\u05d5\u05d1\u05d3\u05d4 \u05e9\u05e1\u05e4\u05e8 \u05d4\u05d8\u05dc\u05e4\u05d5\u05e0\u05d9\u05dd \u05de\u05de\u05d5\u05d9\u05df \u05de-\u05d0 \u05d5\u05e2\u05d3 \u05ea", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "\u05d4\u05d9\u05d4 \u05dc\u05d5 \u05de\u05d6\u05dc \u05d5\u05d4\u05d5\u05d0 \u05d1\u05de\u05e7\u05e8\u05d4 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05e9\u05dd \u05e9\u05d7\u05d9\u05e4\u05e9", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d5\u05d0 \u05e2\u05d1\u05e8 \u05e2\u05dc \u05d4\u05e9\u05de\u05d5\u05ea \u05d1\u05d0\u05d5\u05ea\u05d5 \u05e1\u05d3\u05e8 \u05db\u05de\u05d5 \u05d4\u05de\u05ea\u05d7\u05e8\u05d4 \u05d4\u05e9\u05e0\u05d9, \u05d0\u05d1\u05dc \u05de\u05d4\u05e8 \u05d9\u05d5\u05ea\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1913,8 +1893,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("DuenHMBdczYX")) {
-    show_questions(questionsDuenHMBdczYX, DuenHMBdczYX);
+  if (document.getElementById("wllFeHwdxHVT")) {
+    show_questions(questionswllFeHwdxHVT, wllFeHwdxHVT);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1941,8 +1921,8 @@ function try_show() {
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qEXjaxGpHlpI" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#qEXjaxGpHlpI {
+<div class="output text_html"><div id="QnztzLkXIwIs" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#QnztzLkXIwIs {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -2159,7 +2139,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqEXjaxGpHlpI=[{"question": "\u05de\u05d4\u05d5 \u05d4\u05e7\u05dc\u05d8 \u05d5\u05d4\u05e4\u05dc\u05d8 \u05d1\u05d1\u05e2\u05d9\u05d4 \u05d0\u05d5\u05ea\u05d4 \u05de\u05e0\u05e1\u05d4 \u05dc\u05e4\u05ea\u05d5\u05e8 \u05e4\u05e7\u05d9\u05d3 \u05d4\u05d3\u05d5\u05d0\u05e8?", "type": "many_choice", "answers": [{"answer": "\u05e7\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8 \u05d5\u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "\u05e7\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05e7\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05e7\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionsQnztzLkXIwIs=[{"question": "\u05de\u05d4\u05d5 \u05d4\u05e7\u05dc\u05d8 \u05d5\u05d4\u05e4\u05dc\u05d8 \u05d1\u05d1\u05e2\u05d9\u05d4 \u05d0\u05d5\u05ea\u05d4 \u05de\u05e0\u05e1\u05d4 \u05dc\u05e4\u05ea\u05d5\u05e8 \u05e4\u05e7\u05d9\u05d3 \u05d4\u05d3\u05d5\u05d0\u05e8?", "type": "many_choice", "answers": [{"answer": "\u05e7\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8 \u05d5\u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "\u05e7\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05e7\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8, \u05e4\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05d4\u05de\u05d9\u05d5\u05e2\u05d3\u05ea \u05dc\u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05e7\u05dc\u05d8 - \u05d4\u05de\u05e2\u05d8\u05e4\u05d5\u05ea \u05e9\u05d1\u05de\u05d3\u05e3, \u05e4\u05dc\u05d8 - \u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e2\u05d8\u05e4\u05d4 \u05e9\u05dc \u05d0\u05de\u05d9\u05e8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -3222,8 +3202,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("qEXjaxGpHlpI")) {
-    show_questions(questionsqEXjaxGpHlpI, qEXjaxGpHlpI);
+  if (document.getElementById("QnztzLkXIwIs")) {
+    show_questions(questionsQnztzLkXIwIs, QnztzLkXIwIs);
   } else {
     setTimeout(try_show, 200);
   }
@@ -3268,8 +3248,8 @@ function try_show() {
 <p>הבחירה איך להגדיר את הפלט (וגם הקלט) היא הרבה פעמים גמישה ותלויה בהקשר ובבעיה שאותה אנחנו מנסים לפתור.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="QyRmfukDlPTo" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#QyRmfukDlPTo {
+<div class="output text_html"><div id="eiYUENTzSlaB" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#eiYUENTzSlaB {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -3486,7 +3466,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsQyRmfukDlPTo=[{"question": "\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05e4\u05dc\u05d8 \u05d4\u05d7\u05d3\u05e9 \u05e2\u05d1\u05d5\u05e8 \u05d4\u05e7\u05dc\u05d8 L=[4,2,1,3,5] \u05d5-x=1", "type": "numeric", "answers": [{"type": "value", "value": 2, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionseiYUENTzSlaB=[{"question": "\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05e4\u05dc\u05d8 \u05d4\u05d7\u05d3\u05e9 \u05e2\u05d1\u05d5\u05e8 \u05d4\u05e7\u05dc\u05d8 L=[4,2,1,3,5] \u05d5-x=1", "type": "numeric", "answers": [{"type": "value", "value": 2, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -4549,8 +4529,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("QyRmfukDlPTo")) {
-    show_questions(questionsQyRmfukDlPTo, QyRmfukDlPTo);
+  if (document.getElementById("eiYUENTzSlaB")) {
+    show_questions(questionseiYUENTzSlaB, eiYUENTzSlaB);
   } else {
     setTimeout(try_show, 200);
   }
@@ -4564,8 +4544,8 @@ function try_show() {
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="AJIAIeYtrfdp" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#AJIAIeYtrfdp {
+<div class="output text_html"><div id="IJgjuRNPZuRB" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#IJgjuRNPZuRB {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -4782,7 +4762,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsAJIAIeYtrfdp=[{"question": "\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05e4\u05dc\u05d8 \u05d4\u05d7\u05d3\u05e9 \u05e2\u05d1\u05d5\u05e8 \u05d4\u05e7\u05dc\u05d8 L=[4,2,1,3,5] \u05d5-x=6", "type": "numeric", "answers": [{"type": "value", "value": -1, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionsIJgjuRNPZuRB=[{"question": "\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05e4\u05dc\u05d8 \u05d4\u05d7\u05d3\u05e9 \u05e2\u05d1\u05d5\u05e8 \u05d4\u05e7\u05dc\u05d8 L=[4,2,1,3,5] \u05d5-x=6", "type": "numeric", "answers": [{"type": "value", "value": -1, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -5845,8 +5825,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("AJIAIeYtrfdp")) {
-    show_questions(questionsAJIAIeYtrfdp, AJIAIeYtrfdp);
+  if (document.getElementById("IJgjuRNPZuRB")) {
+    show_questions(questionsIJgjuRNPZuRB, IJgjuRNPZuRB);
   } else {
     setTimeout(try_show, 200);
   }
@@ -5892,8 +5872,8 @@ function try_show() {
 <p>השאלות הבאות מתייחסות לרשימה <code class="docutils literal notranslate"><span class="pre">L</span> <span class="pre">=</span> <span class="pre">[1,2,3,4,5,6,7,8,9,10]</span></code>.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="fyUkAaLLLPmX" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#fyUkAaLLLPmX {
+<div class="output text_html"><div id="afpMZfBnhCWm" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#afpMZfBnhCWm {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -6110,7 +6090,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsfyUkAaLLLPmX=[{"question": "\u05de\u05d4\u05d5 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d4\u05e9\u05d5\u05d5\u05d0\u05d5\u05ea \u05d4\u05d2\u05d3\u05d5\u05dc \u05d1\u05d9\u05d5\u05ea\u05e8 \u05e9\u05de\u05d1\u05d5\u05e6\u05e2 \u05d1\u05e2\u05ea \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d0\u05d7\u05e8\u05d9 \u05de\u05e1\u05e4\u05e8 \u05db\u05dc\u05e9\u05d4\u05d5 \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 L?", "type": "numeric", "answers": [{"type": "value", "value": 10, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionsafpMZfBnhCWm=[{"question": "\u05de\u05d4\u05d5 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d4\u05e9\u05d5\u05d5\u05d0\u05d5\u05ea \u05d4\u05d2\u05d3\u05d5\u05dc \u05d1\u05d9\u05d5\u05ea\u05e8 \u05e9\u05de\u05d1\u05d5\u05e6\u05e2 \u05d1\u05e2\u05ea \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d0\u05d7\u05e8\u05d9 \u05de\u05e1\u05e4\u05e8 \u05db\u05dc\u05e9\u05d4\u05d5 \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 L?", "type": "numeric", "answers": [{"type": "value", "value": 10, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -7173,8 +7153,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("fyUkAaLLLPmX")) {
-    show_questions(questionsfyUkAaLLLPmX, fyUkAaLLLPmX);
+  if (document.getElementById("afpMZfBnhCWm")) {
+    show_questions(questionsafpMZfBnhCWm, afpMZfBnhCWm);
   } else {
     setTimeout(try_show, 200);
   }
@@ -7188,8 +7168,8 @@ function try_show() {
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="IgmKZEesvjMb" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#IgmKZEesvjMb {
+<div class="output text_html"><div id="iHqRwWlKxhbL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#iHqRwWlKxhbL {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -7406,7 +7386,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsIgmKZEesvjMb=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e2\u05e8\u05db\u05d9\u05dd \u05e0\u05d2\u05d9\u05e2 \u05dc\u05de\u05e1\u05e4\u05e8 \u05d4\u05d4\u05e9\u05d5\u05d5\u05d0\u05d5\u05ea \u05de\u05d4\u05e9\u05d0\u05dc\u05d4 \u05d4\u05e7\u05d5\u05d3\u05de\u05ea?", "type": "many_choice", "answers": [{"answer": "10", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! 10 \u05d4\u05d5\u05d0 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05d0\u05d7\u05e8\u05d5\u05df \u05d1\u05e8\u05e9\u05d9\u05de\u05d4, \u05d5\u05dc\u05db\u05df \u05d9\u05e9 \u05dc\u05e2\u05d1\u05d5\u05e8 \u05d3\u05e8\u05da \u05db\u05dc \u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05e2\u05d3 \u05e9\u05de\u05d2\u05d9\u05e2\u05d9\u05dd \u05d0\u05dc\u05d9\u05d5."}, {"answer": "3", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "9", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "17", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! 17 \u05db\u05dc\u05dc \u05dc\u05d0 \u05e0\u05de\u05e6\u05d0 \u05d1\u05e8\u05e9\u05d9\u05de\u05d4, \u05d5\u05dc\u05db\u05df \u05e6\u05e8\u05d9\u05da \u05dc\u05e2\u05d1\u05d5\u05e8 \u05e2\u05dc \u05db\u05dc \u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 \u05e2\u05d3 \u05e9\u05de\u05e9\u05ea\u05db\u05e0\u05e2\u05d9\u05dd \u05e9\u05d4\u05d5\u05d0 \u05dc\u05d0 \u05e9\u05dd."}]}];
+</style></div><script type="application/javascript">var questionsiHqRwWlKxhbL=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e2\u05e8\u05db\u05d9\u05dd \u05e0\u05d2\u05d9\u05e2 \u05dc\u05de\u05e1\u05e4\u05e8 \u05d4\u05d4\u05e9\u05d5\u05d5\u05d0\u05d5\u05ea \u05de\u05d4\u05e9\u05d0\u05dc\u05d4 \u05d4\u05e7\u05d5\u05d3\u05de\u05ea?", "type": "many_choice", "answers": [{"answer": "10", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! 10 \u05d4\u05d5\u05d0 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05d0\u05d7\u05e8\u05d5\u05df \u05d1\u05e8\u05e9\u05d9\u05de\u05d4, \u05d5\u05dc\u05db\u05df \u05d9\u05e9 \u05dc\u05e2\u05d1\u05d5\u05e8 \u05d3\u05e8\u05da \u05db\u05dc \u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05e2\u05d3 \u05e9\u05de\u05d2\u05d9\u05e2\u05d9\u05dd \u05d0\u05dc\u05d9\u05d5."}, {"answer": "3", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "9", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "17", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! 17 \u05db\u05dc\u05dc \u05dc\u05d0 \u05e0\u05de\u05e6\u05d0 \u05d1\u05e8\u05e9\u05d9\u05de\u05d4, \u05d5\u05dc\u05db\u05df \u05e6\u05e8\u05d9\u05da \u05dc\u05e2\u05d1\u05d5\u05e8 \u05e2\u05dc \u05db\u05dc \u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 \u05e2\u05d3 \u05e9\u05de\u05e9\u05ea\u05db\u05e0\u05e2\u05d9\u05dd \u05e9\u05d4\u05d5\u05d0 \u05dc\u05d0 \u05e9\u05dd."}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -8469,8 +8449,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("IgmKZEesvjMb")) {
-    show_questions(questionsIgmKZEesvjMb, IgmKZEesvjMb);
+  if (document.getElementById("iHqRwWlKxhbL")) {
+    show_questions(questionsiHqRwWlKxhbL, iHqRwWlKxhbL);
   } else {
     setTimeout(try_show, 200);
   }
@@ -8489,8 +8469,8 @@ function try_show() {
 כעת נבחן את היעילות של חיפוש סדרתי.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="laXHVrsAFYXf" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#laXHVrsAFYXf {
+<div class="output text_html"><div id="yhDwoxDGrQyW" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#yhDwoxDGrQyW {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -8707,7 +8687,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionslaXHVrsAFYXf=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 L, \u05de\u05d4\u05d5 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e7\u05e1\u05d9\u05de\u05dc\u05d9 \u05e9\u05dc \u05d0\u05d9\u05d1\u05e8\u05d9\u05dd \u05e9\u05d4\u05d0\u05dc\u05d2\u05d5\u05e8\u05d9\u05ea\u05dd \u05d9\u05e6\u05d8\u05e8\u05da \u05dc\u05d1\u05d3\u05d5\u05e7?", "type": "many_choice", "answers": [{"answer": "len(L)", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "Len(L)-1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)+1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionsyhDwoxDGrQyW=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 L, \u05de\u05d4\u05d5 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05e7\u05e1\u05d9\u05de\u05dc\u05d9 \u05e9\u05dc \u05d0\u05d9\u05d1\u05e8\u05d9\u05dd \u05e9\u05d4\u05d0\u05dc\u05d2\u05d5\u05e8\u05d9\u05ea\u05dd \u05d9\u05e6\u05d8\u05e8\u05da \u05dc\u05d1\u05d3\u05d5\u05e7?", "type": "many_choice", "answers": [{"answer": "len(L)", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "Len(L)-1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)+1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -9770,8 +9750,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("laXHVrsAFYXf")) {
-    show_questions(questionslaXHVrsAFYXf, laXHVrsAFYXf);
+  if (document.getElementById("yhDwoxDGrQyW")) {
+    show_questions(questionsyhDwoxDGrQyW, yhDwoxDGrQyW);
   } else {
     setTimeout(try_show, 200);
   }
@@ -9789,8 +9769,8 @@ function try_show() {
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="wfkQuJxVAICV" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#wfkQuJxVAICV {
+<div class="output text_html"><div id="XXxpWpdWplnZ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#XXxpWpdWplnZ {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -10007,7 +9987,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionswfkQuJxVAICV=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 L, \u05de\u05d4\u05d5 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05d9\u05e0\u05d9\u05de\u05dc\u05d9 \u05e9\u05dc \u05d0\u05d9\u05d1\u05e8\u05d9\u05dd \u05e9\u05d4\u05d0\u05dc\u05d2\u05d5\u05e8\u05d9\u05ea\u05dd \u05d9\u05e6\u05d8\u05e8\u05da \u05dc\u05d1\u05d3\u05d5\u05e7?", "type": "many_choice", "answers": [{"answer": "len(L)", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)-1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)+1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "1", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionsXXxpWpdWplnZ=[{"question": "\u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 L, \u05de\u05d4\u05d5 \u05d4\u05de\u05e1\u05e4\u05e8 \u05d4\u05de\u05d9\u05e0\u05d9\u05de\u05dc\u05d9 \u05e9\u05dc \u05d0\u05d9\u05d1\u05e8\u05d9\u05dd \u05e9\u05d4\u05d0\u05dc\u05d2\u05d5\u05e8\u05d9\u05ea\u05dd \u05d9\u05e6\u05d8\u05e8\u05da \u05dc\u05d1\u05d3\u05d5\u05e7?", "type": "many_choice", "answers": [{"answer": "len(L)", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)-1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "Len(L)+1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "1", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -11070,8 +11050,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("wfkQuJxVAICV")) {
-    show_questions(questionswfkQuJxVAICV, wfkQuJxVAICV);
+  if (document.getElementById("XXxpWpdWplnZ")) {
+    show_questions(questionsXXxpWpdWplnZ, XXxpWpdWplnZ);
   } else {
     setTimeout(try_show, 200);
   }
@@ -11127,8 +11107,8 @@ function try_show() {
 </ol>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qapbNKSsTvmJ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#qapbNKSsTvmJ {
+<div class="output text_html"><div id="slTedTvXPHiM" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#slTedTvXPHiM {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -11345,7 +11325,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsqapbNKSsTvmJ=[{"question": "\u05de\u05d7\u05e4\u05e9\u05d9\u05dd \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 4 \u05d1\u05d0\u05de\u05e6\u05e2\u05d5\u05ea \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9, \u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df \u05e9\u05d0\u05d5\u05ea\u05d5 \u05e0\u05d1\u05d3\u05d5\u05e7, \u05d5\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9?", "type": "many_choice", "answers": [{"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 5; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 42; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 5; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 5", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 25; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionsslTedTvXPHiM=[{"question": "\u05de\u05d7\u05e4\u05e9\u05d9\u05dd \u05d1\u05e8\u05e9\u05d9\u05de\u05d4 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 4 \u05d1\u05d0\u05de\u05e6\u05e2\u05d5\u05ea \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9, \u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df \u05e9\u05d0\u05d5\u05ea\u05d5 \u05e0\u05d1\u05d3\u05d5\u05e7, \u05d5\u05de\u05d4 \u05d9\u05d4\u05d9\u05d4 \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9?", "type": "many_choice", "answers": [{"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 5; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 42; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 5; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 5", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "\u05d4\u05d0\u05d9\u05d1\u05e8 \u05d4\u05e8\u05d0\u05e9\u05d5\u05df: 25; \u05d4\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05d4\u05e9\u05e0\u05d9: 1", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -12408,8 +12388,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("qapbNKSsTvmJ")) {
-    show_questions(questionsqapbNKSsTvmJ, qapbNKSsTvmJ);
+  if (document.getElementById("slTedTvXPHiM")) {
+    show_questions(questionsslTedTvXPHiM, slTedTvXPHiM);
   } else {
     setTimeout(try_show, 200);
   }
@@ -12434,8 +12414,8 @@ function try_show() {
 </ul>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="vdHKJkUMZFUA" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#vdHKJkUMZFUA {
+<div class="output text_html"><div id="iYjCtjVOGZqL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#iYjCtjVOGZqL {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -12652,7 +12632,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsvdHKJkUMZFUA=[{"question": "\u05d0\u05dd \u05d4\u05e1\u05d8\u05d5\u05d3\u05e0\u05d8 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 \u05d0\u05d5\u05ea\u05d5 \u05d7\u05d9\u05e4\u05e9 - \u05de\u05d4 \u05d4\u05d9\u05d4 \u05d4\u05de\u05e1\u05e4\u05e8?", "type": "many_choice", "answers": [{"answer": "8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "4", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "2", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "5", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionsiYjCtjVOGZqL=[{"question": "\u05d0\u05dd \u05d4\u05e1\u05d8\u05d5\u05d3\u05e0\u05d8 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 \u05d0\u05d5\u05ea\u05d5 \u05d7\u05d9\u05e4\u05e9 - \u05de\u05d4 \u05d4\u05d9\u05d4 \u05d4\u05de\u05e1\u05e4\u05e8?", "type": "many_choice", "answers": [{"answer": "8", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "4", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "2", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "5", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -13715,8 +13695,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("vdHKJkUMZFUA")) {
-    show_questions(questionsvdHKJkUMZFUA, vdHKJkUMZFUA);
+  if (document.getElementById("iYjCtjVOGZqL")) {
+    show_questions(questionsiYjCtjVOGZqL, iYjCtjVOGZqL);
   } else {
     setTimeout(try_show, 200);
   }
@@ -13730,8 +13710,8 @@ function try_show() {
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="XlRyYPNOmOBV" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#XlRyYPNOmOBV {
+<div class="output text_html"><div id="DvsaokCSpSqL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#DvsaokCSpSqL {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -13948,7 +13928,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsXlRyYPNOmOBV=[{"question": "\u05d0\u05dd \u05d4\u05e1\u05d8\u05d5\u05d3\u05e0\u05d8 \u05dc\u05d0 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 \u05d0\u05d5\u05ea\u05d5 \u05d7\u05d9\u05e4\u05e9 - \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05d4\u05d1\u05d0\u05d9\u05dd \u05d9\u05d9\u05ea\u05db\u05df \u05e9\u05d7\u05d9\u05e4\u05e9?", "type": "many_choice", "answers": [{"answer": "18", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "6", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "10", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionsDvsaokCSpSqL=[{"question": "\u05d0\u05dd \u05d4\u05e1\u05d8\u05d5\u05d3\u05e0\u05d8 \u05dc\u05d0 \u05de\u05e6\u05d0 \u05d0\u05ea \u05d4\u05de\u05e1\u05e4\u05e8 \u05d0\u05d5\u05ea\u05d5 \u05d7\u05d9\u05e4\u05e9 - \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05de\u05e1\u05e4\u05e8\u05d9\u05dd \u05d4\u05d1\u05d0\u05d9\u05dd \u05d9\u05d9\u05ea\u05db\u05df \u05e9\u05d7\u05d9\u05e4\u05e9?", "type": "many_choice", "answers": [{"answer": "18", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "6", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "10", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -15011,8 +14991,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("XlRyYPNOmOBV")) {
-    show_questions(questionsXlRyYPNOmOBV, XlRyYPNOmOBV);
+  if (document.getElementById("DvsaokCSpSqL")) {
+    show_questions(questionsDvsaokCSpSqL, DvsaokCSpSqL);
   } else {
     setTimeout(try_show, 200);
   }
@@ -15040,8 +15020,8 @@ function try_show() {
 במקרה כזה הבעיה אינה באלגוריתם, אלא בכך שהשתמשנו בו בתנאים שאינם מתאימים. <strong>האחריות היא עלינו לוודא שההנחות הדרושות מתקיימות לפני השימוש בו</strong>.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="SlRubLgvvvIQ" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#SlRubLgvvvIQ {
+<div class="output text_html"><div id="pyMpDDHiuVXx" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#pyMpDDHiuVXx {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -15258,7 +15238,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsSlRubLgvvvIQ=[{"question": "\u05e0\u05ea\u05d5\u05e0\u05d4 \u05d4\u05e8\u05e9\u05d9\u05de\u05d4 L = [5, 2, 8, 4, 1]. \u05e2\u05d1\u05d5\u05e8 \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e2\u05e8\u05db\u05d9\u05dd \u05d4\u05d1\u05d0\u05d9\u05dd \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d9\u05d7\u05d6\u05d9\u05e8 True?", "type": "many_choice", "answers": [{"answer": "1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "7", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "5", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionspyMpDDHiuVXx=[{"question": "\u05e0\u05ea\u05d5\u05e0\u05d4 \u05d4\u05e8\u05e9\u05d9\u05de\u05d4 L = [5, 2, 8, 4, 1]. \u05e2\u05d1\u05d5\u05e8 \u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e2\u05e8\u05db\u05d9\u05dd \u05d4\u05d1\u05d0\u05d9\u05dd \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d9\u05d7\u05d6\u05d9\u05e8 True?", "type": "many_choice", "answers": [{"answer": "1", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "7", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}, {"answer": "5", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "8", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -16321,8 +16301,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("SlRubLgvvvIQ")) {
-    show_questions(questionsSlRubLgvvvIQ, SlRubLgvvvIQ);
+  if (document.getElementById("pyMpDDHiuVXx")) {
+    show_questions(questionspyMpDDHiuVXx, pyMpDDHiuVXx);
   } else {
     setTimeout(try_show, 200);
   }
@@ -16432,8 +16412,8 @@ function try_show() {
 <p>על כמה איברים מהרשימה עובר האלגוריתם לחיפוש בינארי? נתחיל מהמקרה הטוב, שהוא גם קל מאוד לניתוח.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="hIlXHPKUxSHv" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#hIlXHPKUxSHv {
+<div class="output text_html"><div id="BBBMzgrsrnsI" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#BBBMzgrsrnsI {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -16650,7 +16630,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionshIlXHPKUxSHv=[{"question": "\u05de\u05d4\u05d5 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d0\u05d9\u05d8\u05e8\u05e6\u05d9\u05d5\u05ea \u05e9\u05dc \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d1\u05de\u05e7\u05e8\u05d4 \u05d4\u05d8\u05d5\u05d1?", "type": "numeric", "answers": [{"type": "value", "value": 1, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d7\u05e9\u05d1\u05d5 - \u05d1\u05d0\u05d9\u05d6\u05d4 \u05de\u05e7\u05e8\u05d4 \u05e0\u05e1\u05d9\u05d9\u05dd \u05d4\u05db\u05d9 \u05de\u05d4\u05e8?"}]}];
+</style></div><script type="application/javascript">var questionsBBBMzgrsrnsI=[{"question": "\u05de\u05d4\u05d5 \u05de\u05e1\u05e4\u05e8 \u05d4\u05d0\u05d9\u05d8\u05e8\u05e6\u05d9\u05d5\u05ea \u05e9\u05dc \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d1\u05de\u05e7\u05e8\u05d4 \u05d4\u05d8\u05d5\u05d1?", "type": "numeric", "answers": [{"type": "value", "value": 1, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d7\u05e9\u05d1\u05d5 - \u05d1\u05d0\u05d9\u05d6\u05d4 \u05de\u05e7\u05e8\u05d4 \u05e0\u05e1\u05d9\u05d9\u05dd \u05d4\u05db\u05d9 \u05de\u05d4\u05e8?"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -17713,8 +17693,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("hIlXHPKUxSHv")) {
-    show_questions(questionshIlXHPKUxSHv, hIlXHPKUxSHv);
+  if (document.getElementById("BBBMzgrsrnsI")) {
+    show_questions(questionsBBBMzgrsrnsI, BBBMzgrsrnsI);
   } else {
     setTimeout(try_show, 200);
   }
@@ -17737,8 +17717,8 @@ function try_show() {
 ואכן, log2(128)=7. לכן, בחיפוש בינארי עבור רשימת קלט בגודל n=128, דרושות 7 איטרציות <strong>לכל היותר</strong> עד שמגיעים לרשימה בגודל 1. לעומת זאת, בחיפוש סדרתי נדרש ל-128 איטרציות במקרה הגרוע ביותר.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="rdfRFLXNKtqu" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#rdfRFLXNKtqu {
+<div class="output text_html"><div id="BQaxeCOLXrRD" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#BQaxeCOLXrRD {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -17955,7 +17935,7 @@ function try_show() {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsrdfRFLXNKtqu=[{"question": "\u05de\u05d4 \u05de\u05e1\u05e4\u05e8 \u05d4\u05e9\u05dc\u05d1\u05d9\u05dd \u05d4\u05e0\u05d3\u05e8\u05e9 \u05de\u05d4\u05d7\u05d9\u05e4\u05d5\u05e9 \u05d4\u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d1\u05de\u05e7\u05e8\u05d4 \u05d4\u05d2\u05e8\u05d5\u05e2 \u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 \u05d1\u05d2\u05d5\u05d3\u05dc 256?", "type": "numeric", "answers": [{"type": "value", "value": 9, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! \u05db\u05d0\u05e9\u05e8 \u05de\u05d2\u05d3\u05d9\u05dc\u05d9\u05dd \u05d0\u05ea \u05e8\u05e9\u05d9\u05de\u05ea \u05d4\u05e7\u05dc\u05d8 \u05e4\u05d9 2, \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05de\u05d1\u05e6\u05e2 \u05e8\u05e7 \u05d0\u05d9\u05d8\u05e8\u05e6\u05d9\u05d4 \u05d0\u05d7\u05ea \u05e0\u05d5\u05e1\u05e4\u05ea \u05d1\u05e1\u05da \u05d4\u05db\u05dc!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
+</style></div><script type="application/javascript">var questionsBQaxeCOLXrRD=[{"question": "\u05de\u05d4 \u05de\u05e1\u05e4\u05e8 \u05d4\u05e9\u05dc\u05d1\u05d9\u05dd \u05d4\u05e0\u05d3\u05e8\u05e9 \u05de\u05d4\u05d7\u05d9\u05e4\u05d5\u05e9 \u05d4\u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05d1\u05de\u05e7\u05e8\u05d4 \u05d4\u05d2\u05e8\u05d5\u05e2 \u05e2\u05d1\u05d5\u05e8 \u05e8\u05e9\u05d9\u05de\u05d4 \u05d1\u05d2\u05d5\u05d3\u05dc 256?", "type": "numeric", "answers": [{"type": "value", "value": 9, "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! \u05db\u05d0\u05e9\u05e8 \u05de\u05d2\u05d3\u05d9\u05dc\u05d9\u05dd \u05d0\u05ea \u05e8\u05e9\u05d9\u05de\u05ea \u05d4\u05e7\u05dc\u05d8 \u05e4\u05d9 2, \u05d7\u05d9\u05e4\u05d5\u05e9 \u05d1\u05d9\u05e0\u05d0\u05e8\u05d9 \u05de\u05d1\u05e6\u05e2 \u05e8\u05e7 \u05d0\u05d9\u05d8\u05e8\u05e6\u05d9\u05d4 \u05d0\u05d7\u05ea \u05e0\u05d5\u05e1\u05e4\u05ea \u05d1\u05e1\u05da \u05d4\u05db\u05dc!"}, {"type": "default", "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -19018,8 +18998,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("rdfRFLXNKtqu")) {
-    show_questions(questionsrdfRFLXNKtqu, rdfRFLXNKtqu);
+  if (document.getElementById("BQaxeCOLXrRD")) {
+    show_questions(questionsBQaxeCOLXrRD, BQaxeCOLXrRD);
   } else {
     setTimeout(try_show, 200);
   }

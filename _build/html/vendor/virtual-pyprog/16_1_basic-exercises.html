@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>שאלות בסיסיות ברקורסיה &#8212; Computers For physics</title>
+    <title>רקורסיה - דוגמאות בסיסיות &#8212; Computers For physics</title>
   
   
   
@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -237,7 +238,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -249,79 +249,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -576,7 +556,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>שאלות בסיסיות ברקורסיה</h1>
+    <h1>רקורסיה - דוגמאות בסיסיות</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -586,10 +566,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חישוב עצרת</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">סדרת פיבונאצ’י</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש פונקצית פיבונאצ’י בפייתון</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">מציאות סכום של רשימות מקוננות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. חישוב עצרת</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">פתרון בלולאות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. סדרת פיבונאצ’י</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">מימוש בפייתון</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. סכום של רשימות מקוננות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">מימוש בפייתון</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -602,39 +590,72 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>שאלות בסיסיות ברקורסיה<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>רקורסיה - דוגמאות בסיסיות<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>בשיעור זה נתרגל פתרון בעיות בצורה רקורסיבית על כמה דוגמאות פשוטות יחסית.<br />
+המטרה העיקרית בתרגול זה היא לזהות את המבנה הרקורסיבי, ולממש אותו בפייתון.</p>
 <section id="id2">
-<h2>חישוב עצרת<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>1. חישוב עצרת<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/GPz45ZszRAk" title="recursion examples 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>עצרת היא פעולה שמתבצעת על מספרים אי-שליליים (גדולים או שווים לאפס), והיא מוגדרת כמכפלת כל המספרים מ1 ועד המספר נתון. לדוגמא: <span class="math notranslate nohighlight">\(4! = 1*2*3*4 = 24\)</span></p>
 <p>להלן ההגדרה המתמטית הקלאסית לעצרת:</p>
-<p><span class="math notranslate nohighlight">\(n! = 1*2*3*…(n-1)*n\)</span></p>
-<p>ניתן להגדיר <strong>נוסחא מתמטית רקורסיבית</strong> את בעית חישוב עצרת גם בצורה רקורסיבית</p>
-<p><span class="math notranslate nohighlight">\(n! = n * (n-1)!\)</span></p>
+</span><p><span class="math notranslate nohighlight">\(n! = 1*2*3*…(n-1)*n\)</span></p>
+<span class=custom-text-content> 
+<p>עם זאת, ניתן להגדיר גם <strong>נוסחא מתמטית רקורסיבית</strong> לבעית חישוב עצרת. הנוסחא מוגדרת על-ידי שני ביטויים:</p>
+</span><p><span class="math notranslate nohighlight">\(n! = n * (n-1)!\)</span></p>
 <p><span class="math notranslate nohighlight">\(0! = 1\)</span></p>
+<span class=custom-text-content> 
 <p>מדוע מדובר בנוסחא רקורסיבית?</p>
 <ul class="simple">
-<li><p>הפעולה עצרת (<span class="math notranslate nohighlight">\(n!\)</span>) מוגדרת ע”י הפעלת אותה הפעולה על מספר קטן יותר <span class="math notranslate nohighlight">\(n-1 \)</span>.</p></li>
-<li><p>ניתן יהיה להפעיל את אותה נוסחא בדיוק עד שנקבל <span class="math notranslate nohighlight">\(n=0 \)</span>. במקרה זה, הנוסחא תחזיר 1 ללא קריאה נוספת לעצרת (!). כלומר, <span class="math notranslate nohighlight">\(n=0 \)</span> הוא תנאי העצירה שלנו</p></li>
+<li><p>בביטוי הראשון - הפעולה עצרת (<span class="math notranslate nohighlight">\(n!\)</span>) מוגדרת על-ידי הפעלת אותה הפעולה על מספר קטן יותר (<span class="math notranslate nohighlight">\(n-1 \)</span>).</p></li>
+<li><p>כך ניתן יהיה להפעיל את אותה נוסחא, כל פעם עם <span class="math notranslate nohighlight">\(n\)</span> קטן יותר, עד שנקבל <span class="math notranslate nohighlight">\(n=0 \)</span>. במקרה זה, הנוסחא תחזיר 1 ללא קריאה נוספת לעצרת (!).</p></li>
 </ul>
-<p>נראה כעת את המימוש של נוסחא מתמטית זו בפייתון</p>
-<div class="cell docutils container">
+</span><div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  מה תנאי העצירה במקרה זה?</p>
+<p>המקרה היחיד בו אין קריאה רקורסיבית הוא <span class="math notranslate nohighlight">\(n=0 \)</span>. הוא תנאי העצירה שלנו.</p>
+</div>
+<span class=custom-text-content> 
+<p>כעת, נראה כיצד לממש נוסחא מתמטית זו בפייתון:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
         <span class="k">return</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="n">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24
 </pre></div>
 </div>
 </div>
 </div>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  מה יקרה אם נקרא לפונקציה הזו על מספר שלילי?</p>
+<p>אם קראנו לפונקציה הזו על מספר שלילי, בכל פעם שנקטין את <span class="math notranslate nohighlight">\(n\)</span> ב-1 אנחנו <strong>נתרחק</strong> ממקרה הקצה.
+כלומר, עבור מספר שלילי, הפונקציה הזו תיכנס (בתאוריה) לרקורסיה אינסופית, ובפועל נקבל שגיאת maximum recursion depth כפי שלמדנו.</p>
+</div>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  למה שמנו את בדיקת תנאי הבסיס <strong>לפני</strong> הקריאה הרקורסיבית?</p>
+<p>אם גם במקרה של <span class="math notranslate nohighlight">\(n=0\)</span> נבצע קריאה רקורסיבית, לא יהיה לנו אף מקרה בסיס. כדי שרקורסיה תסתיים, היא חייבת להגיע למקרה בסיס בו אין כלל קריאות רקורסיביות!</p>
+<p>ככלל אצבע - עדיף לבדוק את מקרי הבסיס בתחילת פונקציה רקורסיבית, כדי לוודא שכל המקרים נבדקים ומוחזרים לפני שמתחילות קריאות רקורסיביות.</p>
+</div>
+<section id="id3">
+<h3>פתרון בלולאות<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<span class=custom-text-content> 
 <p>שימו לב כי ניתן לפתור בעיה זו גם ללא רקורסיה, ע”י שימוש בלולאות:</p>
-<div class="cell docutils container">
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">iterative_factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
@@ -642,60 +663,83 @@ document.write(`
         <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span>
     <span class="k">return</span> <span class="n">result</span>
 
-<span class="n">iterative_factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iterative_factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>24
 </pre></div>
 </div>
 </div>
 </div>
-<p>בעיות רבות יכולות להפתור ע”י שימוש בלולאות או ע”י שימוש ברקורסיה.<br />
-מתי נעדיף להשתמש בכל גישה?</p>
+<span class=custom-text-content> 
+<p>ככלל, בהרבה בעיות ניתן לבחור בין פתרון בלולאות לבין פתרון ברקורסיה.</p>
+</span><span class=custom-text-content> 
+<p><strong>מתי נעדיף להשתמש בגישה רקורסיבית במקום בלולאות?</strong></p>
 <ul class="simple">
-<li><p>יתרונות</p>
+<li><p>נעדיף להשתמש ברקורסיה במקומות בהן הפתרון יהיה:</p>
 <ul>
 <li><p>קצר ואלגנטי</p></li>
-<li><p>טבעי עבור חלק מהבעיות</p></li>
+<li><p>טבעי עבור הבעיה עצמה (כמו נוסחא מתמטית רקורסיבית)</p></li>
 </ul>
 </li>
-<li><p>חסרונות</p>
+<li><p>לעומת זאת, במקרים בהם פירוק הבעיה פחות טבעי, עלולות לצוץ הבעיות הבאות:</p>
 <ul>
-<li><p>במקרים רבים קשה לנסח ולהבין</p></li>
-<li><p>מספר הקריאות הרקורסיביות מוגבל</p></li>
+<li><p>לוגיקת פתרון מסורבלת, מה שגם בד”כ מביא לכדי קוד לא קריא</p></li>
+<li><p>מספר הקריאות הרקורסיביות תחום, מה שמגביל את היכולת לפתור בעיות עבור קלט גדול יחסית</p></li>
 </ul>
 </li>
 </ul>
+</span></section>
 </section>
-<section id="id3">
-<h2>סדרת פיבונאצ’י<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>הגדרת מתמטית של נוסחת סדרת פיבונאצ’י:
-$<span class="math notranslate nohighlight">\(
-fib(0) = 0 \\
-fib(1) = 1 \\
-fib(n) = fib(n-1) + fib(n-2)
-\)</span>$</p>
+<section id="id4">
+<h2>2. סדרת פיבונאצ’י<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/3osNP5utpAg" title="recursion examples 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>סדרת פיבונאצ’י מוגדרת מתמטית על-ידי הנוסחא הבאה:</p>
+</span><div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+fib(0) &amp;= 0 \\
+fib(1) &amp;= 1 \\
+fib(n) &amp;= fib(n-1) + fib(n-2)
+\end{aligned}
+\end{split}\]</div>
+<span class=custom-text-content> 
 <p>התחלת סדרת פיבונאצ’י נראית כך: <span class="math notranslate nohighlight">\(0, 1, 1, 2, 3, 5, 8, 13, 21, 34...\)</span></p>
-<p>כמו בחישוב העצרת ניתן לראות כי הנוסחא המתמטית מגלמת בתוכה את הקריאה הרקורסיבית: כאשר הערך של המספר הפיבונאצ’י ה-<span class="math notranslate nohighlight">\(n\)</span> תלוי בערך מספרי הפיבונאצ’י ה<span class="math notranslate nohighlight">\(n-1\)</span> ו-<span class="math notranslate nohighlight">\(n-2\)</span></p>
-<p>נראה כיצד כל אחד משלושת השלבים של הרקורסיה בא לידי ביטוי בנוסחא במתמטית של פיבונאצ’י</p>
-<p>בחלק הראשון של הנוסחא הוא למעשה תנאי העצירה. שימו לב כי במקרה זה קיימים לנו למעשה <strong>2</strong> תנאי עצירה:</p>
-<div class="math notranslate nohighlight">
+</span><span class=custom-text-content> 
+<p>כמו בחישוב העצרת, ניתן לראות כי הנוסחא המתמטית מגלמת בתוכה את הקריאה הרקורסיבית: הערך של מספר פיבונאצ’י ה-<span class="math notranslate nohighlight">\(n\)</span> תלוי בערכי מספרי פיבונאצ’י ה<span class="math notranslate nohighlight">\(n-1\)</span> ו-<span class="math notranslate nohighlight">\(n-2\)</span>.</p>
+</span><span class=custom-text-content> 
+<p>כעת, נבחין כיצד כל אחד משלושת השלבים של הרקורסיה בא לידי ביטוי בנוסחא.</p>
+</span><span class=custom-text-content> 
+<p><strong>תנאי עצירה</strong><br />
+החלק הראשון של הנוסחא הוא למעשה תנאי העצירה. אלה המקרים בהם “יש לנו תשובה ישר” ואין צורך בקריאה רקורסיבית. נשים לב שבמקרה הזה קיימים לנו <strong>2</strong> תנאי עצירה:</p>
+</span><div class="math notranslate nohighlight">
 \[\begin{split}
 fib(0) = 0 \\
 fib(1) = 1
 \end{split}\]</div>
-<p>החלק השני של הנוסחא מגלם את שלבי הפירוק וההרכבה:</p>
-<div class="math notranslate nohighlight">
+<span class=custom-text-content> 
+<p><strong>פירוק והרכבה</strong><br />
+החלק השני של הנוסחא מגלם את שלבי הפירוק וההרכבה:</p>
+</span><div class="math notranslate nohighlight">
 \[
 fib(n) = fib(n-1) + fib(n-2) 
 \]</div>
-<p>הפירוק הוא בעצם 2 קריאות לפונקצית פיבונאצ’י עם הפרמטרים <span class="math notranslate nohighlight">\(n-1\)</span> ו-<span class="math notranslate nohighlight">\(n-2\)</span>.<br />
-ההרכבה היא <strong>פעולת החיבור</strong> שנעשית על תוצאות 2 הקריאות</p>
-</section>
-<section id="id4">
-<h2>מימוש פונקצית פיבונאצ’י בפייתון<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<span class=custom-text-content> 
+<p><strong>הפירוק</strong> הוא 2 קריאות לפונקצית פיבונאצ’י - עם הפרמטרים <span class="math notranslate nohighlight">\(n-1\)</span> ו-<span class="math notranslate nohighlight">\(n-2\)</span>.<br />
+<strong>ההרכבה</strong> היא <strong>פעולת החיבור</strong> שנעשית על תוצאות 2 הקריאות.</p>
+</span><section id="id5">
+<h3>מימוש בפייתון<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fibonacci_rec</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -708,8 +752,9 @@ fib(n) = fib(n-1) + fib(n-2)
 </div>
 </div>
 </div>
-<p>ניתן גם לצרף את 2 תנאי בעצירה לתנאי אחד:</p>
-<div class="cell docutils container">
+<span class=custom-text-content> 
+<p>ניתן גם לצרף את 2 תנאי העצירה לתנאי אחד:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fibonacci_rec</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -719,31 +764,51 @@ fib(n) = fib(n-1) + fib(n-2)
 </div>
 </div>
 </div>
-<p>השתמשו ב<a class="reference external" href="https://recursion.vercel.app/">כלי הזה</a> כדי לעקוב אחר עץ הרקורסיה של סדרת פיבונאצ’י</p>
+<div class="caution admonition">
+<p class="admonition-title"><strong>נסו בעצמכם</strong></p>
+<p>הכניסו את המימוש שלנו ל<a class="reference external" href="https://recursion.vercel.app/">כלי הזה</a> ובדקו מקרים שונים כדי לעקוב אחר הקריאות הרקורסיביות (נקרא גם עץ הרקורסיה) של סדרת פיבונאצ’י.</p>
+</div>
 </section>
-<section id="id5">
-<h2>מציאות סכום של רשימות מקוננות<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>בבעיה זו רשימה יכולה להכיל מספרים שלמים (<code class="docutils literal notranslate"><span class="pre">int</span></code>) או רשימות (<code class="docutils literal notranslate"><span class="pre">list</span></code>).<br />
-בהנתן רשימה כלשהי, יש להדפיס את סכום המספרים המוכלים בה (כולל אלו שנמצאים בתתי רשימות המוכלות בה)</p>
-<p>לדוגמא: <span class="math notranslate nohighlight">\([1,2,[3,4,[5,6]],7] = 28 \)</span></p>
-<p>על מנת לפתור בעיה זו, נצטרך לבדוק עבור על איבר נבדוק עבור כל איבר שמתקבל בקלט אם הוא מספר או רשימה.<br />
-אם מדובר מספר, נחזיר אותו בלי לעשות דבר. <strong>זהו למעשה תנאי העצירה שלנו</strong>.<br />
-אם מדובר ברשימה, נפעיל על כל אחד מאיבריה את הקריאה הרקורסיבית (זהו פירוק הבעיה לתת-בעיות) ונסכום את הערכים שחוזרים (זו ההרכבה של תתי הבעיות לפתרון השלם).</p>
-<p>פתרון:</p>
+</section>
+<section id="id6">
+<h2>3. סכום של רשימות מקוננות<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/lLrPoqSGFEs" title="recursion examples 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>בבעיה זו, כל רשימה יכולה להכיל מספרים שלמים (<code class="docutils literal notranslate"><span class="pre">int</span></code>) או רשימות (<code class="docutils literal notranslate"><span class="pre">list</span></code>).<br />
+בהנתן רשימה כלשהי, נרצה להדפיס את סכום כל המספרים המוכלים בה (כולל אלו שנמצאים בתתי רשימות המוכלות בה).</p>
+<p>לדוגמא:</p>
+</span><p><span class="math notranslate nohighlight">\([1,2,[3,4,[5,6]],7] \Rightarrow 28 \)</span></p>
+<span class=custom-text-content> 
+<p>על מנת לפתור בעיה זו, נפרק את הבעיה לשלושת מרכיבי הפתרון הרקורסיבי:<br />
+<strong>תנאי עצירה</strong> - אם הקלט שלנו הוא מספר בודד, פשוט נחזיר את המספר בלי לעשות קריאה רקורסיבית.<br />
+<strong>פירוק הבעיה לתתי בעיות</strong> - אם קיבלנו בקלט רשימה, נרצה לחשב את הסכום של כל אחד מהאיברים של הרשימה (חלקם יהיו בעצמם רשימות מקוננות שדורשים חישוב מורכב).<br />
+<strong>הרכבה של תתי הבעיות לפתרון שלם</strong> - אחרי שחישבנו את הסכום של כל אחד מאיברי הרשימה הקלט, ניתן לסכום אותם ולקבל את התוצאה עבור הרשימה הרצויה.</p>
+</span><section id="id7">
+<h3>מימוש בפייתון<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sum_multi_nested_list</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">element</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">:</span> 
         <span class="k">return</span> <span class="n">element</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">sum_of_sublist</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">for</span> <span class="n">sub_element</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
-            <span class="n">sum_of_sublist</span> <span class="o">+=</span> <span class="n">sum_multi_nested_list</span><span class="p">(</span><span class="n">sub_element</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">sum_of_sublist</span>
-    
+    <span class="n">sum_of_sublist</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">sub_element</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+        <span class="n">sum_of_sublist</span> <span class="o">+=</span> <span class="n">sum_multi_nested_list</span><span class="p">(</span><span class="n">sub_element</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sum_of_sublist</span>
 </pre></div>
 </div>
 </div>
+</div>
+<div class="caution admonition">
+<p class="admonition-title"><strong>נסו בעצמכם</strong></p>
+<p>הכניסו את המימוש שלנו ל<a class="reference external" href="https://recursion.vercel.app/">כלי הזה</a> ובדקו את עצי הרקורסיה של הקלטים למטה.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -781,6 +846,7 @@ fib(n) = fib(n-1) + fib(n-2)
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -830,10 +896,18 @@ fib(n) = fib(n-1) + fib(n-2)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חישוב עצרת</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">סדרת פיבונאצ’י</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש פונקצית פיבונאצ’י בפייתון</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">מציאות סכום של רשימות מקוננות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. חישוב עצרת</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">פתרון בלולאות</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. סדרת פיבונאצ’י</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">מימוש בפייתון</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3. סכום של רשימות מקוננות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">מימוש בפייתון</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

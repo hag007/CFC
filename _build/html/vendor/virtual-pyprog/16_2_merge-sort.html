@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -58,6 +59,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'vendor/virtual-pyprog/16_2_merge-sort';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -235,7 +238,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +249,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,12 +566,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">עקרונות הפתרון</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">מה היתרון במיזוג שתי רשימות ממוינות?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">עקרונות הפתרון</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">מיזוג שתי רשימות ממוינות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">תיאור האלגוריתם</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש מיזוג שתי רשימות ממויינות בפייתון</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">היתרון במיזוג רשימות ממוינות</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">מימוש מיזוג שתי רשימות ממויינות בפייתון</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש Merge Sort בפייתון</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">מימוש Merge Sort</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">מימוש בפייתון</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -604,33 +593,41 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="merge-sort">
 <h1>מיון מיזוג - Merge sort<a class="headerlink" href="#merge-sort" title="Link to this heading">#</a></h1>
 <p>Merge Sort הוא אחד מאלגוריתמי המיון הקלאסיים והחשובים במדעי המחשב.<br />
-הייחוד שלו הוא בכך שהוא מבוסס על רעיון פשוט אך עוצמתי: במקום למיין רשימה שלמה בבת אחת, מפרקים אותה באמצעות רקורסיה לבעיות מיון קטנות יותר - תתי-רשימות - שקל יותר למיין בנפרד, ולמזג בצורה יעילה.</p>
+הייחוד שלו הוא בכך שהוא מבוסס על רעיון פשוט אך עוצמתי: במקום למיין רשימה שלמה בבת אחת, מפרקים אותה באמצעות רקורסיה לבעיות קטנות יותר - תתי-רשימות קצרות יותר - שקל יותר למיין בנפרד, ולמזג בצורה יעילה.</p>
 <section id="id1">
 <h2>עקרונות הפתרון<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>נפרק את רשימת הקלט לשני חצאים, ונמיין כל אחד מהם בנפרד</p>
+<li><p>נפרק את רשימת הקלט לשני חצאים, ונמיין כל אחד מהם בנפרד.</p>
 <ul>
-<li><p>כל תתרשימה היא למעשה תת בעיה ולכן נבצע את המין באמצעות קריאה רקורסיבית <strong>באמצעות הקריאה הרקורסיבית</strong></p></li>
+<li><p>למיין כל תת-רשימה זו בעצם תת בעיה מאותו סוג (למיין רשימה), ולכן נבצע את המיון <strong>באמצעות קריאה רקורסיבית</strong>.</p></li>
 </ul>
 </li>
-<li><p>לאחר מכן, נרכיב את שתי הרשימות <strong>הממויינות</strong> ביחד כדי ליצור רשימה ממויינת אחת שלמה</p></li>
+<li><p>לאחר מכן, נרכיב את שתי תתי הרשימות <strong>הממויינות</strong> ביחד כדי ליצור רשימה ממויינת אחת שלמה.</p></li>
 </ul>
+</section>
 <section id="id2">
-<h3>מה היתרון במיזוג שתי רשימות ממוינות?<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>אם כבר יש לנו שתי רשימות ממוינות, הרבה יותר יעיל לאחד אותן לרשימה אחת ממוינת.
-נתחיל מהגדרת  <strong>האיבר המוביל</strong> ברשימה האיבר הראשון שעדיין לא נבחר בכל רשימה ממוינת.
-נעבור בלולאת <code class="docutils literal notranslate"><span class="pre">while</span></code>, ובכל איטרציה ניקח בכל שלב את האיבר הקטן ביותר מבין שני ה”איברים המובילים” (הראשונים שעדיין לא נלקחו) בכל רשימה, ולהעביר אותו לרשימה החדשה.   לאחר מכן איבר המוביל “מתקדם” לאינדקס הבא באותה הרשימה שממנה נלקח האיבר. התהליך נמשך עד שכל האיברים מאחת הרשימות הועתקו לרשימה המאוחדת, ואז להעתיק את שארית האיבורים מהרשימה השניה.</p>
-<p>היתרון הגדול במיון כזה הוא שאין צורך להשוות כל איבר לכל האחרים. למעשה, מספר האיטרציות הדרושות הן לכל היותר סכום אורכי הרשימות. זו בדיוק הסיבה ש־Merge Sort משתמש במיזוג רשימות ממוינות כצעד מרכזי: הוא הופך את מלאכת בניית הרשימה הממוינת הגדולה לבעיה פשוטה של חיבור שתי רשימות שכבר ממוינות, בצורה מהירה ויעילה.</p>
-</section>
-</section>
+<h2>מיזוג שתי רשימות ממוינות<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>כעת נראה כיצד מאחדים שתי רשימות ממוינות לרשימה ממוינת אחת. כדי לבצע זאת בצורה יעילה, ניעזר בכך שהרשימות כבר ממוינות.</p>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עיצרו וחישבו:</strong>  בהינתן שתי רשימות ממוינות a ו־b, מאילו איברים עשוי להגיע הערך המינימלי ברשימה המאוחדת?</p>
+<p>כיוון שכל אחת מהרשימות כבר ממוינת, האיבר הקטן ביותר בכל אחת מהן נמצא בתחילתה — כלומר באינדקס 0.<br />
+איננו יודעים מי מהשניים קטן יותר, <code class="docutils literal notranslate"><span class="pre">a[0]</span></code> או <code class="docutils literal notranslate"><span class="pre">b[0]</span></code>, אך ברור שאחד מהם יהיה הערך המינימלי ברשימה המאוחדת.</p>
+</div>
 <section id="id3">
-<h2>מימוש מיזוג שתי רשימות ממויינות בפייתון<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h3>תיאור האלגוריתם<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>נגדיר את <strong>האיבר המוביל</strong> ברשימה כאיבר הראשון שעדיין לא נבחר בכל רשימה ממוינת.
+נעבור בלולאת <code class="docutils literal notranslate"><span class="pre">while</span></code>, ובכל איטרציה ניקח את האיבר הקטן ביותר מבין שני ה”איברים המובילים” (הראשונים שעדיין לא נלקחו) בכל רשימה, ונעביר אותו לרשימה החדשה.<br />
+לאחר מכן, נקדם את האיבר המוביל לאינדקס הבא ברשימה שממנה נלקח האיבר.</p>
+<p>התהליך נמשך עד שאחת הרשימות “הסתיימה” - כל האיברים בה הועתקו לרשימה המאוחדת. אחר כך נוכל להעתיק את שארית האיברים מהרשימה השניה לרשימת הפלט.</p>
+</section>
+<section id="id4">
+<h3>מימוש מיזוג שתי רשימות ממויינות בפייתון<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
     <span class="n">merged_list</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">left_i</span><span class="p">,</span> <span class="n">right_i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">left_i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="n">right_i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>
+    <span class="n">left_i</span><span class="p">,</span> <span class="n">right_i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>    <span class="c1"># Leading indices</span>
+    <span class="k">while</span> <span class="n">left_i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span> <span class="ow">and</span> <span class="n">right_i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>    <span class="c1"># While both lists are not done</span>
         <span class="k">if</span> <span class="n">left</span><span class="p">[</span><span class="n">left_i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">[</span><span class="n">right_i</span><span class="p">]:</span>
             <span class="n">merged_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">left</span><span class="p">[</span><span class="n">left_i</span><span class="p">])</span>
             <span class="n">left_i</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -645,17 +642,32 @@ document.write(`
 </div>
 </div>
 </div>
-<p><span style='color:purple'><b>נניח ש-<code class="docutils literal notranslate"><span class="pre">len(right)=5</span></code>, ו־-<code class="docutils literal notranslate"><span class="pre">len(left)=3</span></code>. כמה איטרציות תתבצענה לכל היותר בתוך לולאת ה-<code class="docutils literal notranslate"><span class="pre">while</span></code>?</b></span></p>
-<p>כעת נשתמש בפונקצית <code class="docutils literal notranslate"><span class="pre">merge</span></code> כדי לממש את הפתרון הרקורסיבי של Merge Sort</p>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עיצרו וחישבו:</strong>  נניח ש-len(right)=5, ו־-len(left)=3. כמה איטרציות תתבצענה לכל היותר בתוך לולאת ה-while?</p>
+<p>אנחנו יודעים שהלולאה תיפסק ברגע שאחת מהרשימות “תסתיים” - כלומר, כשנכניס לרשימה המאוחדת את האיבר האחרון שלה.
+כדי לגרום ללולאה לפעול כמה שיותר זמן, נרצה ששתי הרשימות “יחזיקו מעמד” כמה שיותר לפני שהאחת מהן תתרוקן.
+נשיג זאת אם נדאג שהאיבר המקסימלי בכל רשימה יופיע כמה שיותר לקראת הסוף של תהליך המיזוג.</p>
+<p>לדוגמה: עבור <code class="docutils literal notranslate"><span class="pre">left=[1,2,100]</span></code> ו<code class="docutils literal notranslate"><span class="pre">right=[3,4,5,6,101]</span></code>, שתי הרשימות ישתתפו כמעט עד הסוף - כל אחת תשמור את האיבר המקסימלי שלה (100 ו־101) לסיום.
+במקרה זה יתבצעו 6 איטרציות של הלולאה, עד הרגע שבו נכניס את 100 ונרוקן את הרשימה <code class="docutils literal notranslate"><span class="pre">left</span></code>.</p>
+</div>
+<section id="id5">
+<h4>היתרון במיזוג רשימות ממוינות<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>היתרון המרכזי בשיטה זו הוא שאין צורך להשוות כל איבר לכל איבר אחר. מאחר שכל אחת מהרשימות כבר ממוינת, ניתן למזג אותן על בסיס השוואות נקודתיות בלבד, והמספר המרבי של האיטרציות הוא פשוט סכום אורכי הרשימות.
+זו בדיוק הסיבה שאלגוריתם Merge Sort משתמש במיזוג רשימות ממוינות כשלב מרכזי: הוא מפשט את תהליך המיון כולו לכדי חיבור של שתי רשימות שכבר מסודרות, בצורה מהירה, אלגנטית ויעילה במיוחד.</p>
+<p>לאחר שהכרנו את הפונקציה <code class="docutils literal notranslate"><span class="pre">merge</span></code>, נשתמש בה עבור הפתרון הרקורסיבי של Merge Sort.</p>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>מימוש Merge Sort<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>נתחיל מהגדרת שלושת חלקי הרקורסיה בפתרון:</p>
 <ul class="simple">
-<li><p><strong>תנאי עצירה (stop):</strong> רשימה עם איבר אחד</p></li>
-<li><p><strong>פירוק לתתי בעיות (decomposition):</strong> חלוקת הרשימה לשני חצאים, מיון כל חצי רקורסיבית</p></li>
-<li><p><strong>הרכבת תתי הבעיות לפתרון (aggregation):</strong> מיזוג תתי-הרשימות הממוינות לרשימה אחת ממוינת (באמצעות פונקצית <code class="docutils literal notranslate"><span class="pre">merge</span></code> שכתבתו למעלה)</p></li>
+<li><p><strong>תנאי עצירה (stop):</strong> רשימה עם איבר אחד. הרשימה כבר ממוינת ואין צורך להמשיך.</p></li>
+<li><p><strong>פירוק לתתי בעיות (decomposition):</strong> נחלק את הרשימה לשני חצאים (באורך קטן יותר מהרשימה המקורית), ונמיין כל אחד מהחצאים בצורה רקורסיבית.</p></li>
+<li><p><strong>הרכבת תתי הבעיות לפתרון (aggregation):</strong> נמזג את תתי-הרשימות הממוינות לרשימה אחת ממוינת (באמצעות פונקצית <code class="docutils literal notranslate"><span class="pre">merge</span></code> שכתבנו למעלה)</p></li>
 </ul>
-</section>
-<section id="id4">
-<h2>מימוש Merge Sort בפייתון<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>מימוש בפייתון<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">mergesort</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -683,7 +695,17 @@ document.write(`
 </div>
 </div>
 </div>
-<p><span style='color:purple'><b> נניח ש-<code class="docutils literal notranslate"><span class="pre">len(lst)=16</span></code>. מהו ה”עומק” של עץ הרקורסיה?</b></span></p>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עיצרו וחישבו:</strong>  נניח שהרצנו את הפונקציה על רשימה באורך 16. מה יהיה “העומק” של עץ הרקורסיה?</p>
+<p>ב-Merge Sort, בכל שלב של הרקורסיה הרשימה נחצית לשניים — כלומר בכל רמה בעץ הרקורסיה, גודל הרשימות קטן פי שניים מהשלב הקודם.
+נמשיך לפצל עד שנקבל תתי־רשימות באורך 1 (שבהן אין צורך למיין).</p>
+<p>אם אורך הרשימה ההתחלתי הוא len(lst)=16, נוכל לחשב את עומק העץ כך:
+בכל שלב אנו מחלקים ב־2:<br />
+16 → 8 → 4 → 2 → 1</p>
+<p>נדרשו 4 חלוקות להגיע מ־16 ל־1, ולכן עומק עץ הרקורסיה הוא 4.</p>
+<p>באופן כללי, עומק העץ של Merge Sort הוא <span class="math notranslate nohighlight">\(log₂(n)\)</span> - כלומר במקרה זה, <span class="math notranslate nohighlight">\(log₂(16)=4\)</span>.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -733,12 +755,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">עקרונות הפתרון</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">מה היתרון במיזוג שתי רשימות ממוינות?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">עקרונות הפתרון</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">מיזוג שתי רשימות ממוינות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">תיאור האלגוריתם</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש מיזוג שתי רשימות ממויינות בפייתון</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">היתרון במיזוג רשימות ממוינות</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">מימוש מיזוג שתי רשימות ממויינות בפייתון</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">מימוש Merge Sort בפייתון</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">מימוש Merge Sort</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">מימוש בפייתון</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

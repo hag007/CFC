@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,12 +564,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">groupby</span></code> התחביר של</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#df-groupby-x-y-op">df.<span style="color:red">groupby(x)</span><span style="color:blue">[y]</span>.<span style="color:green">op()</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגול</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><code class="docutils literal notranslate"><span class="pre">groupby</span></code> - סיכום קבוצות של שורות לכדי שורה בודדת</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">התחביר של <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#df-groupby-x-y-op"><span style="color:green">()</span>df.<span style="color:red">groupby(x)</span><span style="color:blue">[y]</span>.<span style="color:green">op</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגול</a></li>
 </ul>
 </li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -600,10 +582,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="groupby">
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספרית <code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הרצת השורת הראשונה בתא למטה.<br />
+בנוסף, נגביל את מספר השורות והעמודות שתופענה בהדפסת הטבלאות ע”י שורות הקוד השניה והשלישית:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span><span class="o">=</span><span class="mi">5</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>בפרק זה נתחיל להכיר את אחת מהיכולות החזקות ביותר של pandas: קיבוץ נתונים לפי קטגוריות או תכונות משותפות, באמצעות המתודה <code class="docutils literal notranslate"><span class="pre">groupby</span></code>. פונקציה זו מאפשרת לנו לבצע חישובים סטטיסטיים, סיכומים וטרנספורמציות שונות עבור תת-קבוצות של הנתונים, מבלי לכתוב לולאות מסובכות. נלמד כיצד לקבץ טבלאות לפי ערך בעמודה, לבצע פעולות כמו סכום, ממוצע ומניין על כל קבוצה.</p>
+<section id="groupby">
 <h1><code class="docutils literal notranslate"><span class="pre">groupby</span></code> - סיכום קבוצות של שורות לכדי שורה בודדת<a class="headerlink" href="#groupby" title="Link to this heading">#</a></h1>
-<p>המתודה <code class="docutils literal notranslate"><span class="pre">groupby</span></code> מאפשרת בצע שאלתות מתקדמות באצעות חלוקת את הנתונים בטבלה לקבוצות על פי ערכים בעמודה מסוימת (או במספר עמודות), ולאחר מכן להפעיל על כל קבוצה חישובים ופעולות סיכום.</p>
-<p>לדוגמא, נניח כי בטבלת ציוני הסטודנטים שלנו קיימת עמודה נוספת בשם <code class="docutils literal notranslate"><span class="pre">Degree</span></code>. נוכל להשתמש ב־<code class="docutils literal notranslate"><span class="pre">groupby(&quot;Degree&quot;)</span></code> כדי לאסוף את כל הסטודנטים של כל קורס לקבוצה אחת, ואז לחשב ממוצע ציונים בתכנות לכל תואר בנפרד.</p>
+<p>המתודה <code class="docutils literal notranslate"><span class="pre">groupby</span></code> מאפשרת לבצע שאילתות מתקדמות באמצעות חלוקת הנתונים לקבוצות על פי <strong>ערכים בעמודה מסוימת</strong> (או במספר עמודות), ולאחר מכן להפעיל על כל קבוצה חישובים ופעולות סיכום.</p>
+<p>לדוגמא, נניח כי בטבלת ציוני הסטודנטים שלנו קיימת עמודה נוספת בשם <code class="docutils literal notranslate"><span class="pre">Degree</span></code> המייצגת את התואר אותו לומד כל סטודנט. נוכל להשתמש ב־<code class="docutils literal notranslate"><span class="pre">groupby(&quot;Degree&quot;)</span></code> כדי לאסוף את כל הסטודנטים של כל תואר לקבוצה אחת, ואז לחשב ממוצע ציונים בכל קורס <strong>לכל תואר בנפרד</strong>.</p>
 <p>כדי לממש את התרחיש לעיל, נוסיף לטבלה שלנו עמודה חדשה בשם “Degree”</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -638,11 +638,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
+      <th>...</th>
       <th>Art</th>
       <th>Degree</th>
     </tr>
@@ -652,11 +648,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
+      <td>...</td>
       <td>91</td>
       <td>Industrial</td>
     </tr>
@@ -664,11 +656,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
-      <td>52</td>
+      <td>...</td>
       <td>88</td>
       <td>Industrial</td>
     </tr>
@@ -679,20 +667,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
+      <td>...</td>
       <td>80</td>
       <td>mechanical</td>
     </tr>
@@ -700,11 +680,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
+      <td>...</td>
       <td>70</td>
       <td>mechanical</td>
     </tr>
@@ -713,17 +689,18 @@ document.write(`
 <p>13 rows × 9 columns</p>
 </div></div></div>
 </div>
+</section>
 <section id="id1">
-<h2><code class="docutils literal notranslate"><span class="pre">groupby</span></code> התחביר של<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h1>התחביר של <code class="docutils literal notranslate"><span class="pre">groupby</span></code><a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="df-groupby-x-y-op">
-<h3>df.<span style='color:red'>groupby(x)</span><span style='color:blue'>[y]</span>.<span style='color:green'>op()</span><a class="headerlink" href="#df-groupby-x-y-op" title="Link to this heading">#</a></h3>
+<h2><span style='color:green'>()</span>df.<span style='color:red'>groupby(x)</span><span style='color:blue'>[y]</span>.<span style='color:green'>op</span><a class="headerlink" href="#df-groupby-x-y-op" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><span style='color:red'>חלוקת ה־<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> לקבוצות (טבלאות משנה מסוג <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>) לפי הערכים בעמודה או בעמודות <code class="docutils literal notranslate"><span class="pre">x</span></code></span></p></li>
-<li><p><span style='color:blue'>בחירת העמודה או העמודות הרלוונטיות - <code class="docutils literal notranslate"><span class="pre">y</span></code></span></p></li>
-<li><p><span style='color:green'>ביצוע פעולת סיכום על הערכים בכל טבלת משנה לקבלת ערך יחיד באמצעות האופרטור/פונקציה המתאימה (<code class="docutils literal notranslate"><span class="pre">op</span></code>). למשל: <code class="docutils literal notranslate"><span class="pre">mean()</span></code>, <code class="docutils literal notranslate"><span class="pre">max()</span></code>, <code class="docutils literal notranslate"><span class="pre">min()</span></code>, <code class="docutils literal notranslate"><span class="pre">sum()</span></code>, <code class="docutils literal notranslate"><span class="pre">count()</span></code>, <code class="docutils literal notranslate"><span class="pre">apply()</span></code></span></p></li>
+<li><p><span style='color:blue'>בחירת העמודה או העמודות עליהן נרצה לבצע את סיכום הערכים - <code class="docutils literal notranslate"><span class="pre">y</span></code></span></p></li>
+<li><p><span style='color:green'>ביצוע פעולת סיכום על הערכים של כל קבוצה בנפרד, באמצעות האופרטור/פונקציה המתאימה (<code class="docutils literal notranslate"><span class="pre">op</span></code>). למשל: <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">sum</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">apply</span></code></span></p></li>
 </ul>
 <p>שימו לב ש־<code class="docutils literal notranslate"><span class="pre">x</span></code> ו־<code class="docutils literal notranslate"><span class="pre">y</span></code> יכולים להיות עמודה אחת (מחרוזת בודדת <code class="docutils literal notranslate"><span class="pre">str</span></code>) או מספר עמודות (רשימה של מחרוזות).</p>
-<p>לדוגמא, השורה שלהלן מחזירה את הממוצע בתכנות בפילוח לפי סוג תואר</p>
+<p>לדוגמא, השורה שלהלן מחזירה את הממוצע בקורס תכנות בפילוח לפי סוג תואר:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Degree&quot;</span><span class="p">])[</span><span class="s1">&#39;Programming&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -741,7 +718,13 @@ Name: Programming, dtype: float64
 </div>
 </div>
 </div>
-<p>ואם נרצה לדעת מהו הציון מקסימלי שהתקבל בכל קבוצה?<br />
+<p>כלומר במקרה זה:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> היה “Degree”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code> היה “Programming”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">op</span></code> היה <code class="docutils literal notranslate"><span class="pre">mean</span></code>.</p></li>
+</ul>
+<p>ואם נרצה לדעת מהו הציון <strong>המקסימלי</strong> שהתקבל בכל קבוצה?<br />
 פשוט נחליף את פעולת הסיכום ל<code class="docutils literal notranslate"><span class="pre">max</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -762,32 +745,28 @@ Name: Programming, dtype: int64
 </div>
 </section>
 <section id="id2">
-<h3>תרגול<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>נסו כעת בעצמכם:</p>
-<p>כתבו שורת קוד בודדת המחלצת את הסטודנט שיקבל את הציון הכי נמוך בכל תואר (סה”כ 4 סטודנטים כי ישנם 4 תארים).<br />
+<h2>תרגול<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>כתבו שורת קוד בודדת המחלצת את <strong>שם הסטודנט שקיבל את הציון הכי נמוך</strong> בכל תואר (סה”כ 4 סטודנטים כי ישנם 4 תארים).<br />
 הניחו כי בכל תואר קיים סטודנט אחד כזה בדיוק.</p>
-<p>השוו את הקוד שכתבתם הפתרון למטה.</p>
-<div class="tip admonition">
-<p class="admonition-title"><strong>רמז</strong></p>
-<p>השתמשו ב<code class="docutils literal notranslate"><span class="pre">idxmin</span></code></p>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Degree&quot;</span><span class="p">])[</span><span class="s1">&#39;Programming&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">(),</span> <span class="s1">&#39;Name&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4     Danielle
-9          Tal
-6       Yarden
-12         Adi
-Name: Name, dtype: object
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write your code here</span>
 </pre></div>
 </div>
 </div>
 </div>
-</section>
+<div class="dropdown tip admonition">
+<p class="admonition-title"><strong>רמז</strong></p>
+<p>השתמשו ב<code class="docutils literal notranslate"><span class="pre">idxmin</span></code>.</p>
+</div>
+<div class="dropdown tip admonition">
+<p class="admonition-title"><strong>לחצו כאן כדי לצפות בפתרון</strong></p>
+<p>באמצעות <code class="docutils literal notranslate"><span class="pre">groupby</span></code> ו<code class="docutils literal notranslate"><span class="pre">idxmin</span></code> נוכל לחלץ את <strong>שם השורה</strong> של הסטודנט שקיבל את הציון הכי נמוך בכל תואר.
+לאחר מכן, באמצעות <code class="docutils literal notranslate"><span class="pre">loc</span></code>, נוכל לקבל את השמות שנמצאים באותן השורות, כדי לקבל את שמות הסטודנטים.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Degree&quot;</span><span class="p">])[</span><span class="s1">&#39;Programming&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">(),</span> <span class="s1">&#39;Name&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
 </section>
 </section>
 
@@ -837,12 +816,14 @@ Name: Name, dtype: object
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">groupby</span></code> התחביר של</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#df-groupby-x-y-op">df.<span style="color:red">groupby(x)</span><span style="color:blue">[y]</span>.<span style="color:green">op()</span></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגול</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><code class="docutils literal notranslate"><span class="pre">groupby</span></code> - סיכום קבוצות של שורות לכדי שורה בודדת</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">התחביר של <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#df-groupby-x-y-op"><span style="color:green">()</span>df.<span style="color:red">groupby(x)</span><span style="color:blue">[y]</span>.<span style="color:green">op</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגול</a></li>
 </ul>
 </li>
 </ul>
+
   </nav></div>
 
 </div></div>

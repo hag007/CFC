@@ -100,8 +100,6 @@ parts:
             title: "break ו־continue"
           - file: vendor/virtual-pyprog/8_2_nested_loops
             title: "לולאות מקוננות"
-          - file: vendor/virtual-pyprog/8_3_list-comprehensions
-            title: "List Comprehensions"
 
       - file: course/weeks/week_5
         title: "שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים"
@@ -124,105 +122,85 @@ parts:
             title: "Dictionaries"
           - file: vendor/virtual-pyprog/13_0_string-formats
             title: "עיצוב מחרוזות"
-          - file: vendor/virtual-pyprog/13_1_files
-            title: "קריאה וכתיבה לקבצים"
-
+            
       - file: course/weeks/week_7
-        title: "שבוע 7 — Numpy"
-        sections:
-          - file: course/weeks/week_7/7_0_intro_libs
-            title: "Intro: Setup & NumPy"
-          - file: course/weeks/week_7/7_1_arrays
-            title: "Arrays"
-          - file: course/weeks/week_7/7_2_arrays_indexing
-            title: "Arrays — Indexing"
-          - file: course/weeks/week_7/7_3_datatypes
-            title: "Datatypes"
-          - file: course/weeks/week_7/7_4_array_math
-            title: "Array Math"
-          - file: course/weeks/week_7/7_5_broadcasting
-            title: "Broadcasting"
-
-      - file: course/weeks/week_8
-        title: "שבוע 8 — Matplotlib, Probabilities & Histograms"
-        sections:
-          - file: course/weeks/week_8/8_1_matplotlib
-            title: "Matplotlib — Basics"
-          - file: course/weeks/week_8/8_2_example_matplotlib
-            title: "דוגמה מסכמת — Matplotlib"
-          - file: course/weeks/week_8/8_3_prob_hists
-            title: "Probabilities & Histograms"
-
-      - file: course/weeks/week_9
-        title: "שבוע 9 — Numpy מתקדם"
-        sections:
-          - file: course/weeks/week_9/9_1_matrix_operations
-            title: "פעולות מטריציוניות מתקדמות"
-          - file: course/weeks/week_9/9_2_linear_system
-            title: "פתרון מערכות ליניאריות"
-          - file: course/weeks/week_9/9_3_eigen_values
-            title: "ערכים ווקטורים עצמיים"
-          - file: course/weeks/week_9/9_4_SVD
-            title: "SVD"
-          - file: course/weeks/week_9/9_7_exercises
-            title: "תרגול עצמי"
-          - file: course/weeks/week_9/9_5_example_image_SVD
-            title: "תרגול: דחיסת תמונה באמצעות SVD"
-          - file: course/weeks/week_9/9_6_example_PI_MC
-            title: "תרגול: הערכת π בשיטת מונטה־קרלו"
-
-      - file: course/weeks/week_10
-        title: "שבוע 10 — SciPy ומבוא לPandas"
-        sections:
-          - file: course/weeks/week_10/10_1_physical_consts
-            title: "קבועים פיזיקליים ויחידות"
-          - file: course/weeks/week_10/10_2_integration
-            title: "אינטגרציה נומרית"
-          - file: course/weeks/week_10/10_3_optimization
-            title: "אופטימיזציה"
-          - file: course/weeks/week_11/11_0_intro
-            title: "מבוא לעבודה עם Pandas"
-          - file: course/weeks/week_11/11_1_data_structures
-            title: "Series ו־DataFrame"
-          - file: course/weeks/week_11/11_2_io
-            title: "טעינה וכתיבה של נתונים (I/O)"
-          - file: course/weeks/week_10/10_5_example_MB.ipynb
-            title: "תרגול: התפלגות Maxwell-Boltzmann" 
-
-      - file: course/weeks/week_11
-        title: "שבוע 11 — Pandas מתקדם"
-        sections:
-          - file: course/weeks/week_11/11_3_indexing_select_filter
-            title: "מיון, סינון ואינדוקס נתונים"
-          - file: course/weeks/week_11/11_4_cleaning_type_handling
-            title: "ניקוי נתונים וטיפוסים"
-          - file: course/weeks/week_11/11_5_vector_transform
-            title: "טרנספורמציות ווקטוריות"
-          - file: course/weeks/week_11/11_6_grouping_aggregation
-            title: "קיבוץ וצבירה"
-          - file: course/weeks/week_11/11_7_reshaping_dataframes
-            title: "Reshaping DataFrames"
-          - file: course/weeks/week_11/11_8_merging_joining
-            title: "Merging & Joining"
-          - file: course/weeks/week_11/11_9_time_series
-            title: "Time Series"
-          - file: course/weeks/week_11/11_10_exploration_quick_plots
-            title: "Exploration & Quick Plots"
-
-      - file: course/weeks/week_12
-        title: "שבוע 12 — OOP & Unittesting"
+        title: "שבוע 7 — OOP"
         sections:
           - file: vendor/virtual-pyprog/17_0_oop-intro
             title: "מבוא ל־OOP"
           - file: vendor/virtual-pyprog/17_1_oop-implementation
             title: "מימוש עקרונות OOP"
-          - file: course/weeks/week_12/12_1_unittesting_intro
-            title: "מבוא ל־Unit Testing"
-          - file: course/weeks/week_12/12_2_setup_teardown_edges
-            title: "setUp/tearDown ושוליים"
-          - file: course/weeks/week_12/12_3_unittesting_oop
-            title: "בדיקות ל־OOP"
-          - file: course/weeks/week_12/12_4_physicsl_unittesting
-            title: "בדיקות לקוד נומרי בפיזיקה"
-          - file: course/weeks/week_12/12_5_Pandas_tutorial
-            title: "תרגול מסכם"
+
+      - file: course/weeks/week_8
+        title: "שבוע 8 — Numpy"
+        sections:
+          - file: course/weeks/week_8/8_0_intro_libs
+            title: "Intro: Setup & libs" 
+          - file: vendor/virtual-pyprog/18_0_numpy-intro
+            title: "Intro: NumPy"
+          - file: vendor/virtual-pyprog/18_1_create-array
+            title: "Arrays"
+          - file: course/weeks/week_8/8_1_arrays
+            title: "Arrays"
+          - file: course/weeks/week_8/8_2_arrays_indexing
+            title: "Arrays — Indexing"
+          - file: course/weeks/week_8/8_3_datatypes
+            title: "Datatypes"
+          - file: course/weeks/week_8/8_4_array_math
+            title: "Array Math"
+          - file: course/weeks/week_8/8_5_broadcasting
+            title: "Broadcasting"
+
+      - file: course/weeks/week_9
+        title: "שבוע 9 — Matplotlib, Probabilities & Histograms"
+        sections:
+          - file: course/weeks/week_9/9_1_matplotlib
+            title: "Matplotlib — Basics"
+          - file: course/weeks/week_9/9_2_example_matplotlib
+            title: "דוגמה מסכמת — Matplotlib"
+          - file: course/weeks/week_9/9_3_prob_hists
+            title: "Probabilities & Histograms"
+
+      - file: course/weeks/week_10
+        title: "שבוע 10 — Numpy מתקדם"
+        sections:
+          - file: course/weeks/week_10/10_1_matrix_operations
+            title: "פעולות מטריציוניות מתקדמות"
+          - file: course/weeks/week_10/10_2_linear_system
+            title: "פתרון מערכות ליניאריות"
+          - file: course/weeks/week_10/10_3_eigen_values
+            title: "ערכים ווקטורים עצמיים"
+          - file: course/weeks/week_10/10_4_SVD
+            title: "SVD"
+          - file: course/weeks/week_10/10_7_exercises
+            title: "תרגול עצמי"
+          - file: course/weeks/week_10/10_5_example_image_SVD
+            title: "תרגול: דחיסת תמונה באמצעות SVD"
+          - file: course/weeks/week_10/10_6_example_PI_MC
+            title: "תרגול: הערכת π בשיטת מונטה־קרלו"
+
+      - file: course/weeks/week_11
+        title: "שבוע 11 — SciPy"
+        sections:
+          - file: course/weeks/week_11/11_1_physical_consts
+            title: "קבועים פיזיקליים ויחידות"
+          - file: course/weeks/week_11/11_2_integration
+            title: "אינטגרציה נומרית"
+          - file: course/weeks/week_11/11_3_optimization
+            title: "אופטימיזציה"
+          - file: course/weeks/week_11/11_5_example_MB.ipynb
+            title: "תרגול: התפלגות Maxwell-Boltzmann" 
+
+      - file: course/weeks/week_12
+        title: "שבוע 12 — Pandas"
+        sections:
+          - file: vendor/virtual-pyprog/19_1_pandas-intro
+            title: "מבוא לעבודה עם Pandas"
+          - file: vendor/virtual-pyprog/19_2_create-df
+            title: "יצירת טבלה"
+          - file: vendor/virtual-pyprog/19_3_access-df
+            title: "גישה לנתונים בטבלה"
+          - file: vendor/virtual-pyprog/19_4_basic_editing
+            title: "עריכת טבלה"
+
+

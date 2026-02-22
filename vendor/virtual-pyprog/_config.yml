@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
+title: PyProg lectures
+author: Hagai Levi,  Maya Metzger, Amir Rubinstein, Michal Kleinbort
 logo: _static/tau.png
 
 # Force re-execution of notebooks on each build.
@@ -15,10 +15,6 @@ latex:
   latex_documents:
     targetname: book.tex
 
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
-
 # Information about where the book exists on the web
 repository:
   url: https://github.com/hag007/virtual-pyprog  # Online location of your book
@@ -30,7 +26,7 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_css:
-    - rtl.css
+    - custom.css
 
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
@@ -44,6 +40,5 @@ sphinx:
   config:
     togglebutton_hint: "הציגו בהרחבה"
     togglebutton_hide_hint: "סגרו"
-    # html_theme_options:
-    #   secondary_sidebar_items: []   # removes the whole right-hand column
-    #   show_toc_level: 0
+    html_static_path:
+      - "utils"

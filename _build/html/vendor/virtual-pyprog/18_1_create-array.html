@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>יצירת מערך חדש &#8212; Computers For physics</title>
+    <title>8.4. אתחול מערכים ב-numpy &#8212; Computers For physics</title>
   
   
   
@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -61,6 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'vendor/virtual-pyprog/18_1_create-array';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.5. Numpy’s Arrays (מערכים)" href="../../course/weeks/week_8/8_1_arrays.html" />
+    <link rel="prev" title="8.3. ספריית numpy" href="18_0_numpy-intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +126,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -185,7 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../0_intro.html">מנהלות</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">שבועות הלמידה</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_1.html">1. שבוע 1 — טיפוסים ותנאים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="0_0_objectives.html">1.2. מבוא</a></li>
 <li class="toctree-l2"><a class="reference internal" href="0_1_hardware-to-software.html">1.3. חומרה, תוכנה והשיטה הבינארית</a></li>
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -574,7 +554,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>יצירת מערך חדש</h1>
+    <h1>אתחול מערכים ב-numpy</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -584,7 +564,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-ndarray-np-array">ייצוג מערכים בNumpy באמצעות ndarray/<code class="docutils literal notranslate"><span class="pre">np.array</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">8.4.1. יצירת מערך חדש</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.4.2. פעולות אריתמטיות פשוטות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">8.4.3. דרכים נוספות ליצירת מערכים</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">8.4.3.1. מערכים לא אחידים</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.4.3.2. מערכים עם מספרים אקראיים</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">8.4.3.2.1. ואיך נוכל ליצור מערכים אקראיים בטווח מספרים אחר?</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -596,43 +585,79 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>יצירת מערך חדש<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="numpy-ndarray-np-array">
-<h2>ייצוג מערכים בNumpy באמצעות ndarray/<code class="docutils literal notranslate"><span class="pre">np.array</span></code><a class="headerlink" href="#numpy-ndarray-np-array" title="Link to this heading">#</a></h2>
-<p>האובייקט המרכזי בספריית Numpy הוא <strong>מערך רב־ממדי (ndarray), או <code class="docutils literal notranslate"><span class="pre">np.array</span></code></strong>. זהו מבנה נתונים הומוגני, <strong>כלומר כל האיברים שבו הם מאותו טיפוס</strong>. למשל, כולם מספרים שלמים או כולם שברים עשרוניים). ניתן לחשוב עליו גם כוקטור חד מימדי או מטריצה של איברים (בדרך כלל מספרים). ניתן לייצג במערכי Numpy גם מבנים רב מימדיים כמו מטריצה תלת מימדית, אך לא נעסוק בכך במסגרת נושא זה.</p>
-<p>באופן אינטואיטיבי, ניתן ליצור מערך מרשימה (וקטור חד מימדי) או מרשימה מקוננת (מטריצה):</p>
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספריית <code class="docutils literal notranslate"><span class="pre">numpy</span></code> ע”י הרצת השורת הבאה:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is&#39;</span> <span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b is </span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c is </span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a is [0 1]
-b is 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="numpy">
+<h1><span class="section-number">8.4. </span>אתחול מערכים ב-<code class="docutils literal notranslate"><span class="pre">numpy</span></code><a class="headerlink" href="#numpy" title="Link to this heading">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/Dbg-j-F2mtM" title="numpy 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>האובייקט המרכזי בספריית <code class="docutils literal notranslate"><span class="pre">numpy</span></code> הוא <strong>מערך רב־ממדי (ndarray), או <code class="docutils literal notranslate"><span class="pre">np.array</span></code></strong>.<br />
+המערך הוא מבנה נתונים הומוגני, <strong>כלומר כל האיברים שבו הם מאותו טיפוס</strong>. למשל, כולם מספרים שלמים או כולם שברים עשרוניים.<br />
+ניתן לחשוב על מערך גם כוקטור חד מימדי או כמטריצה של איברים (בדרך כלל מספרים).<br />
+ניתן לייצג במערכי <code class="docutils literal notranslate"><span class="pre">numpy</span></code> גם מבנים רב מימדיים כמו מטריצה תלת מימדית, אך לא נעסוק בכך במסגרת נושא זה.</p>
+<p>בחלק זה נכיר דרכים שונות ליצור מערכים חדשים, ונלמד מעט פעולות אריתמתיות שניתן לבצע על מערכים כאלו.</p>
+</span><section id="id1">
+<h2><span class="section-number">8.4.1. </span>יצירת מערך חדש<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<span class=custom-text-content> 
+<p>באופן אינטואיטיבי, ניתן ליצור מערך על ידי המרה מרשימה (וקטור חד מימדי) או מרשימה מקוננת (מטריצה):</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is:&#39;</span> <span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b is: </span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c is: </span><span class="se">\n</span><span class="s1">&#39;</span> <span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a is: [0 1]
+b is: 
  [[1 2 3]
  [4 5 6]]
-c is 
+c is: 
  [[0.1 0.2 0.3]
  [0.4 0.5 0.6]]
 </pre></div>
 </div>
 </div>
 </div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
-<p>אם יוצרים מטריצה, אורכי הרשימות המקוננות צריכים להיות זהים (אחרת זו אינה מטריצה)</p>
+<p>כדי ליצור ndarray שמייצג מטריצה, צריך לוודא שכל הרשימות המקוננות בעלות אורך זהה. אחרת, לא נקבל מטריצה.</p>
 </div>
-<p>בהנתן 2 מטריצות בעלות אותה הצורה ניתן להפעיל עליהן פעולות אריתמטיות</p>
-<div class="cell docutils container">
+</section>
+<section id="id2">
+<h2><span class="section-number">8.4.2. </span>פעולות אריתמטיות פשוטות<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<span class=custom-text-content> 
+<p>בהנתן 2 מטריצות בעלות אותם מימדים, ניתן להפעיל עליהן פעולות אריתמטיות.
+לדוגמא, חיבור שתי מטריצות cell by cell מתבצע על-ידי פעולת החיבור.</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">c</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">c</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -643,28 +668,39 @@ c is
 </div>
 </div>
 </div>
-<p>אך אם המימדים אינם זהים, הפעולה תכשל</p>
-<div class="cell docutils container">
+<span class=custom-text-content> 
+<p><strong>שימו לב!</strong>
+פעולת חיבור בין שתי מטריצות מוגדרת אך אם המימדים זהים.<br />
+אם ננסה לבצע חיבור על שתי מטריצות בעלות מימדים שונים, הפעולה תכשל:</p>
+</span><div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
 
 <span class="ne">ValueError</span>: operands could not be broadcast together with shapes (2,) (2,3) 
 </pre></div>
 </div>
 </div>
 </div>
-<p>יוצא דופן לכך הוא מקרה בו מחברים וקטור חד מימדי עם מטריצה שאורך שורותיה (כלומר, מס’ העמודות) זהה לאורך הוקטור:</p>
-<div class="cell tag_raises-exception docutils container">
+<span class=custom-text-content> 
+<p>יוצא דופן לכך הוא מקרה בו מחברים <strong>וקטור</strong> (חד מימדי) עם מטריצה שאורך שורותיה (כלומר, מס’ העמודות) זהה לאורך הוקטור:
+לפעולה כזו קוראים גם <strong>broadcasting</strong>.</p>
+</span><div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">+</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -675,9 +711,13 @@ c is
 </div>
 </div>
 </div>
-<p>בנוסף, קיימות פונקציות שמסייעות לנו לאתחל מערך חדש בצורה פשוטה.<br />
-שתי פונקציות נפוצות המשמשות לצורך זה הן <code class="docutils literal notranslate"><span class="pre">zeros</span></code> ו-<code class="docutils literal notranslate"><span class="pre">ones</span></code>, המקבלות כארגומנט ראשון את מימדי הוקטור או המטריצה שרוצים לאתחל.</p>
-<div class="cell docutils container">
+</section>
+<section id="id3">
+<h2><span class="section-number">8.4.3. </span>דרכים נוספות ליצירת מערכים<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<span class=custom-text-content> 
+<p>מעבר להמרה מרשימות, קיימות פונקציות שמסייעות לנו לאתחל מערך חדש בצורה פשוטה.<br />
+שתי פונקציות נפוצות המשמשות לצורך זה הן <code class="docutils literal notranslate"><span class="pre">zeros</span></code> ו-<code class="docutils literal notranslate"><span class="pre">ones</span></code>, המקבלות כארגומנט ראשון את <strong>מימדי הוקטור או המטריצה</strong> שרוצים לאתחל.</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
 </pre></div>
@@ -689,9 +729,27 @@ c is
 </div>
 </div>
 </div>
-<p>שימו לב בהדפסה לעיל לנקודות שבאות לאחר האפסים. נקודות אלו באות לרמוז לנו שהערכים במטריצה הם מטיפוס <code class="docutils literal notranslate"><span class="pre">float</span></code>.<br />
-אם נרצה לשנות את איתחול המטריצה, כך שיהיה עם טיפוס אחר, נוכל לעשות זאת באמצעות הפרמטר <code class="docutils literal notranslate"><span class="pre">dtype</span></code>. לדוגמא, באתחול המטריצה להלן:</p>
-<div class="cell docutils container">
+<p>אם נרצה ליצור מטריצה, נעביר tuple של מימדי המטריצה (מספר השורות ומספר העמודות). שימו לב לסוגריים הנוספים עבור ה-tuple.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1.]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="error admonition">
+<p class="admonition-title"><strong>שימו לב!</strong></p>
+<p>הנקודות שמופיעות אחרי האפסים רומזות לנו שהערכים במטריצה הם מטיפוס <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+</div>
+<span class=custom-text-content> 
+<p>אם נרצה לשנות את איתחול המטריצה כך שתכיל ערכים מטיפוס אחר, נגדיר לפונקציה את הפרמטר <code class="docutils literal notranslate"><span class="pre">dtype</span></code>. לדוגמא, באתחול המטריצה להלן:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">))</span>
 </pre></div>
@@ -704,27 +762,26 @@ c is
 </div>
 </div>
 </div>
-<p>ומה אם נרצה לאתחל את המטריצה במספר שאינו 0 או 1? ישנן מספר דרכים לעשות זאת בNumpy. אך הדרך הכי אינטואיטיבית למי שלמד אלגברה ליניארית ומבצע אנליזות נומריות באמצעות הספריה הוא כפל מטריצה במספר (סקלאר):</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">3.17</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  מה אם נרצה לאתחל את המטריצה במספר קבוע, שאינו 0 או 1? הרי לא הגיוני לממש twos, threes וכן הלאה.</p>
+<p>הדרך הכי אינטואיטיבית (למי שנושם אלגברה ליניארית), הוא להשתמש בכפל מטריצה במספר (סקלאר):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mf">3.17</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3.17 3.17]
- [3.17 3.17]
- [3.17 3.17]]
-</pre></div>
+<section id="id4">
+<h3><span class="section-number">8.4.3.1. </span>מערכים לא אחידים<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<span class=custom-text-content> 
+<p>נניח שנרצה לייצר מערך שמייצג <strong>סדרה של מספרים</strong>.<br />
+היינו יכולים ליצור <strong>רשימה</strong> המכילה סדרה זו ולהעביר אותה ל<code class="docutils literal notranslate"><span class="pre">np.array</span></code>.</p>
+</span><div class="dropdown note admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  כיצד הייתם יוצרים סדרה של מספרים?</p>
+<p>באמצעות <code class="docutils literal notranslate"><span class="pre">range</span></code> כמובן!<br />
+נזכיר כי הקלט ל<code class="docutils literal notranslate"><span class="pre">range</span></code> הוא אינדקס ההתחלה (כולל), אינדקס הסיום (לא כולל) והקפיצה של כל צעד בסדרה.</p>
 </div>
-</div>
-</div>
-<p>ומה אם נרצה לאתחל מערך בצורה לא אחידה? לדוגמא, בסדרה של מספרים?</p>
-<p>נוכל ליצור רשימה המכילה סדרה זו ולהעביר אותה ל<code class="docutils literal notranslate"><span class="pre">np.array</span></code>.</p>
-<p>כיצד הייתם יוצרים סדרה ארוכה כזו? לדוגמא, של כל המספרים מ0 עד 1000? באמצעות <code class="docutils literal notranslate"><span class="pre">range</span></code> כמובן!</p>
-<p>נזכיר כי הקלט ל<code class="docutils literal notranslate"><span class="pre">range</span></code> הוא אינדקס ההתחלה (כולל), אינדקס הסיום (לא כולל) והקפיצה של כל צעד בסדרה</p>
-<p>מסתבר ש<code class="docutils literal notranslate"><span class="pre">numpy</span></code> מימשו עבורנו כבר פונקציה דומה בשם <code class="docutils literal notranslate"><span class="pre">arange</span></code> המבצעת פעולה דומה וחוסכת לנו את פעולת ההמרה:</p>
-<div class="cell docutils container">
+<span class=custom-text-content> 
+<p>מסתבר ש-<code class="docutils literal notranslate"><span class="pre">numpy</span></code> מימשו עבורנו כבר פונקציה דומה בשם <code class="docutils literal notranslate"><span class="pre">arange</span></code> המבצעת פעולה דומה וחוסכת לנו את פעולת ההמרה:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </pre></div>
@@ -736,8 +793,9 @@ c is
 </div>
 </div>
 </div>
-<p>כשדרוג נוסף לפונקצית <code class="docutils literal notranslate"><span class="pre">range</span></code> שראינו, ניתן באמצעות <code class="docutils literal notranslate"><span class="pre">arange</span></code> ליצור סדרות עם מספרים שבריים (<code class="docutils literal notranslate"><span class="pre">float</span></code>):</p>
-<div class="cell docutils container">
+<span class=custom-text-content> 
+<p>לעומת <code class="docutils literal notranslate"><span class="pre">range</span></code> שראינו, באמצעות <code class="docutils literal notranslate"><span class="pre">arange</span></code> ניתן ליצור <strong>סדרות עם מספרים שבריים (<code class="docutils literal notranslate"><span class="pre">float</span></code>)</strong>:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span>
 </pre></div>
@@ -749,9 +807,13 @@ c is
 </div>
 </div>
 </div>
-<p>לבסוף, נראה איתחול של וקטורים ומטריצות ב<strong>ערכים אקראיים</strong>.</p>
-<p>באמצעות <code class="docutils literal notranslate"><span class="pre">np.random.random</span></code>, בהנתן מימדי המטריצה, ניתן לאתחל ערכים אקראיים שבריים בין 0 ל-1</p>
-<div class="cell docutils container">
+</section>
+<section id="id5">
+<h3><span class="section-number">8.4.3.2. </span>מערכים עם מספרים אקראיים<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<span class=custom-text-content> 
+<p>כעת נראה איתחול של וקטורים ומטריצות עם <strong>ערכים אקראיים</strong>.</p>
+<p>באמצעות <code class="docutils literal notranslate"><span class="pre">np.random.random</span></code>, אשר מקבלת <code class="docutils literal notranslate"><span class="pre">tuple</span></code> המייצג את מימדי המטריצה, ניתן לאתחל ערכים אקראיים שבריים בין 0 ל-1.</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rand_arr</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="p">)</span>
@@ -759,83 +821,113 @@ c is
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.60736756 0.68662925 0.26965962 0.95609409 0.66257245]
- [0.51312364 0.62507254 0.20818247 0.52921081 0.00230717]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.50836108 0.05666032 0.61023818 0.65054569 0.83743548]
+ [0.77686803 0.44535466 0.08334258 0.51389735 0.75091325]]
 </pre></div>
 </div>
 </div>
 </div>
-<p>באמצעות כפל בסקלאר ניתן “למתוח” או “לכווץ” את הטווח</p>
-<div class="cell docutils container">
+<div class="caution admonition">
+<p class="admonition-title"><strong>נסו בעצמכם</strong></p>
+<p>הריצו את התא למעלה בשנית. האם קיבלתם את אותם מספרים?</p>
+</div>
+<section id="id6">
+<h4><span class="section-number">8.4.3.2.1. </span>ואיך נוכל ליצור מערכים אקראיים בטווח מספרים אחר?<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<span class=custom-text-content> 
+<p>באמצעות כפל בסקלאר ניתן “למתוח” או “לכווץ” את הטווח.</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># ranging between 0 to 2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.21473511 1.37325849 0.53931923 1.91218818 1.32514489]
- [1.02624728 1.25014508 0.41636494 1.05842162 0.00461433]]
-[[0.30368378 0.34331462 0.13482981 0.47804704 0.33128622]
- [0.25656182 0.31253627 0.10409123 0.2646054  0.00115358]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.01672217 0.11332065 1.22047636 1.30109138 1.67487095]
+ [1.55373606 0.89070932 0.16668515 1.02779471 1.5018265 ]]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="o">*</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1"># ranging between 0 to 0.5</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>ובאמצעות הוספת סקלאר ניתן “להזיז” את טווח הערכים</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="o">+</span><span class="n">rand_arr</span><span class="p">)</span> <span class="c1"># ranging between 4 to 5</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">+</span><span class="n">rand_arr</span><span class="p">)</span> <span class="c1"># ranging between -4 to -3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="o">*</span><span class="mf">0.5</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-3.39263244 -3.31337075 -3.73034038 -3.04390591 -3.33742755]
- [-3.48687636 -3.37492746 -3.79181753 -3.47078919 -3.99769283]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.25418054 0.02833016 0.30511909 0.32527285 0.41871774]
+ [0.38843402 0.22267733 0.04167129 0.25694868 0.37545662]]
 </pre></div>
 </div>
 </div>
 </div>
+<span class=custom-text-content> 
+<p>ובאמצעות הוספת סקלאר ניתן “להזיז” את טווח הערכים.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="o">+</span><span class="n">rand_arr</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[-3.49163892 -3.94333968 -3.38976182 -3.34945431 -3.16256452]
+ [-3.22313197 -3.55464534 -3.91665742 -3.48610265 -3.24908675]]
+</pre></div>
+</div>
+</div>
+</div>
+<span class=custom-text-content> 
 <p>למעשה, ע”י הוספת והכפלה ניתן להגיע לכל טווח שנרצה. לדוגמא:</p>
-<div class="cell docutils container">
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="n">rand_arr</span><span class="o">*</span><span class="mf">0.2</span><span class="p">)</span> <span class="c1"># ranging between 3 to 3.2 </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="n">rand_arr</span><span class="o">*</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3.10167222 3.01133206 3.12204764 3.13010914 3.1674871 ]
+ [3.15537361 3.08907093 3.01666852 3.10277947 3.15018265]]
 </pre></div>
 </div>
 </div>
 </div>
-<p>ואם נרצה ערכים רנדומליים שלמים? לצורך כך, נוכל להשתמש <code class="docutils literal notranslate"><span class="pre">np.random.randint</span></code>.
-כאן, הערכים הראשונים שנעביר מייצגים את טווח המספרים השלמים מהם נרצה להגריל את המספר האקראי שלנו: המספר הראשון הוא תחילת הטווח (כולל), והשני סוף הטווח (לא כולל).<br />
-הפרמטר השלישי הוא מימדי הוקטור/מטריצה</p>
+<p><strong>נסו בעצמכם!</strong> צרו מערך בעל 3 שורות ו2 עמודות המכיל ערכים אקראיים בטווח 10-12:</p>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="dropdown tip admonition">
+<p class="admonition-title"><strong>לחצו כאן כדי לצפות בפתרון</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rand_arr</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<span class=custom-text-content> 
+<p>ואם נרצה <strong>ערכים רנדומליים שלמים?</strong> לצורך כך, נוכל להשתמש <code class="docutils literal notranslate"><span class="pre">np.random.randint</span></code>.
+כאן, הערכים הראשונים שנעביר מייצגים את <strong>טווח המספרים השלמים</strong> מהם נרצה להגריל את המספר האקראי שלנו: המספר הראשון הוא תחילת הטווח (כולל), והשני סוף הטווח (לא כולל).<br />
+הפרמטר השלישי הוא טאפל המייצג את <strong>מימדי הוקטור/מטריצה</strong>.</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[6 2]
- [2 1]
- [6 1]
- [0 6]
- [1 2]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[3 4]
+ [5 5]
+ [0 3]
+ [6 4]
+ [2 6]]
 </pre></div>
 </div>
 </div>
 </div>
+</section>
+</section>
 </section>
 </section>
 
@@ -869,6 +961,24 @@ c is
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="18_0_numpy-intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">8.3. </span>ספריית <code class="docutils literal notranslate"><span class="pre">numpy</span></code></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../course/weeks/week_8/8_1_arrays.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8.5. </span>Numpy’s Arrays (מערכים)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -885,7 +995,16 @@ c is
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#numpy-ndarray-np-array">ייצוג מערכים בNumpy באמצעות ndarray/<code class="docutils literal notranslate"><span class="pre">np.array</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">8.4.1. יצירת מערך חדש</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.4.2. פעולות אריתמטיות פשוטות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">8.4.3. דרכים נוספות ליצירת מערכים</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">8.4.3.1. מערכים לא אחידים</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.4.3.2. מערכים עם מספרים אקראיים</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">8.4.3.2.1. ואיך נוכל ליצור מערכים אקראיים בטווח מספרים אחר?</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

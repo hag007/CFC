@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,7 +564,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lud-least-used-dictionary">הבעית ה-LUD – Least Used Dictionary</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lud-least-used-dictionary">דוגמא: מימוש מבנה הנתונים LUD – Least Used Dictionary</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">הסבר על המימוש, שלב אחר שלב:</a></li>
 </ul>
 </li>
@@ -601,10 +581,28 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>מתודות קסם<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>כבר מהשלבים הראשונים בלימוד פייתון ראינו שטיפוסים קיימים בפייתון כמו int, str, ו־list מתנהגים בצורה מאוד טבעית: אנחנו יכולים להשתמש בהם באופרטורים (+, *, ==), להדפיס אותם ישירות עם <code class="docutils literal notranslate"><span class="pre">print</span></code>, לחשב את אורכם עם <code class="docutils literal notranslate"><span class="pre">len</span></code> או לבדוק הכלה בעזרת <code class="docutils literal notranslate"><span class="pre">in</span></code>. למשל, הפקודה <code class="docutils literal notranslate"><span class="pre">len([1,2,3])</span></code> מחזירה את אורך הרשימה. טיפוסים הקיימים בפייתון עובדים בצורה טבעית עם פונקציות מובנות מבלי שנצטרך לחשוב מה מתרחש “מאחורי הקלעים”.</p>
-<p>הסיבה לכך שהפונקציות המובנות עובדות כך היא שבפייתון ניתן לכתוב עבור כל מחלקה <strong>מתודות קסם, או dunder methods</strong>, שמאפשרות לטיפוסים להתנהג כאילו היו חלק מובנה מהשפה. מתודות אלו מגדירות כיצד האובייקט מגיב למצבים שונים: יצירה, הדפסה, בדיקות אורך או בדיקת הכלה. כשאנחנו מגדירים מחלקה משלנו, אנחנו יכולים לממש את אותן מתודות ובכך לגרום לאובייקטים מותאמים אישית להתנהג באותה הצורה הטבעית שראינו עם טיפוסים מובנים.<br />
-למעשה, מאחורי הקלעים <strong>הפונקציות המובנות נעזרות במתודות הקסם על מנת לבצע את פעולתן</strong>.</p>
-<p>קיים מספר רב של מתודות קסם. ביחידה זו נתמקד בשלוש:</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315"  src="https://www.youtube.com/embed/mTWpc-3eEJ0" title="oop_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>כבר מהשלבים הראשונים בלימוד פייתון ראינו שטיפוסים קיימים בפייתון כמו int, str, ו־list מתנהגים בצורה מאוד טבעית:<br />
+אנחנו יכולים להשתמש בהם באופרטורים (+, *, ==), להדפיס אותם ישירות עם <code class="docutils literal notranslate"><span class="pre">print</span></code>, לחשב את אורכם עם <code class="docutils literal notranslate"><span class="pre">len</span></code> או לבדוק הכלה בעזרת <code class="docutils literal notranslate"><span class="pre">in</span></code>.<br />
+למשל, הפקודה <code class="docutils literal notranslate"><span class="pre">len([1,2,3])</span></code> מחזירה את אורך הרשימה.<br />
+טיפוסים הקיימים בפייתון עובדים בצורה טבעית עם פונקציות מובנות מבלי שנצטרך לחשוב מה מתרחש “מאחורי הקלעים”.</p>
+</span> <span class=custom-text-content> 
+<p>הסיבה שהפונקציות המובנות עובדות כך היא שבפייתון ניתן לכתוב עבור כל מחלקה <strong>מתודות קסם, או dunder methods</strong>, שמאפשרות לטיפוסים להתנהג כאילו היו חלק מובנה מהשפה.</p>
+<p>מתודות אלו מגדירות כיצד האובייקט מגיב למצבים שונים: יצירה, הדפסה, בדיקות אורך או בדיקת הכלה.<br />
+למעשה, כבר הכרנו מתודת קסם אחת -  <code class="docutils literal notranslate"><span class="pre">__init__</span></code> - שהיא בעצם הבנאי המשמש ליצירת אובייקט חדש.</p>
+<p>כשאנחנו מגדירים מחלקה משלנו, אנחנו יכולים לממש את מתודות הקסם ובכך לגרום לאובייקטים שאנחנו מימשנו להתנהג באותה הצורה הטבעית שראינו עם טיפוסים מובנים.</p>
+<p>מאחורי הקלעים <strong>הפונקציות המובנות נעזרות במתודות הקסם על מנת לבצע את פעולתן</strong>.</p>
+</span><span class=custom-text-content> 
+<p>קיים מספר רב של מתודות קסם. ביחידה זו נלמד על שלוש מתודות קסם חדשות:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">__repr__(self)</span></code></p>
 <ul>
@@ -626,15 +624,22 @@ document.write(`
 </ul>
 </li>
 </ul>
-<p>בבעיה הבאה שנציג, נדגים את השימוש בשלושת המתודות המיוחדות הללו</p>
-<div class="tip admonition">
+<p>בבעיה הבאה שנציג, נדגים את השימוש בשלוש המתודות המיוחדות הללו.</p>
+</span><div class="tip admonition">
 <p class="admonition-title"><strong>כדאי  לדעת</strong></p>
 <p>גם <code class="docutils literal notranslate"><span class="pre">__init__</span></code> (הבנאי) היא למעשה סוג של מתודת קסם מיוחדת, אשר נקראת בכל פעם שאנו קוראים למחלקה עם סוגריים עגולים</p>
 </div>
 <section id="lud-least-used-dictionary">
-<h2>הבעית ה-LUD – Least Used Dictionary<a class="headerlink" href="#lud-least-used-dictionary" title="Link to this heading">#</a></h2>
-<p>LUD הוא מילון מיוחד בגודל מוגבל, שמנהל לא רק זוגות של מפתחות וערכים אלא גם עוקב אחרי מספר הפעמים שכל מפתח נשלף ממנו. כלומר, בכל פעם שניגשים לערך באמצעות get(key), המילון מעלה את מונה הגישות לאותו מפתח. בדרך זו נשמרת היסטוריה של תדירות השימוש בכל ערך במבנה.</p>
-<p>כאשר המילון מגיע לגודל המקסימלי שלו, והמשתמש מנסה להוסיף זוג חדש של מפתח-ערך, המילון חייב “לזרוק” זוג מפתח-ערך קיים על מנת לשמור את הזוג החדש. המילון יבחור איזה מפתח לזרוק לפי <strong>תדירות הגישה למפתח-ערך</strong>: הזוג שהיה בשימוש המועט ביותר (כלומר בעל מספר הגישות הנמוך ביותר) יוסר מהמילון, ורק לאחר מכן יתווסף את הזוג החדש. כך מבטיחים שמצד אחד המילון ישמור על גודל מוגבל, אך גם יכיל את הערכים השימושיים ביותר, ויפנה מקום באופן חכם כאשר נדרשת הוספה של פריטים חדשים.</p>
+<h2>דוגמא: מימוש מבנה הנתונים LUD – Least Used Dictionary<a class="headerlink" href="#lud-least-used-dictionary" title="Link to this heading">#</a></h2>
+<span class=custom-text-content> 
+<p>LUD הוא מילון מיוחד בגודל מוגבל, שמנהל לא רק זוגות של מפתחות וערכים אלא גם עוקב אחרי מספר הפעמים שכל מפתח נשלף ממנו.<br />
+כלומר, בכל פעם שניגשים לערך באמצעות get(key), המילון מעלה את מונה הגישות לאותו מפתח.<br />
+בדרך זו נשמרת היסטוריה של מספר הגישות לכל מפתח במילון.</p>
+<p>כאשר המילון מגיע לגודל המקסימלי שלו, והמשתמש מנסה להוסיף זוג חדש של מפתח-ערך, המילון חייב “לזרוק” זוג מפתח-ערך קיים על מנת לשמור את הזוג החדש.<br />
+המילון יבחר איזה מפתח לזרוק לפי <strong>מספר הגישות למפתח</strong>:<br />
+הזוג שהיה בשימוש המועט ביותר (כלומר בעל מספר הגישות הנמוך ביותר) יוסר מהמילון, ורק לאחר מכן יתווסף הזוג החדש.<br />
+כך מבטיחים שמצד אחד המילון ישמור על גודל מוגבל, אך גם יכיל את הערכים השימושיים ביותר, ויפנה מהזכרון ערכים הנמצאים פחות בשימוש כאשר נדרשת הוספה של פריטים חדשים.</p>
+</span><span class=custom-text-content> 
 <p>נבחן כעת מחלקה המממשת את LUD, אשר תכיל את המתודות הבאות:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">__init__(self,</span> <span class="pre">memory_size)</span></code>:</p>
@@ -658,6 +663,9 @@ document.write(`
 <li><p>מחזירה מחרוזת המכילה את כל מפתחות המילון מופרדים ע”י מקף.</p></li>
 </ul>
 </li>
+</ul>
+</span><span class=custom-text-content> 
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">get(self,</span> <span class="pre">key)</span></code>:</p>
 <ul>
 <li><p>מחזירה את הערך המתאים למפתח. בנוסף, הפעולה מעדכנת את מונה הגישות לאותו מפתח.</p></li>
@@ -670,40 +678,70 @@ document.write(`
 </ul>
 </li>
 </ul>
-<section id="id2">
+</span><section id="id2">
 <h3>הסבר על המימוש, שלב אחר שלב:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memory_size</span><span class="p">):</span>
+<span class=custom-text-content> 
+<p>הבנאי (<code class="docutils literal notranslate"><span class="pre">__init__</span></code>)  מתבצע אתחול של האובייקט: אם המשתמש העביר גודל זיכרון קטן מ־1, תודפס הודעת שגיאה. לאחר מכן נשמר הערך של <code class="docutils literal notranslate"><span class="pre">memory_size</span></code> ומאותחלים שני מילונים פנימיים: <code class="docutils literal notranslate"><span class="pre">data</span></code> לשמירת המפתחות והערכים בפועל, ו-<code class="docutils literal notranslate"><span class="pre">usage</span></code> למעקב אחר מספר הפעמים שכל מפתח נשלף.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memory_size</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">memory_size</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error memory size&#39;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memory_size</span> <span class="o">=</span> <span class="n">memory_size</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">usage</span> <span class="o">=</span> <span class="p">{},</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">usage</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
 </div>
-<p>הבנאי (<code class="docutils literal notranslate"><span class="pre">__init__</span></code>)  מתבצע אתחול של האובייקט: אם המשתמש העביר גודל זיכרון קטן מ־1, תודפס הודעת שגיאה. לאחר מכן נשמר הערך של <code class="docutils literal notranslate"><span class="pre">memory_size</span></code> ומאותחלים שני מילונים פנימיים: <code class="docutils literal notranslate"><span class="pre">data</span></code> לשמירת המפתחות והערכים בפועל, ו-<code class="docutils literal notranslate"><span class="pre">usage</span></code> למעקב אחר מספר הפעמים שכל מפתח נשלף.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</div>
+</div>
+<span class=custom-text-content> 
+<p><strong>המתודה <code class="docutils literal notranslate"><span class="pre">__len__</span></code></strong> מחזירה את מספר האיברים במילון, על ידי קריאה לפונקציה len על המילון data. בצורה זו יתאפשר לנו בהמשך להשתמש בפונקציה המובנית <code class="docutils literal notranslate"><span class="pre">len</span></code> ישירות על אובייקטים מטיפוס LUD.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span> 
 </pre></div>
 </div>
-<p>מתודה זו מחזירה את מספר האיברים במילון, על ידי קריאה לפונקציה len על המילון data. בצורה זו יאפשר לנו בהמשך להשתמש בפונקציה המובנית <code class="docutils literal notranslate"><span class="pre">len</span></code> ישירות על אובייקטים מטיפוס LUD.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+</div>
+</div>
+<span class=custom-text-content> 
+<p><strong>המתודה <code class="docutils literal notranslate"><span class="pre">__contains__</span></code></strong> מתבצעת בדיקת שייכות: האם מפתח מסוים מוכל במילון. זה יאפשר לנו בהמשך להשתמש בתחביר הטבעי <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">in</span> <span class="pre">lud</span></code> במקום לקרוא לפונקציה נפרדת.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
 </pre></div>
 </div>
-<p>מתודה זו מתבצעת בדיקת שייכות: האם מפתח מסוים מוכל במילון. זה יאפשר לנו בהמשך להשתמש בתחביר הטבעי <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">in</span> <span class="pre">lud</span></code> במקום לקרוא לפונקציה נפרדת.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</div>
+</div>
+<span class=custom-text-content> 
+<p><strong>המתודה <code class="docutils literal notranslate"><span class="pre">__repr__</span></code></strong> מחזירה מחרוזת שמייצגת את המילון – כאן נעשה שימוש במתודה <code class="docutils literal notranslate"><span class="pre">join</span></code> של <code class="docutils literal notranslate"><span class="pre">str</span></code> המאחדת את המפתחות לכדי מחרוזת אחת באמצעות מקפים. מימוש מתודה זו מאפשרת לייצג את האובייקט בצורה קריאה ולא ככתובת בזיכרון.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="s2">&quot;-&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>מתודה זו מחזירה מחרוזת שמייצגת את המילון – כאן נעשה שימוש פשוט שמחבר את המפתחות בעזרת מקפים, כך שהאובייקט יודפס בצורה קריאה ולא ככתובת בזיכרון.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+</div>
+</div>
+<span class=custom-text-content> 
+<p><strong>המתודה <code class="docutils literal notranslate"><span class="pre">get</span></code></strong> אחראית להחזרת הערך השייך למפתח. היא משתמשת במתודת <code class="docutils literal notranslate"><span class="pre">get</span></code> של מילון רגיל, ואם הערך נמצא, מגדילה ב־1 את מונה הגישות לאותו מפתח במילון usage. אם המפתח לא קיים, מוחזר <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">val</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">usage</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="n">val</span>
 </pre></div>
 </div>
-<p>מתודה זו אחראית להחזרת הערך השייך למפתח. היא משתמשת במתודת <code class="docutils literal notranslate"><span class="pre">get</span></code> של מילון רגיל, ואם הערך נמצא, מגדילה ב־1 את מונה הגישות לאותו מפתח במילון usage. אם המפתח לא קיים, מוחזר <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">put</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+</div>
+</div>
+<span class=custom-text-content> 
+<p><strong>המתודה <code class="docutils literal notranslate"><span class="pre">put</span></code></strong> מוסיפה זוג מפתח-ערך חדש למילון ה-LUD.</p>
+</span><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span><span class="w"> </span><span class="nf">put</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">memory_size</span> <span class="ow">and</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
             <span class="n">mkey</span><span class="p">,</span> <span class="n">mval</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">usage</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">key_value</span><span class="p">:</span> <span class="n">key_value</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">mkey</span><span class="p">)</span>
@@ -712,34 +750,45 @@ document.write(`
         <span class="bp">self</span><span class="o">.</span><span class="n">usage</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 </div>
-<p>מתודה זו מוסיפה זוג מפתח-ערך חדש.</p>
-<p>תחילה, מתבצעת בדיקה אם המילון כבר הגיע לגודל המקסימלי והמפתח החדש עדיין לא קיים: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(self)</span> <span class="pre">==</span> <span class="pre">self.memory_size</span> <span class="pre">and</span> <span class="pre">key</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">self</span></code>.<br />
-שימו לב כי הפקודות <code class="docutils literal notranslate"><span class="pre">len</span></code> ו<code class="docutils literal notranslate"><span class="pre">in</span></code> מופעלות ישירות על <code class="docutils literal notranslate"><span class="pre">self</span></code>. דבר זה מתאפשר בזכות המימוש שכתבנו למתודות הקסם שכתבנו: <code class="docutils literal notranslate"><span class="pre">__len__</span></code> ו-<code class="docutils literal notranslate"><span class="pre">__contains__</span></code>.</p>
+</div>
+</div>
+<span class=custom-text-content> 
+<p>נעקוב ביתר בפירוט אחר המימוש של פונקציה זו.<br />
+תחילה, מתבצעת בדיקה אם המילון כבר הגיע לגודל המקסימלי והמפתח החדש עדיין לא קיים:<br />
+<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(self)</span> <span class="pre">==</span> <span class="pre">self.memory_size</span> <span class="pre">and</span> <span class="pre">key</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">self</span></code>.<br />
+שימו לב כי הפקודות <code class="docutils literal notranslate"><span class="pre">len</span></code> ו<code class="docutils literal notranslate"><span class="pre">in</span></code> מופעלות ישירות על <code class="docutils literal notranslate"><span class="pre">self</span></code>.<br />
+דבר זה מתאפשר בזכות המימוש שכתבנו למתודות הקסם שכתבנו: <code class="docutils literal notranslate"><span class="pre">__len__</span></code> ו-<code class="docutils literal notranslate"><span class="pre">__contains__</span></code>.</p>
+</span><span class=custom-text-content> 
 <p>במידה והמילון כבר הגיע למקסימום זוגות מפתח-ערך שהוא יכול להכיל (לפי <code class="docutils literal notranslate"><span class="pre">memory_size</span></code>), יש להסיר משני המילונים (<code class="docutils literal notranslate"><span class="pre">data</span></code> ו-<code class="docutils literal notranslate"><span class="pre">usage</span></code>) את המפתח שהשתמשו בו הכי מעט.<br />
-על מנת לגלות מי המפתח בו השתמשו הכי מעט משתמשים ב-<code class="docutils literal notranslate"><span class="pre">mkey,</span> <span class="pre">mval</span> <span class="pre">=</span> <span class="pre">min(self.usage.items(),</span> <span class="pre">key=lambda</span> <span class="pre">key_value:</span> <span class="pre">key_value[1])</span></code>.</p>
+על מנת לגלות מי המפתח בו השתמשו הכי מעט נבצע את הפקודה:<br />
+<code class="docutils literal notranslate"><span class="pre">mkey,</span> <span class="pre">mval</span> <span class="pre">=</span> <span class="pre">min(self.usage.items(),</span> <span class="pre">key=lambda</span> <span class="pre">key_value:</span> <span class="pre">key_value[1])</span></code>.</p>
 <p>נסביר פקודה זו מעט בהרחבה:<br />
-זכרו כי <code class="docutils literal notranslate"><span class="pre">()dict.items</span></code> מחזירה אובייקט איטרציה של זוגות (key, value) — כלומר צדים של מפתח-ערך.<br />
-אנו עושים שימוש בפרמטר <code class="docutils literal notranslate"><span class="pre">key</span></code>, אשר מגדיר יחס סדר חדש לפונקציה <code class="docutils literal notranslate"><span class="pre">min</span></code>. יחס סדר ,תלוי בערך של כל מפתח (שהוא האיבר השני בכל tuple): <code class="docutils literal notranslate"><span class="pre">lambda</span> <span class="pre">key_value:</span> <span class="pre">key_value[1]</span></code>, כלומר עבור כל זוג (key, count) נסתכל דווקא על האיבר השני — מונה השימוש — ונבחר את המינימום על פי הערך הזה.<br />
-התוצאה של <code class="docutils literal notranslate"><span class="pre">min</span></code> היא הזוג מפתח-ערך עם הערך המינימלי. במקרה שלנו, הערך הוא מספר הפעמים שניגשו למפתח זה.<br />
-את הזוג מפתח-ערך, ואנחנו מפרקים אותו ל־mkey (המפתח להסרה) ו־mval (מספר הגישות שלו).</p>
-<p>לאחר שחילצנו את המפתח בעל מספר הגישות המינימלי, נסיר אותו משני המילונים שלנו (<code class="docutils literal notranslate"><span class="pre">data</span></code> ו-<code class="docutils literal notranslate"><span class="pre">usage</span></code>), ונוסיף את מפתח החדש נוסף עם הערך המתאים, ובמקביל מאופס מונה השימוש שלו (0).</p>
+זכרו כי <code class="docutils literal notranslate"><span class="pre">()dict.items</span></code> מחזירה סדרה של זוגות (key, value) — כלומר זוגות של מפתח-ערך.<br />
+אנו עושים שימוש בפרמטר <code class="docutils literal notranslate"><span class="pre">key</span></code> של הפונקציה <code class="docutils literal notranslate"><span class="pre">min</span></code>, אשר מגדיר יחס סדר חדש לפונקציה <code class="docutils literal notranslate"><span class="pre">min</span></code>.<br />
+יחס הסדר שהוגדר הוא לפי הערך המשויך לכל מפתח (כלומר, האיבר השני בכל tuple החוזר מ<code class="docutils literal notranslate"><span class="pre">dict.items()</span></code>): <code class="docutils literal notranslate"><span class="pre">lambda</span> <span class="pre">key_value:</span> <span class="pre">key_value[1]</span></code>, כלומר עבור כל זוג (key, count) נסתכל דווקא על האיבר השני בטאפל — מונה השימוש — ונבחר את המינימום על פי הערך הזה.<br />
+התוצאה של <code class="docutils literal notranslate"><span class="pre">min</span></code> היא הזוג מפתח-ערך עם הערך המינימלי שהוא בעצם מספר הפעמים שניגשו למפתח אליו ניגשו הכי פחות.<br />
+אם כך, נקבל את הזוג מפתח-ערך, ואנחנו מפרקים אותו ל־mkey (המפתח להסרה) ו־mval (מספר הגישות שלו).</p>
+</span><span class=custom-text-content> 
+<p>לאחר שחילצנו את המפתח בעל מספר הגישות המינימלי, נסיר אותו משני המילונים שלנו (<code class="docutils literal notranslate"><span class="pre">data</span></code> ו-<code class="docutils literal notranslate"><span class="pre">usage</span></code>), ונוסיף את המפתח החדש יחד עם הערך המתאים. בנוסף, נאפס את מונה השימוש שלו במילון <code class="docutils literal notranslate"><span class="pre">usage</span></code>.</p>
 <p>בצורה זו מובטחת התנהגות של Least Used Dictionary – בכל הוספה כשהמילון מלא, המפתח בעל השימוש המועט ביותר מוסר.</p>
-<div class="info admonition">
+</span><div class="info admonition">
 <p class="admonition-title"><strong>הרחבה</strong></p>
 <p>ברירת המחדל של min היא להשוות ישירות בין הזוגות (טאפלים). בפייתון, ההשוואה בין טאפלים נעשית בצורה לקסיקוגרפית:
 קודם משווים את האיבר הראשון (המפתח).
 אם הם שונים – ההשוואה מוכרעת לפי המפתחות.
 אם הם שווים – רק אז משווים את האיבר השני (הערך).</p>
 </div>
+<span class=custom-text-content> 
 <p>כעת נצרף את כלל המימושים למחלקה שלמה:</p>
-<div class="cell docutils container">
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">LUD</span><span class="p">:</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">memory_size</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">memory_size</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error memory size&#39;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">memory_size</span> <span class="o">=</span> <span class="n">memory_size</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">usage</span> <span class="o">=</span> <span class="p">{},</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">usage</span> <span class="o">=</span> <span class="p">{}</span>
         
     <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span> 
@@ -767,8 +816,10 @@ document.write(`
 </div>
 </div>
 </div>
+<span class=custom-text-content> 
 <p>כעת, לאחר שמימשנו את המחלקה, נדגים את השימוש בה.<br />
-נסו להוסיף ולשנות קריאות למחלקה, ולראות את אתם התוצאה שהתקבלה היא מה שאתם מצפים לראות</p>
+</span></p>
+<p>נסו להוסיף ולשנות קריאות למחלקה, ולראות אם התוצאה שהתקבלה היא מה שאתם מצפים לראות</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lud_dict</span> <span class="o">=</span> <span class="n">LUD</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -842,7 +893,7 @@ Hi-Hi again
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lud-least-used-dictionary">הבעית ה-LUD – Least Used Dictionary</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lud-least-used-dictionary">דוגמא: מימוש מבנה הנתונים LUD – Least Used Dictionary</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">הסבר על המימוש, שלב אחר שלב:</a></li>
 </ul>
 </li>

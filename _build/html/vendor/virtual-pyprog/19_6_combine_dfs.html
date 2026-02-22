@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,11 +564,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגיל</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concat-by-columns-axis-1"><code class="docutils literal notranslate"><span class="pre">concat</span></code>  by columns (axis=1)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. שינוי השמות כך שיותאמו לשמות הסטודנטים</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">2. שימוש במתודה <code class="docutils literal notranslate"><span class="pre">merge</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">תרגול</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concat">חיבור באמצעות <code class="docutils literal notranslate"><span class="pre">concat</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חיבור טבלאות לפי שורות (אנכי)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">עבודה עם ערכים חסרים</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">חיבור טבלאות לפי עמודות (אופקי)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">הפונקציה <code class="docutils literal notranslate"><span class="pre">merge</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">טיפול בערכים חסרים</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">תרגול</a></li>
 </ul>
 </li>
 </ul>
@@ -602,12 +586,117 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספרית <code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הרצת השורת הראשונה בתא למטה.<br />
+בנוסף, נגביל את מספר השורות והעמודות שתופענה בהדפסת הטבלאות ע”י שורות הקוד השניה והשלישית:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span><span class="o">=</span><span class="mi">5</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>חיבור בין טבלאות<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>בפנדס קיימות שתי פונקציות נפוצות לחיבור בין טבלאות - <code class="docutils literal notranslate"><span class="pre">concat</span></code> ו־<code class="docutils literal notranslate"><span class="pre">merge</span></code>.</p>
-<p>ב<code class="docutils literal notranslate"><span class="pre">concat</span></code> כבר נתקלנו בעת שלמדנו להוסיף שורה ועמודה לטבלה.</p>
-<div class="tip admonition">
-<p class="admonition-title"><strong>תזכורת</strong></p>
+<p>בחלק זה נעמיק ביכולת לשלב ולאחד בין טבלאות שונות.</p>
+<p>ב־pandas קיימות שתי פונקציות עיקריות לביצוע פעולות אלה - <code class="docutils literal notranslate"><span class="pre">concat</span></code> ו־<code class="docutils literal notranslate"><span class="pre">merge</span></code>.
+הפונקציה <code class="docutils literal notranslate"><span class="pre">concat</span></code> משמשת לחיבור טבלאות זו אל זו, בצורה אנכית (הוספת שורות) או אופקית (הוספת עמודות). למעשה, כבר פגשנו אותה כשעסקנו בהוספת שורות ועמודות לטבלה קיימת.<br />
+בהמשך נראה כיצד להשתמש בה באופן רחב יותר, וגם נלמד על <code class="docutils literal notranslate"><span class="pre">merge</span></code>, המאפשרת איחוד חכם ומבוסס־מפתחות בין טבלאות שונות.</p>
+<p>הפעולות להלן יודגמו טבלת הציונים <code class="docutils literal notranslate"><span class="pre">&quot;files/StudentsGrades.csv&quot;</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFileName</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Programming</th>
+      <th>...</th>
+      <th>Planet Survival</th>
+      <th>Art</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Yael</td>
+      <td>50</td>
+      <td>...</td>
+      <td>65</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Nadav</td>
+      <td>61</td>
+      <td>...</td>
+      <td>52</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tom</td>
+      <td>98</td>
+      <td>...</td>
+      <td>92</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Adi</td>
+      <td>76</td>
+      <td>...</td>
+      <td>84</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+<p>13 rows × 8 columns</p>
+</div></div></div>
+</div>
+<section id="concat">
+<h2>חיבור באמצעות <code class="docutils literal notranslate"><span class="pre">concat</span></code><a class="headerlink" href="#concat" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>חיבור טבלאות לפי שורות (אנכי)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>ביחידות הקודמות ראינו כיצד ניתן להשתמש ב<code class="docutils literal notranslate"><span class="pre">concat</span></code> על מנת לחבר שורה או עמודה בודדת.</p>
+<div class="info admonition">
+<p class="admonition-title"><strong>תזכורת:</strong> הפונקציה concat</p>
 <p><code class="docutils literal notranslate"><span class="pre">concat</span></code> מחברת בין טבלאות לפי:</p>
 <ul class="simple">
 <li><p>שמות העמודות - במקרה של הוספת שורות/<code class="docutils literal notranslate"><span class="pre">axis=0</span></code></p></li>
@@ -621,17 +710,13 @@ document.write(`
 </pre></div>
 </div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<p>בדוגמא לעיל הוספנו <strong>שורה</strong> לטבלה, או המילים אחרות, ביצענו <strong>חיבור אנכי</strong>.<br />
-באופן אינטואיטיבי, כפי שחיברנו טבלה בעלת שורה בודדת לטבלה אחרת, <strong>ניתן לחבר גם טבלה בעלת מספר שורות</strong>.<br />
+<p>באופן אינטואיטיבי, כפי שחיברנו לטבלה בעלת שורה בודדת לטבלה אחרת, <strong>ניתן לחבר גם טבלה בעלת מספר שורות</strong>.<br />
 יתרה מכך, ניתן אף לחבר <strong>מספר טבלאות</strong>. כל מה שצריך זה להעביר בארגומנט הראשון טאפל או רשימה המכילים מספר טבלאות בעלות אותן עמודות (אחרת נקבל תאים ריקים, או <code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים).</p>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
-<p>גם פה יש להקפחיד להעביר ל<code class="docutils literal notranslate"><span class="pre">concat</span></code> את הפרמטר <code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code>, אחרת נקבל שמות שורות כפולים</p>
+<p>גם פה יש להקפיד להעביר ל<code class="docutils literal notranslate"><span class="pre">concat</span></code> את הפרמטר <code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code>, אחרת נקבל שמות שורות כפולים</p>
 </div>
-<p>להלן דוגמא לחיבור טבלאות:</p>
+<p>להלן דוגמא לחיבור אנכי (כלומר, לפי שורות) בין שתי טבלאות:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -662,10 +747,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -675,10 +757,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -686,10 +765,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -700,18 +776,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -719,10 +789,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -766,10 +833,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -779,10 +843,7 @@ document.write(`
       <th>0</th>
       <td>Shahar</td>
       <td>45.0</td>
-      <td>15.0</td>
-      <td>87.0</td>
-      <td>81.0</td>
-      <td>100.0</td>
+      <td>...</td>
       <td>82.0</td>
       <td>24.0</td>
     </tr>
@@ -790,10 +851,7 @@ document.write(`
       <th>1</th>
       <td>Hagai</td>
       <td>100.0</td>
-      <td>62.0</td>
-      <td>78.0</td>
-      <td>10.0</td>
-      <td>62.0</td>
+      <td>...</td>
       <td>69.0</td>
       <td>100.0</td>
     </tr>
@@ -801,15 +859,13 @@ document.write(`
       <th>2</th>
       <td>Inbal</td>
       <td>100.0</td>
-      <td>25.0</td>
-      <td>84.0</td>
-      <td>100.0</td>
-      <td>95.0</td>
+      <td>...</td>
       <td>99.0</td>
       <td>30.0</td>
     </tr>
   </tbody>
 </table>
+<p>3 rows × 8 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -839,10 +895,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -852,10 +905,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50.0</td>
-      <td>56.0</td>
-      <td>70.0</td>
-      <td>60.0</td>
-      <td>87.0</td>
+      <td>...</td>
       <td>65.0</td>
       <td>91.0</td>
     </tr>
@@ -863,10 +913,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61.0</td>
-      <td>77.0</td>
-      <td>75.0</td>
-      <td>75.0</td>
-      <td>63.0</td>
+      <td>...</td>
       <td>52.0</td>
       <td>88.0</td>
     </tr>
@@ -877,18 +924,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>14</th>
       <td>Hagai</td>
       <td>100.0</td>
-      <td>62.0</td>
-      <td>78.0</td>
-      <td>10.0</td>
-      <td>62.0</td>
+      <td>...</td>
       <td>69.0</td>
       <td>100.0</td>
     </tr>
@@ -896,10 +937,7 @@ document.write(`
       <th>15</th>
       <td>Inbal</td>
       <td>100.0</td>
-      <td>25.0</td>
-      <td>84.0</td>
-      <td>100.0</td>
-      <td>95.0</td>
+      <td>...</td>
       <td>99.0</td>
       <td>30.0</td>
     </tr>
@@ -908,9 +946,11 @@ document.write(`
 <p>16 rows × 8 columns</p>
 </div></div></div>
 </div>
+</section>
+<section id="id3">
+<h3>עבודה עם ערכים חסרים<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>בעת עבודה עם נתונים בטבלה, ניתקל לעיתים בערכים חסרים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code> – Not a Number), שמציינים מידע שלא קיים או שלא נמדד. ערכים אלו עלולים להשפיע על חישובים, גרפים וניתוחים סטטיסטיים, ולכן חשוב לזהות ולטפל בהם באופן מושכל לפני המשך העיבוד.</p>
-<p>בקוד שלהלן ניסו לחבר לטבלת הציונים שלנו טבלת ציונים נוספת של סטונדטים מהטכניון, והתקבלו תאים ריקים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים)</p>
-<p>ודאו כי אתם מבינים מדוע הופיעו ערכי <code class="docutils literal notranslate"><span class="pre">NaN</span></code> בתאים בהם בטבלה המאוחדת (האחרונה שמודפסת).</p>
+<p>בקוד שלהלן ניסו לחבר בין טבלת הציונים שלנו לבין טבלת ציונים נוספת של סטודנטים מהטכניון, והתקבלו תאים ריקים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst_grades_from_technion</span> <span class="o">=</span> \
@@ -950,10 +990,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -963,10 +1000,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -974,10 +1008,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -988,18 +1019,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1007,10 +1032,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -1097,14 +1119,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
-      <th>Art</th>
-      <th>Machine Learning</th>
-      <th>Spanish</th>
+      <th>...</th>
       <th>Karting</th>
       <th>Yoga</th>
     </tr>
@@ -1114,14 +1129,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50.0</td>
-      <td>56.0</td>
-      <td>70.0</td>
-      <td>60.0</td>
-      <td>87.0</td>
-      <td>65.0</td>
-      <td>91.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1129,14 +1137,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61.0</td>
-      <td>77.0</td>
-      <td>75.0</td>
-      <td>75.0</td>
-      <td>63.0</td>
-      <td>52.0</td>
-      <td>88.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1147,26 +1148,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>15</th>
       <td>Inbal</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>100.0</td>
-      <td>92.0</td>
+      <td>...</td>
       <td>95.0</td>
       <td>86.0</td>
     </tr>
@@ -1174,14 +1161,7 @@ document.write(`
       <th>16</th>
       <td>Rotem</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>80.0</td>
-      <td>100.0</td>
+      <td>...</td>
       <td>100.0</td>
       <td>100.0</td>
     </tr>
@@ -1190,15 +1170,22 @@ document.write(`
 <p>17 rows × 12 columns</p>
 </div></div></div>
 </div>
+<div class="dropdown caution admonition">
+<p class="admonition-title"><strong>עצרו וחישבו:</strong>  מדעו קיבלנו ערכים ריקים במהלך חיבור הטבלאות?</p>
+<p>שימו לב ששמות העמודות בטבלת הסטודנטים מהטכניון שונים משמות העמודות בטבלת תל אביב. בעת ביצוע חיבור אנכי (<code class="docutils literal notranslate"><span class="pre">concat</span></code>), pandas מבצעת <strong>יישור לפי שמות העמודות</strong>.
+כלומר, עמודות עם אותו שם מתאחדות, אך עמודות ששמן שונה אינן נחשבות תואמות.
+לכן, לסטודנטים מתל אביב אין ערכים בעמודת “ספרדית”, ואילו לסטודנטים מהטכניון אין ערכים בעמודת “היסטוריה”.
+במקומות שבהם חסר מידע, pandas ממלאת ערך ריק (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>).</p>
+<p>באופן דומה, אם נבצע <strong>חיבור אופקי</strong> כאשר שמות השורות אינם חופפים, נקבל <code class="docutils literal notranslate"><span class="pre">NaN</span></code>.</p>
+</div>
+<p>בשלב זה ניתן לשאול באופן טבעי כיצד יש לטפל בנתונים חסרים. בהמשך נראה דרכים לעשות זאת.</p>
+</section>
+<section id="id4">
+<h3>חיבור טבלאות לפי עמודות (אופקי)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>באופן אנלוגי, <strong>ניתן לחבר גם מספר טבלאות באופן אופקי</strong> כלומר, במקום לשרשר שורות, <strong>לשרשר עמודות</strong>. נעשה זאת ע”י העברת הפרמטר <code class="docutils literal notranslate"><span class="pre">axis=1</span></code> בעת הקריאה ל<code class="docutils literal notranslate"><span class="pre">concat</span></code>.<br />
 פה יש להקפיד כי לטבלאות יהיו שמות שורות זהים (אחרת נקבל תאים ריקים, או <code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים).</p>
-<section id="id2">
-<h2>תרגיל<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>בקוד שלהלן ניסו לחבר לטבלת הציונים שלנו טבלת ציונים נוספת של סטונדטים <strong>שעברו מהטכניון לתל אביב</strong>’ כלומר, יש להם ציונים בקורסים הנלמדים ב2 המוסדות. נניח גם כי שמות המשפחה יחודיים.<br />
+<p>בקוד שלהלן ניסו לחבר לטבלת הציונים שלנו טבלת ציונים נוספת של סטונדטים <strong>שעברו מהטכניון לתל אביב</strong>, כלומר, יש להם ציונים בקורסים הנלמדים ב2 המוסדות. הניחו כי השמות הפרטיים יחודיים (כלומר, לא קיימים 2 סטונדטים בעלי אותו שם).<br />
 קבעו מדוע מופיעים תאים ריקים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים) בטבלה המאוחדת (האחרונה שמודפסת).</p>
-</section>
-<section id="concat-by-columns-axis-1">
-<h2><code class="docutils literal notranslate"><span class="pre">concat</span></code>  by columns (axis=1)<a class="headerlink" href="#concat-by-columns-axis-1" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst_grades_from_technion</span> <span class="o">=</span> \
@@ -1236,10 +1223,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1249,10 +1233,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -1260,10 +1241,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -1274,18 +1252,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1293,10 +1265,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -1367,15 +1336,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
-      <th>Art</th>
-      <th>Name</th>
-      <th>Machine Learning</th>
-      <th>Spanish</th>
+      <th>...</th>
       <th>Karting</th>
       <th>Yoga</th>
     </tr>
@@ -1385,15 +1346,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
-      <td>91</td>
-      <td>Tom</td>
-      <td>96.0</td>
-      <td>100.0</td>
+      <td>...</td>
       <td>100.0</td>
       <td>97.0</td>
     </tr>
@@ -1401,15 +1354,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
-      <td>52</td>
-      <td>88</td>
-      <td>Adi</td>
-      <td>98.0</td>
-      <td>65.0</td>
+      <td>...</td>
       <td>87.0</td>
       <td>100.0</td>
     </tr>
@@ -1420,28 +1365,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
-      <td>80</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1449,15 +1378,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
-      <td>70</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1467,10 +1388,9 @@ document.write(`
 </div></div></div>
 </div>
 <p>מה הבעיה בטבלה לעיל?</p>
-<p>בטבלה המאוחדת (האחרונה שמודפסת) הסטודנטים שעברו מהטכניון הוצלבו עם השורות הלא נכונות. זאת מכיוום שההצלבה נעשתה לפי שם השורה (0,1,2) ולא לפי  שמות הסטודנטים (Tom, Adi)</p>
-<p>ניתן לתקן זאת ב2 דרכים:</p>
-<section id="id3">
-<h3>1. שינוי השמות כך שיותאמו לשמות הסטודנטים<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>בטבלה המאוחדת (האחרונה שמודפסת) הסטודנטים שעברו מהטכניון <strong>הוצלבו עם השורות הלא נכונות</strong>. ההצלבה נעשתה לפי שם השורה (0,1,2) ולא לפי שמות הסטודנטים (Tom, Adi).</p>
+<p>ניתן לתקן זאת בשתי דרכים:</p>
+<p>נוכל להגדיר את שמות הסטודנטים כשמות השורות, ואז לבצע <code class="docutils literal notranslate"><span class="pre">concat</span></code> כרגיל.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span>
@@ -1500,28 +1420,12 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
-      <th>Art</th>
-      <th>Name</th>
-      <th>Machine Learning</th>
-      <th>Spanish</th>
+      <th>...</th>
       <th>Karting</th>
       <th>Yoga</th>
     </tr>
     <tr>
       <th>Name</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1534,15 +1438,7 @@ document.write(`
       <th>Yael</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
-      <td>91</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1550,15 +1446,7 @@ document.write(`
       <th>Nadav</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
-      <td>52</td>
-      <td>88</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
@@ -1569,28 +1457,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>Tom</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
-      <td>80</td>
-      <td>Tom</td>
-      <td>96.0</td>
-      <td>100.0</td>
+      <td>...</td>
       <td>100.0</td>
       <td>97.0</td>
     </tr>
@@ -1598,15 +1470,7 @@ document.write(`
       <th>Adi</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
-      <td>70</td>
-      <td>Adi</td>
-      <td>98.0</td>
-      <td>65.0</td>
+      <td>...</td>
       <td>87.0</td>
       <td>100.0</td>
     </tr>
@@ -1615,24 +1479,32 @@ document.write(`
 <p>13 rows × 13 columns</p>
 </div></div></div>
 </div>
-<p>פתרון זה לכאורה עובד, אך הוא בעיתי מ2 סיבות:</p>
+<p>פתרון זה לכאורה עובד, אך הוא בעיתי משתי סיבות:</p>
 <ul class="simple">
-<li><p>עבור על פעולת <code class="docutils literal notranslate"><span class="pre">concat</span></code> עלינו לשנות את שמות השורות למפתח לפיו נרצה לעשות את האיחוד (ואף לנו הבטחה שאין בו כפילויות)</p></li>
-<li><p>עדיין צריך לטפל בעמודת <code class="docutils literal notranslate"><span class="pre">Name</span></code> שמופיעו כעת פעמיים (פעם נוספת באינדקס השורות).</p></li>
+<li><p>עלינו לשנות את שמות השורות למפתח לפיו נרצה לעשות את האיחוד. לא תמיד יש לנו הבטחה שאין כפילויות בעמודת המפתח!</p></li>
+<li><p>העמודה <code class="docutils literal notranslate"><span class="pre">Name</span></code> כעת מופיעה גם כעמודה וגם בשמות השורות. נצטרך לבצע פעולה נוספת.</p></li>
 </ul>
+<p>פתרון נוסף הוא שימוש בפונקציה חדשה בשם <code class="docutils literal notranslate"><span class="pre">merge</span></code> כפי שנראה כעת.</p>
+</section>
 </section>
 <section id="merge">
-<h3>2. שימוש במתודה <code class="docutils literal notranslate"><span class="pre">merge</span></code><a class="headerlink" href="#merge" title="Link to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">merge</span></code> מחברות <strong>זוג טבלאות</strong> ובחיבור אופקי בלבד (כלומר, חיבור עמודות). הייחודיות של <code class="docutils literal notranslate"><span class="pre">merge</span></code> היא האםשרות לבצע חיבור טבלאות על בסיס עמודה, או מספר עמודות בעלות ערכים תואמים. כלומר, <code class="docutils literal notranslate"><span class="pre">merge</span></code> יותר גישה ביצירת המפתח המשותף על פיו מחברים את הטבלאות.</p>
+<h2>הפונקציה <code class="docutils literal notranslate"><span class="pre">merge</span></code><a class="headerlink" href="#merge" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">merge</span></code> מחברת <strong>זוג טבלאות</strong> ו<strong>בחיבור אופקי בלבד</strong> (כלומר, חיבור עמודות). הייחודיות של <code class="docutils literal notranslate"><span class="pre">merge</span></code> היא האפשרות לבצע חיבור טבלאות <strong>על בסיס עמודה, או מספר עמודות</strong> בעלות ערכים תואמים. כלומר, <code class="docutils literal notranslate"><span class="pre">merge</span></code> עובדת על-ידי הגדרת מפתח משותף על פיו מחברים את הטבלאות.</p>
 <p>ההבדל העיקרי הוא אם החיבור מתבצע בצורה ישירה (כמו חיבור רשימות) באמצעות <code class="docutils literal notranslate"><span class="pre">concat</span></code>, או בהתאמה חכמה בין שורות באמצעות <code class="docutils literal notranslate"><span class="pre">merge</span></code>. הבחירה בין השתיים תלויה בשאלה האם מדובר בטבלאות “באותו מבנה” או בטבלאות שונות שצריך לקשר ביניהן דרך ערכים משותפים.</p>
 <p>לפונקציה <code class="docutils literal notranslate"><span class="pre">merge</span></code> קיימים 2 פרמטרים חשובים:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">on</span></code>: מגדיר את העמודה או העמודות שעל פיהן יתבצע החיבור. עמודה או עמודות אלו נקראות גם לעיתים <strong>מפתח</strong>.<br />
-אם מציינים <code class="docutils literal notranslate"><span class="pre">on='x'</span></code>, החיבור ייעשה לפי ערכים תואמים בעמודה <code class="docutils literal notranslate"><span class="pre">x</span></code> בלבד. אם מציינים רשימה כמו <code class="docutils literal notranslate"><span class="pre">on=['x','y']</span></code>, החיבור ייעשה רק במקומות שבהם יש התאמה גם בעמודה <code class="docutils literal notranslate"><span class="pre">x</span></code> וגם בעמודה <code class="docutils literal notranslate"><span class="pre">y</span></code>. כך ניתן לשלוט בדיוק באילו תנאים טבלאות יתחברו.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">how</span></code>: מגדיר את אופן החיבור בין הטבלאות. כאשר בוחרים <code class="docutils literal notranslate"><span class="pre">how='inner'</span></code>, התוצאה כוללת רק את השורות שיש להן ערכים תואמים בעמודות שעליהן מתבצע החיבור – כלומר חיתוך (intersection). לעומת זאת, אם בוחרים <code class="docutils literal notranslate"><span class="pre">how='outer'</span></code>, התוצאה כוללת את כל השורות משתי הטבלאות, גם אם אין להן התאמה, כך שמתקבל איחוד (union) מלא עם ערכי <code class="docutils literal notranslate"><span class="pre">NaN</span></code> במקום שאין התאמה.<br />
-2 ערכים אפשריים נוספים לפרמטר <code class="docutils literal notranslate"><span class="pre">how</span></code> הם <code class="docutils literal notranslate"><span class="pre">left</span></code> ו<code class="docutils literal notranslate"><span class="pre">right</span></code>. עבור <code class="docutils literal notranslate"><span class="pre">how='left'</span></code>, התוצאה שומרת את כל השורות מהטבלה השמאלית (הראשונה שהועברה ל־<code class="docutils literal notranslate"><span class="pre">merge</span></code>) ומוסיפה להן נתונים מהטבלה הימנית רק במקומות שבהם יש התאמה. כאשר <code class="docutils literal notranslate"><span class="pre">how='right'</span></code>, המצב הפוך – כל השורות מהטבלה הימנית נשמרות, ואליהן מצורפים נתונים מהטבלה השמאלית רק כאשר יש התאמה.</p></li>
+אם מכניסים ל<code class="docutils literal notranslate"><span class="pre">on</span></code> מפתח שהוא מחרוזת, לדוגמה <code class="docutils literal notranslate"><span class="pre">'x'</span></code>, החיבור ייעשה לפי ערכים תואמים בעמודה <code class="docutils literal notranslate"><span class="pre">x</span></code> בלבד. אם מציינים רשימה כמו <code class="docutils literal notranslate"><span class="pre">on=['x','y']</span></code>, החיבור ייעשה רק במקומות שבהם יש התאמה <strong>גם</strong> בעמודה <code class="docutils literal notranslate"><span class="pre">x</span></code> <strong>וגם</strong> בעמודה <code class="docutils literal notranslate"><span class="pre">y</span></code>. כך ניתן לשלוט בדיוק באילו תנאים הטבלאות יתחברו.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">how</span></code>: מגדיר את <strong>אופן החיבור</strong> בין הטבלאות. ערך זה מקבל את אחת מארבע המחרוזות הבאות: <code class="docutils literal notranslate"><span class="pre">'inner',</span> <span class="pre">'outer',</span> <span class="pre">'left',</span> <span class="pre">'right'</span></code>.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">inner</span></code>: התוצאה תכלול רק את השורות שיש להן ערכים תואמים בעמודות שעליהן מתבצע החיבור – כלומר חיתוך (intersection).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outer</span></code>: התוצאה תכלול את כל השורות משתי הטבלאות, גם אם אין להן התאמה, כך שמתקבל איחוד (union) מלא עם ערכי <code class="docutils literal notranslate"><span class="pre">NaN</span></code> במקום שאין התאמה.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">left</span></code>: התוצאה תשמור את כל השורות מהטבלה השמאלית (הראשונה שהועברה ל־<code class="docutils literal notranslate"><span class="pre">merge</span></code>) ומוסיפה להן נתונים מהטבלה הימנית רק במקומות שבהם יש התאמה.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">right</span></code>: המצב הפוך – כל השורות מהטבלה הימנית נשמרות, ואליהן מצורפים נתונים מהטבלה השמאלית רק כאשר יש התאמה.</p></li>
 </ul>
-<p>נחזור לדוגמא שלנו, תחילה נטעמן מחדש את הטבלאות (עשיונ עליהם יותר מידי שינויים עד לנקודה זו):</p>
+</li>
+</ul>
+<p>נחזור לדוגמא שלנו, תחילה נטען מחדש את הטבלאות (כדי לאפס את כל השינויים שעשינו להן עד עכשיו):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -1647,7 +1519,8 @@ document.write(`
 </div>
 </div>
 </div>
-<p>כעת, אם נרצה <strong>רק את הסטודנטים שהיו בשני המוסדות</strong>, נשתמש ב<code class="docutils literal notranslate"><span class="pre">how='inner'</span></code>:</p>
+<p>כעת, נבצע <code class="docutils literal notranslate"><span class="pre">merge</span></code> לפי שמות הסטונדטים, כלומר, על העמודה <code class="docutils literal notranslate"><span class="pre">Name</span></code> המשותפת בין הטבלאות.<br />
+אם נרצה <strong>רק את הסטודנטים שהיו בשני המוסדות</strong>, נגדיר את <code class="docutils literal notranslate"><span class="pre">how</span></code> להיות <code class="docutils literal notranslate"><span class="pre">'inner'</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">df_from_technion</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">))</span>
@@ -1675,14 +1548,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
-      <th>Art</th>
-      <th>Machine Learning</th>
-      <th>Spanish</th>
+      <th>...</th>
       <th>Karting</th>
       <th>Yoga</th>
     </tr>
@@ -1692,14 +1558,7 @@ document.write(`
       <th>0</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
-      <td>80</td>
-      <td>96.0</td>
-      <td>100.0</td>
+      <td>...</td>
       <td>100.0</td>
       <td>97.0</td>
     </tr>
@@ -1707,19 +1566,13 @@ document.write(`
       <th>1</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
-      <td>70</td>
-      <td>98.0</td>
-      <td>65.0</td>
+      <td>...</td>
       <td>87.0</td>
       <td>100.0</td>
     </tr>
   </tbody>
 </table>
+<p>2 rows × 12 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
@@ -1731,7 +1584,7 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">display</span><span class="p">(</span><span class="n">df_after_merge_outer</span><span class="p">)</span>
 
 <span class="ne">NameError</span>: name &#39;df_after_merge_outer&#39; is not defined
@@ -1739,7 +1592,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>לעומת זאת, אם נרצה את הטבלה המאוחדת עם <strong>כל הסטונדטים</strong>, נשתמש ב<code class="docutils literal notranslate"><span class="pre">merge</span></code> עם <code class="docutils literal notranslate"><span class="pre">how='outer'</span></code>:</p>
+<p>לעומת זאת, אם נרצה את הטבלה המאוחדת עם <strong>כל הסטונדטים</strong>, נגדיר את <code class="docutils literal notranslate"><span class="pre">how</span></code> להיות <code class="docutils literal notranslate"><span class="pre">'outer'</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_merged</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">df_from_technion</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;outer&#39;</span><span class="p">)</span>
@@ -1862,12 +1715,16 @@ document.write(`
 </div></div></div>
 </div>
 <p>כפי שאנו רואים, ישנם הרבה תאים ריקים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>ים). האם ניתן לטפל בהם בצורה כלשהי?</p>
-<p>בפנדס קיימות שתי דרכים עיקריות לטפל בערכים חסרים:
-<strong>1. החלפת ערכי <code class="docutils literal notranslate"><span class="pre">NaN</span></code> בערכים אחרים.</strong> לדוגמא, נשים קוד ציון מיוחד ציון חסר - 200. ניתן לעשות זאת באמצעות המתודה <code class="docutils literal notranslate"><span class="pre">fillna</span></code>;</p>
-<ul class="simple">
-<li><p>במקצוע כלשה<code class="docutils literal notranslate"><span class="pre">fillna()</span></code>, שמחליפה את הערכים החסרים בערך שנבחר – למשל אפס, ממוצע, או ערך אחר שמייצג בצורה טובה את הנתון החסר. הדרך השנייה היא סינון או הסרה של שורות או עמודות שבהן יש NaN, באמצעות <code class="docutils literal notranslate"><span class="pre">isnull()</span></code> או <code class="docutils literal notranslate"><span class="pre">dropna()</span></code>.</p></li>
-</ul>
-<p>בחירה בין שתי הגישות תלויה באופי הנתונים ובמטרת הניתוח: אם הנתונים החסרים מעטים, ייתכן שכדאי פשוט להסירם; אך אם הם משמעותיים, עדיף למלא אותם בערך מתאים כדי לשמור על עקביות הנתונים.</p>
+</section>
+<section id="id5">
+<h2>טיפול בערכים חסרים<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>ב־pandas יש שתי דרכים עיקריות להתמודד עם ערכים חסרים (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>):</p>
+<ol class="arabic simple">
+<li><p><strong>להחליף את הערכים החסרים בערכים אחרים</strong> באמצעות המתודה <code class="docutils literal notranslate"><span class="pre">()fillna</span></code>. ניתן, למשל, להציב לציון חסר ערך מיוחד כמו 200, או לבחור ערך מייצג אחר - אפס, ממוצע, חציון, או כל ערך שנראה מתאים לנתונים.</p></li>
+<li><p><strong>להסיר שורות או עמודות המכילות ערכים חסרים</strong>, באמצעות <code class="docutils literal notranslate"><span class="pre">()dropna</span></code>, או רק לאתר אילו מקומות חסרים בעזרת <code class="docutils literal notranslate"><span class="pre">()isnull</span></code>.</p></li>
+</ol>
+<p>הבחירה בין שתי הגישות תלויה באופי הנתונים ובמטרת הניתוח: אם יש מעט ערכים חסרים, ייתכן שעדיף להסירם; אך אם הם מופיעים בתדירות גבוהה או במשתנים חשובים, עדיף למלא אותם בערכים מתוקנים כדי לשמור על שלמות הנתונים.</p>
+<p><strong>דרך ראשונה:</strong> להחליף את כל הערכים החסרים ב-200.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_merged</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
@@ -1988,7 +1845,8 @@ document.write(`
 <p>13 rows × 12 columns</p>
 </div></div></div>
 </div>
-<p>סינון החוצה את כל הסטודנטים שאין להם ציון במקצוע מסוים? לצורך כך, ניתן למשתמש בMasking עם המתודה <code class="docutils literal notranslate"><span class="pre">isnull</span></code>, המחזירה מסיכה (טבלה בוליאנית) המייצגת באמצעות את כל התאים הריקים:</p>
+<p><strong>דרך שנייה:</strong> נסנן החוצה את כל הסטודנטים שאין להם ציון ב<code class="docutils literal notranslate"><span class="pre">Karting</span></code>, לדוגמא.<br />
+לצורך כך, ניתן להשתמש ב-Masking עם המתודה <code class="docutils literal notranslate"><span class="pre">isnull</span></code>, המחזירה מסכה המסמנת ב<code class="docutils literal notranslate"><span class="pre">True</span></code> את התאים הריקים:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_merged</span><span class="p">[</span><span class="o">~</span><span class="n">df_merged</span><span class="p">[</span><span class="s1">&#39;Karting&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
@@ -2063,17 +1921,23 @@ document.write(`
 </table>
 </div></div></div>
 </div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
-<p>מכיוון ש<code class="docutils literal notranslate"><span class="pre">isnull</span></code> מחזיר  <code class="docutils literal notranslate"><span class="pre">True</span></code> עבור ערכים ריקים, הפעלנו אופרטור שלילה <code class="docutils literal notranslate"><span class="pre">~</span></code> על מנת להפוך בין הערכים הבוליאניים</p>
+<p>כיוון ש<code class="docutils literal notranslate"><span class="pre">isnull</span></code> מחזיר <code class="docutils literal notranslate"><span class="pre">True</span></code> עבור ערכים ריקים, הפעלנו אופרטור שלילה <code class="docutils literal notranslate"><span class="pre">~</span></code> על מנת להפוך בין הערכים הבוליאניים.</p>
 </div>
-</section>
-<section id="id4">
-<h3>תרגול<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p>נניח שהייתם רוצים להחליף את את כל ערכים הריקים ב-<code class="docutils literal notranslate"><span class="pre">Karting</span></code> ל-0, ואת הערכים הריקים ב<code class="docutils literal notranslate"><span class="pre">Yoga</span></code> ל-200. כיצד הייתה עושים זאת?</p>
-<div class="tip admonition">
+<section id="id6">
+<h3>תרגול<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>החליפו את את כל ערכים הריקים ב-<code class="docutils literal notranslate"><span class="pre">Karting</span></code> ל-0, ואת כל הערכים הריקים ב<code class="docutils literal notranslate"><span class="pre">Yoga</span></code> ל-200.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="dropdown tip admonition">
 <p class="admonition-title"><strong>רמז</strong></p>
-<p>השתמשים ב2 פעולות Masking</p>
+<p>השתמשו בשתי פעולות Masking.</p>
 </div>
 </section>
 </section>
@@ -2125,11 +1989,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגיל</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concat-by-columns-axis-1"><code class="docutils literal notranslate"><span class="pre">concat</span></code>  by columns (axis=1)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. שינוי השמות כך שיותאמו לשמות הסטודנטים</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">2. שימוש במתודה <code class="docutils literal notranslate"><span class="pre">merge</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">תרגול</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concat">חיבור באמצעות <code class="docutils literal notranslate"><span class="pre">concat</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חיבור טבלאות לפי שורות (אנכי)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">עבודה עם ערכים חסרים</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">חיבור טבלאות לפי עמודות (אופקי)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">הפונקציה <code class="docutils literal notranslate"><span class="pre">merge</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">טיפול בערכים חסרים</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">תרגול</a></li>
 </ul>
 </li>
 </ul>

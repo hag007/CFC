@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>גישה בסיסית לטבלה &#8212; Computers For physics</title>
+    <title>12.4. גישה בסיסית לטבלה &#8212; Computers For physics</title>
   
   
   
@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -61,6 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'vendor/virtual-pyprog/19_3_access-df';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.5. עריכה בסיסית של טבלאות וסדרות" href="19_4_basic_editing.html" />
+    <link rel="prev" title="12.3. יצירת טבלה חדשה" href="19_2_create-df.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +126,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -185,7 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../0_intro.html">מנהלות</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">שבועות הלמידה</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_1.html">1. שבוע 1 — טיפוסים ותנאים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="0_0_objectives.html">1.2. מבוא</a></li>
 <li class="toctree-l2"><a class="reference internal" href="0_1_hardware-to-software.html">1.3. חומרה, תוכנה והשיטה הבינארית</a></li>
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,13 +564,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-loc">גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">iloc[,]</span></code> ו-<code class="docutils literal notranslate"><span class="pre">loc[,]</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חילוץ ערכים מטבלה</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">חילוץ ערכים מסדרה</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.4.1. בדיקת נתונים בסיסיים על הטבלה</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-loc">12.4.2. גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">[,]iloc</span></code> ו-<code class="docutils literal notranslate"><span class="pre">[,]loc</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-x-y">12.4.3. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.4.3.1. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בטבלה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.4.3.2. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בסדרה</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-vs-loc">תרגול: <code class="docutils literal notranslate"><span class="pre">iloc</span></code>  vs. <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">שמות שורות ועמודות בטבלאות וסדרות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-x-y">12.4.4. שימוש ב<code class="docutils literal notranslate"><span class="pre">loc[x,y]</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.4.5. השוואה בין <code class="docutils literal notranslate"><span class="pre">iloc</span></code> ל<code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.4.6. תרגול</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">12.4.7. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">12.4.7.1. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בטבלה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">12.4.7.2. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בסדרה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">12.4.7.3. שמות שורות ועמודות בטבלאות וסדרות</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -602,9 +591,27 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>גישה בסיסית לטבלה<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>נתחיל מטעינת טבלת הציונים שלנו מהקובץ files/StudentsGrades.csv לתוך <code class="docutils literal notranslate"><span class="pre">df</span></code>:</p>
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספרית <code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הרצת השורת הראשונה בתא למטה.<br />
+בנוסף, נגביל את מספר השורות והעמודות שתופענה בהדפסת הטבלאות ע”י שורות הקוד השניה והשלישית:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span><span class="o">=</span><span class="mi">5</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><span class="section-number">12.4. </span>גישה בסיסית לטבלה<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>עכשיו כשאנחנו יודעים ליצור טבלאות, נתחיל ללמוד כיצד עובדים איתן.</p>
+<p>נתחיל מטעינת טבלת הציונים שלנו מהקובץ <code class="docutils literal notranslate"><span class="pre">files/StudentsGrades.csv</span></code> לתוך <code class="docutils literal notranslate"><span class="pre">df</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -634,10 +641,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -647,10 +651,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -658,10 +659,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -672,18 +670,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -691,10 +683,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -703,8 +692,10 @@ document.write(`
 <p>13 rows × 8 columns</p>
 </div></div></div>
 </div>
-<p>לפני שנתחיל לנתח את הנתונים של הטבלה, ייתכן כי נרצה לדעת עליה כמה נתונים כללים את הטבלה.</p>
-<p>נניח כי נרצה להחזיר את מספר השורות בטבלה. נוכל לעשות זאת באמצעות פונקציה שכבר הזכרנו בעבר: <code class="docutils literal notranslate"><span class="pre">len</span></code>:</p>
+<section id="id2">
+<h2><span class="section-number">12.4.1. </span>בדיקת נתונים בסיסיים על הטבלה<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>כדי להכיר את הטבלה יותר טוב, נרצה לחלץ ממנה מספר נתונים בסיסיים.</p>
+<p>כדי לקבל את <strong>מספר השורות</strong> בטבלה, נוכל להשתמש בפונקציה שכבר ראינו - <code class="docutils literal notranslate"><span class="pre">len</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span>
@@ -717,8 +708,8 @@ document.write(`
 </div>
 </div>
 </div>
-<p>מה לגבי מספר העמודות?<br />
-מסתבר שיש שדה מיוחדת ב<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> הנקראת <code class="docutils literal notranslate"><span class="pre">shape</span></code>, והיא מחזירה גם את מספר השורות וגם את מספר בעמודות כ<code class="docutils literal notranslate"><span class="pre">tuple</span></code>:</p>
+<p>מה לגבי <strong>מספר העמודות</strong>?<br />
+בדומה ל<code class="docutils literal notranslate"><span class="pre">array</span></code> ב<code class="docutils literal notranslate"><span class="pre">numpy</span></code>, גם ב<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code> ישנו שדה מיוחד בשם <code class="docutils literal notranslate"><span class="pre">shape</span></code>, המייצג את מימדי הטבלה כ<code class="docutils literal notranslate"><span class="pre">tuple</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -731,7 +722,7 @@ document.write(`
 </div>
 </div>
 </div>
-<p>כפי שהזכרנו ביחידה הקודמת, לכל עמודה יש טיפוס משלה. כדי לקבל את הטיפוס של כל עמודה ניתן להשתמש בשדה <code class="docutils literal notranslate"><span class="pre">dtypes</span></code></p>
+<p>כפי שהזכרנו ביחידה הקודמת, כל עמודה יכולה להכיל ערכים מטיפוס שונה. כדי לקבל את הטיפוס של העמודות ניתן להשתמש בשדה <code class="docutils literal notranslate"><span class="pre">dtypes</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
@@ -749,50 +740,124 @@ Length: 8, dtype: object
 </div>
 </div>
 </div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
-<p>עמודות מחרוזת (כמו Name בדוגמא לעיל) מיוצגות בPandas ע”י הטיפוס <code class="docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>עמודות מחרוזת (כמו Name בדוגמא לעיל) מיוצגות ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הטיפוס <code class="docutils literal notranslate"><span class="pre">object</span></code></p>
 </div>
+</section>
 <section id="iloc-loc">
-<h2>גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">iloc[,]</span></code> ו-<code class="docutils literal notranslate"><span class="pre">loc[,]</span></code><a class="headerlink" href="#iloc-loc" title="Link to this heading">#</a></h2>
-<p>בדומה לרשימות, גם ב-Pandas ניתן לגשת לערכים ספציפיים בתמונה, כולל Slicing.</p>
-<p>ב-Pandas קיימות מספר דרכים לגשת לנתונים מטבלה. השיטה הפשוטה ביותר היא <code class="docutils literal notranslate"><span class="pre">df[x]</span></code>, שמחזירה עמודה לפי השם שלה. אם נפעיל את <code class="docutils literal notranslate"><span class="pre">[]</span></code> על סדרה (<code class="docutils literal notranslate"><span class="pre">Series</span></code>), לדוגמא, <code class="docutils literal notranslate"><span class="pre">s[x]</span></code>,  נקבל ערך שנמצא בתא בשם <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
-<p>אבל מה אם נרצה להחזיר תת-טבלה מסוימת?</p>
-<p>לצורך כך קיימות שתי מתודות עיקריות: <code class="docutils literal notranslate"><span class="pre">df.loc[x,y]</span></code> שמבוססת על <strong>שמות</strong> השורות (<code class="docutils literal notranslate"><span class="pre">x</span></code>) ועמודות (<code class="docutils literal notranslate"><span class="pre">y</span></code>), ו־<code class="docutils literal notranslate"><span class="pre">df.iloc[x,y]</span></code> שמבוססת על <strong>המיקומי</strong> של השורות והעמודות (<code class="docutils literal notranslate"><span class="pre">x</span></code> ו-<code class="docutils literal notranslate"><span class="pre">y</span></code>) בהתאמה. באמצעות מתודות אלו, ניתן לבצע חיתוך על השורות והעמודות יחדיו בתוך הסוגריים המרובעים.</p>
-<p>בכל אחת משלושת האופציות הללו, <code class="docutils literal notranslate"><span class="pre">x</span></code> יכול לייצג:</p>
+<h2><span class="section-number">12.4.2. </span>גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">[,]iloc</span></code> ו-<code class="docutils literal notranslate"><span class="pre">[,]loc</span></code><a class="headerlink" href="#iloc-loc" title="Link to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/o7I42VzbhzE" title="pandas 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code> קיימות מספר דרכים לגשת לנתונים מטבלה. השיטה הפשוטה ביותר היא <code class="docutils literal notranslate"><span class="pre">df[x]</span></code>, שמחזירה עמודה לפי השם שלה. אם נפעיל את <code class="docutils literal notranslate"><span class="pre">[]</span></code> על סדרה (<code class="docutils literal notranslate"><span class="pre">Series</span></code>), לדוגמא, <code class="docutils literal notranslate"><span class="pre">s[x]</span></code>,  נקבל ערך שנמצא בתא בשם <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<p>בנוסף, קיימות שתי מתודות מאוד שימושיות: <code class="docutils literal notranslate"><span class="pre">df.loc[x,y]</span></code> שמבוססת על <strong>שמות</strong> השורות (<code class="docutils literal notranslate"><span class="pre">x</span></code>) ועמודות (<code class="docutils literal notranslate"><span class="pre">y</span></code>), ו־<code class="docutils literal notranslate"><span class="pre">df.iloc[x,y]</span></code> שמבוססת על <strong>המיקומי</strong> של השורות והעמודות (<code class="docutils literal notranslate"><span class="pre">x</span></code> ו-<code class="docutils literal notranslate"><span class="pre">y</span></code>) בהתאמה.<br />
+באמצעות מתודות אלו, ניתן לבצע חיתוך על השורות והעמודות יחדיו בתוך הסוגריים המרובעים.</p>
+</span><p><code class="docutils literal notranslate"><span class="pre">df[y]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">s[x]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">df.loc[x,y]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">df.iloc[x,y]</span></code></p>
+<span class=custom-text-content> 
+<p>בכל אחת  מהאופציות הללו, <code class="docutils literal notranslate"><span class="pre">x</span></code> יכול לייצג עבור טבלה:</p>
 <ul class="simple">
 <li><p>שורה בודדת</p></li>
 <li><p>Slicing של שמות/מיקומי שורות</p></li>
 <li><p>רשימה של שמות/מיקומי שורות.</p></li>
 </ul>
-<p>באופן דומה ניתן לגשת לעמודת או מספר עמודות באמצעות <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>באופן דומה ניתן לגשת לעמודה בודדת או מספר עמודות באמצעות <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <p><strong>חשוב להבחין בין שלושת הדרכים הללו, משום שכל אחת מהן מתנהגת אחרת</strong>.</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>שימו לב</strong></p>
-<p>בניגוד לסדרות מספריות כפי שראינו עד כה בקורס, Slicing לפי שמות (ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> ו-<code class="docutils literal notranslate"><span class="pre">loc[]</span></code>) רץ מהשם בראשון *<em>כולל</em> עד השם האחרון <strong>כולל</strong>, לפי סדר הופעת השורות/העמודות.</p>
-<p>שימוש בSlicing ב<code class="docutils literal notranslate"><span class="pre">iloc[]</span></code> מתנהג כפי שראינו עד כה בSlicing: כלומר, רץ מהמספר הראשון <strong>כולל</strong> עד האחרון <strong>לא כולל</strong></p>
-</div>
-<p>כאשר ניגשים לערכים בטבלה, סוג האובייקט שניגשים אליו תלוי בכמות השורות והעמודות שנבחרו:</p>
+</span><p>כאשר ניגשים לערכים בטבלה, סוג האובייקט שניגשים אליו תלוי בכמות השורות והעמודות שנבחרו:</p>
 <ul class="simple">
 <li><p>גישה לתא יחיד מחזירה ערך בודד בהתאם לטיפוס הנתונים של העמודה.</p></li>
 <li><p>גישה לעמודה אחת או שורה אחת מחזירה אובייקט מסוג <code class="docutils literal notranslate"><span class="pre">Series</span></code>, שהוא וקטור חד-ממדי.</p></li>
 <li><p>גישה למספר עמודות ומספר שורות, התוצאה היא <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, כלומר טבלה דו-ממדית.</p></li>
 </ul>
-<p>למטה מופיעות מספר דוגמאות. ודאו שאתה מבינים מדוע מתקבלים הערכים המודפסים.</p>
-<section id="id2">
-<h3>חילוץ ערכים מטבלה<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+</section>
+<section id="iloc-x-y">
+<h2><span class="section-number">12.4.3. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code><a class="headerlink" href="#iloc-x-y" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3><span class="section-number">12.4.3.1. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בטבלה<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>באמצעות שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc</span></code> מתאפשרת גישה לערכים, שורות ועמודות לפי <strong>מיקומים מספריים</strong> (בדומה לגישה לערכים ברשימות, מערכים ומטריצות).</p>
+<p>לדוגמא, ניתן לגשת לערך בודד באמצעות ציון השורה והעמודה של הערך. לדוגמא, כך נחזיר את הערך הנמצא בשורה השניה והעמודה השניה:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_first3</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">df_first3</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df_first3</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>61
 </pre></div>
 </div>
+</div>
+</div>
+<p>על מנת לגשת לשורה שלמה, נפרט רק את האינדקס הראשון. לדוגמא, הקוד הבא מחלץ את השורה הראשונה (אינדקס 0):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name               Yael
+Programming          50
+                   ... 
+Planet Survival      65
+Art                  91
+Name: 0, Length: 8, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>ניתן לראות כי במקרה הזה מכיוון שחילצנו שורה, הערך שחזר הוא מטיפוס <code class="docutils literal notranslate"><span class="pre">series</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<p>כאשר רוצים להחזיר שורה בודדת, בברירת המחדל נבחרים ערכי כל העמודות באותה השורה.</p>
+<p>ואם נרצה לבחור <strong>עמודה</strong>? נוכל לשים את האינדקס של העמודה במיקום השני בסוגריים המרובעים (כלומר, לאחר הפסיק).
+אך בניגוד להחזר שורה, אין ערך ברירת מחדל לערכי השורות שחוזרות עבור העמודה. על מנת להחזיר את כל ערכי השורות של העמודה, נוכל להשתמש ב<code class="docutils literal notranslate"><span class="pre">:</span></code> ללא פירוט נוסף. כפי שראינו בslicing, <code class="docutils literal notranslate"><span class="pre">:</span></code> משתמשים לציון כל הטווח, כלומר, במקרה שלנו, ערכי העמודה בכל השורות.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Yael
+1     Nadav
+      ...  
+11      Tom
+12      Adi
+Name: Name, Length: 13, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>ניתן גם לבחור תת טבלה לפי טווחים של שורות ושל עמודות יחד.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -839,67 +904,47 @@ Length: 8, dtype: object
 </table>
 </div></div></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_first3</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_first3</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name              Yael
-Programming         50
-Marine Biology      56
-Name: 0, dtype: object
-0      Yael
-1     Nadav
-2    Michal
-Name: Name, dtype: object
-</pre></div>
-</div>
-</div>
-</div>
 </section>
-<section id="id3">
-<h3>חילוץ ערכים מסדרה<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3><span class="section-number">12.4.3.2. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בסדרה<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>בדומה לטבלה, גם מסדרה ניתן לחלץ ערכים.</p>
+<p>בדוגמא למטה, נחלץ תחילה שורה הרביעית בטבלה:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_first1</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">df_first1</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df_first1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name              Yael
-Programming         50
-Marine Biology      56
-Name: 0, dtype: object
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_row</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>כעת נוכל להשתמש ב<code class="docutils literal notranslate"><span class="pre">iloc</span></code> (שוב) כדי לחלץ ערך מהסדרה:</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_first1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df_first1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_row</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Yael
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shoshana
 </pre></div>
 </div>
+</div>
+</div>
+<p>כלומר, כאן חילצנו את הערך הראשון של הסדרה, שהוא למעשה ערך העמודה הראשונה בשורה הרביעית.</p>
+<p>כפי שהזכרנו קודם, הטיפוס של שורה הוא <code class="docutils literal notranslate"><span class="pre">series</span></code>, כלומר, סדרת ערכים חד מימדית. לכן נוכל לבחור רק לפי מימד אחד של אינדקסים (כלומר, <code class="docutils literal notranslate"><span class="pre">x</span></code> ללא <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p>
+<p>אם ננסה לבחור גם לפי <code class="docutils literal notranslate"><span class="pre">y</span></code> נקבל שגיאה:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_row</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">IndexingError</span><span class="g g-Whitespace">                             </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">df_first1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">df_first1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">df_row</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
 
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1184,</span> in <span class="ni">_LocationIndexer.__getitem__</span><span class="nt">(self, key)</span>
+<span class="nn">File ~/micromamba/lib/python3.11/site-packages/pandas/core/indexing.py:1184,</span> in <span class="ni">_LocationIndexer.__getitem__</span><span class="nt">(self, key)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1182</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_scalar_access</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
 <span class="g g-Whitespace">   </span><span class="mi">1183</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">_get_value</span><span class="p">(</span><span class="o">*</span><span class="n">key</span><span class="p">,</span> <span class="n">takeable</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_takeable</span><span class="p">)</span>
 <span class="ne">-&gt; </span><span class="mi">1184</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_tuple</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
@@ -907,13 +952,13 @@ Name: 0, dtype: object
 <span class="g g-Whitespace">   </span><span class="mi">1186</span>     <span class="c1"># we by definition only have the 0th axis</span>
 <span class="g g-Whitespace">   </span><span class="mi">1187</span>     <span class="n">axis</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">axis</span> <span class="ow">or</span> <span class="mi">0</span>
 
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1690,</span> in <span class="ni">_iLocIndexer._getitem_tuple</span><span class="nt">(self, tup)</span>
+<span class="nn">File ~/micromamba/lib/python3.11/site-packages/pandas/core/indexing.py:1690,</span> in <span class="ni">_iLocIndexer._getitem_tuple</span><span class="nt">(self, tup)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1689</span> <span class="k">def</span><span class="w"> </span><span class="nf">_getitem_tuple</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tup</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">):</span>
 <span class="ne">-&gt; </span><span class="mi">1690</span>     <span class="n">tup</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_tuple_indexer</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1691</span>     <span class="k">with</span> <span class="n">suppress</span><span class="p">(</span><span class="n">IndexingError</span><span class="p">):</span>
 <span class="g g-Whitespace">   </span><span class="mi">1692</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_lowerdim</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
 
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:962,</span> in <span class="ni">_LocationIndexer._validate_tuple_indexer</span><span class="nt">(self, key)</span>
+<span class="nn">File ~/micromamba/lib/python3.11/site-packages/pandas/core/indexing.py:962,</span> in <span class="ni">_LocationIndexer._validate_tuple_indexer</span><span class="nt">(self, key)</span>
 <span class="g g-Whitespace">    </span><span class="mi">957</span> <span class="nd">@final</span>
 <span class="g g-Whitespace">    </span><span class="mi">958</span> <span class="k">def</span><span class="w"> </span><span class="nf">_validate_tuple_indexer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">959</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
@@ -923,7 +968,7 @@ Name: 0, dtype: object
 <span class="g g-Whitespace">    </span><span class="mi">963</span>     <span class="n">key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expand_ellipsis</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">964</span>     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
 
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1001,</span> in <span class="ni">_LocationIndexer._validate_key_length</span><span class="nt">(self, key)</span>
+<span class="nn">File ~/micromamba/lib/python3.11/site-packages/pandas/core/indexing.py:1001,</span> in <span class="ni">_LocationIndexer._validate_key_length</span><span class="nt">(self, key)</span>
 <span class="g g-Whitespace">    </span><span class="mi">999</span>             <span class="k">raise</span> <span class="n">IndexingError</span><span class="p">(</span><span class="n">_one_ellipsis_message</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1000</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_key_length</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="ne">-&gt; </span><span class="mi">1001</span>     <span class="k">raise</span> <span class="n">IndexingError</span><span class="p">(</span><span class="s2">&quot;Too many indexers&quot;</span><span class="p">)</span>
@@ -936,12 +981,206 @@ Name: 0, dtype: object
 </div>
 </section>
 </section>
-<section id="iloc-vs-loc">
-<h2>תרגול: <code class="docutils literal notranslate"><span class="pre">iloc</span></code>  vs. <code class="docutils literal notranslate"><span class="pre">loc</span></code><a class="headerlink" href="#iloc-vs-loc" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>נראה כעת שלוש דרכים לחלץ חלצו את השורה הראשונה, השלישית והחמישית מתוך <code class="docutils literal notranslate"><span class="pre">df</span></code>:</p></li>
-</ol>
+<section id="loc-x-y">
+<h2><span class="section-number">12.4.4. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">loc[x,y]</span></code><a class="headerlink" href="#loc-x-y" title="Link to this heading">#</a></h2>
+<p>הגישה באמצעות <code class="docutils literal notranslate"><span class="pre">loc</span></code> מאפשרת לנו לבחור שורות ועמודות <strong>לפי שמות</strong>, ולא לפי מיקומים מספריים. זוהי אחת מהדרכים הברורות והנוחות ביותר לגשת למידע ב<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>.</p>
+<p>הגישה לערכי שורות ועמודות ב<code class="docutils literal notranslate"><span class="pre">loc</span></code> זהה בתחביר לגישה עם<code class="docutils literal notranslate"><span class="pre">iloc</span></code>, אך כעת נפרט את <strong>שמות השורות ושמות והעמודות</strong> ולא את האינדקסים.</p>
+<p>לדוגמא, ניגש לעמודת הציונים במקצוע אמנות באופן הבא:</p>
 <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="s1">&#39;Art&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>כעת ניגש לשורה בטבלה לפי שמה.</p>
+<p>כפי שציינו מוקדם יותר ביחידה, שמות השורות הן בברירת מחדל סדרת מספרים המתחילה מ0. לכן, גישה לשורות לפי <code class="docutils literal notranslate"><span class="pre">loc</span></code> ו<code class="docutils literal notranslate"><span class="pre">iloc</span></code> עשויה להראות בהתחלה מעט דומה.<br />
+לדוגמא, בשתי שורות הקוד שלהלן אנו מחזירים פעמיים את השורה הראשונה תוך שימוש דומה ב<code class="docutils literal notranslate"><span class="pre">loc</span></code> ו<code class="docutils literal notranslate"><span class="pre">iloc</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name               Yael
+Programming          50
+                   ... 
+Planet Survival      65
+Art                  91
+Name: 0, Length: 8, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name               Yael
+Programming          50
+                   ... 
+Planet Survival      65
+Art                  91
+Name: 0, Length: 8, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>ניתן גם לתת לשורות שמות בעלי משמעות, ולחלץ שורות לפי שמות אלו.<br />
+כדי להדגים זאת, נשתמש במתודה <code class="docutils literal notranslate"><span class="pre">set_index</span></code> כדי לשנות את שמות שורות בטבלה לערכים המופעים בעמודה Name:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Programming</th>
+      <th>Marine Biology</th>
+      <th>...</th>
+      <th>Planet Survival</th>
+      <th>Art</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Yael</th>
+      <td>50</td>
+      <td>56</td>
+      <td>...</td>
+      <td>65</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>Nadav</th>
+      <td>61</td>
+      <td>77</td>
+      <td>...</td>
+      <td>52</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Tom</th>
+      <td>98</td>
+      <td>76</td>
+      <td>...</td>
+      <td>92</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>Adi</th>
+      <td>76</td>
+      <td>87</td>
+      <td>...</td>
+      <td>84</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+<p>13 rows × 7 columns</p>
+</div></div></div>
+</div>
+<div class="error admonition">
+<p class="admonition-title"><strong>שימו לב</strong></p>
+<ul class="simple">
+<li><p>בברירת המחדל, המתודה <code class="docutils literal notranslate"><span class="pre">set_index</span></code> מורידה את העמודה שהיא הופכת לאינדקס</p></li>
+<li><p>יש להמנע מהגדרת ערכי אינדקסים המכילים כפילויות, מכיוון שזה עלול לגרור שגיאות בשימושים רבים ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code></p></li>
+</ul>
+</div>
+<p>כעת נוכל לחלץ באמצעות <code class="docutils literal notranslate"><span class="pre">loc</span></code> את השורה לפי שמות הסטודנטים:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;Adi&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Programming        76
+Marine Biology     87
+                   ..
+Planet Survival    84
+Art                70
+Name: Adi, Length: 7, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>כעת נחלץ את הציון של עדי נדב באמנות:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;Adi&#39;</span><span class="p">,</span><span class="s1">&#39;Nadav&#39;</span><span class="p">],</span> <span class="s1">&#39;Art&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name
+Adi      70
+Nadav    88
+Name: Art, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title"><strong>הערה</strong></p>
+<p>כאשר מעבירים שמות שורות (או עמודות) ברשימה ל<code class="docutils literal notranslate"><span class="pre">loc</span></code> סדר השורות (או העמודות) שיוחזר יהיה תואם לסדר של השמות ברשימה.</p>
+<p>התנהגות דומה תהיה גם עבור <code class="docutils literal notranslate"><span class="pre">iloc</span></code> עם רשימת אינדקסים</p>
+</div>
+</section>
+<section id="id5">
+<h2><span class="section-number">12.4.5. </span>השוואה בין <code class="docutils literal notranslate"><span class="pre">iloc</span></code> ל<code class="docutils literal notranslate"><span class="pre">loc</span></code><a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>נטען מחדש את הטבלה המקורית:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFileName</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span class=custom-text-content> 
+<p>נראה כעת שלוש דרכים לחלץ את השורה הראשונה, השלישית והחמישית מתוך <code class="docutils literal notranslate"><span class="pre">df</span></code>:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span> 
 </pre></div>
@@ -1160,9 +1399,15 @@ Name: 0, dtype: object
 </table>
 </div></div></div>
 </div>
-<p>שימו לב שבגלל שבדגומא האחרונה אנו משתמשים ב<code class="docutils literal notranslate"><span class="pre">loc</span></code> ולכן הגדרנו את הטווח עד <code class="docutils literal notranslate"><span class="pre">4</span></code> ולא <code class="docutils literal notranslate"><span class="pre">5</span></code>.<br />
-אם היינו מנסים להפעיל אותו Slicing על iloc, לא היינו מקבלים את הערך החמישי:</p>
-<div class="cell docutils container">
+<div class="error admonition">
+<p class="admonition-title"><strong>שימו לב</strong></p>
+<p>בניגוד לסדרות מספריות כפי שראינו עד כה בקורס, Slicing לפי שמות (ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> ו-<code class="docutils literal notranslate"><span class="pre">loc[]</span></code>) רץ מהשם בראשון *<em>כולל</em> עד השם האחרון <strong>כולל</strong>, לפי סדר הופעת השורות/העמודות.</p>
+<p>שימוש בSlicing ב<code class="docutils literal notranslate"><span class="pre">iloc[]</span></code> מתנהג כפי שראינו עד כה בSlicing: כלומר, רץ מהמספר הראשון <strong>כולל</strong> עד האחרון <strong>לא כולל</strong></p>
+</div>
+<span class=custom-text-content> 
+<p>בגלל שבדוגמא האחרונה אנו משתמשים ב<code class="docutils literal notranslate"><span class="pre">loc</span></code> הגדרנו את הטווח עד <code class="docutils literal notranslate"><span class="pre">4</span></code> ולא <code class="docutils literal notranslate"><span class="pre">5</span></code>.<br />
+אם היינו מנסים להפעיל אותו slicing על <code class="docutils literal notranslate"><span class="pre">iloc</span></code>, לא היינו מקבלים את הערך החמישי:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
@@ -1224,7 +1469,13 @@ Name: 0, dtype: object
 </table>
 </div></div></div>
 </div>
-<p>נסו כעת בעצמכם לחלץ מהטבלה <code class="docutils literal notranslate"><span class="pre">df</span></code> את ארבעת השורות האחרונות בכל אחת השלושת השיטות שהדגמנו למעלה <strong>תוך שימוש באינקסים שליליים</strong></p>
+</section>
+<section id="id6">
+<h2><span class="section-number">12.4.6. </span>תרגול<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>חלצו מהטבלה <code class="docutils literal notranslate"><span class="pre">df</span></code> את ארבע השורות <strong>האחרונות</strong> בכל אחת משלוש השיטות שהדגמנו למעלה.</p></li>
+</ol>
+<p><strong>רמז:</strong> השתמשו באינדקסים שליליים.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write your code here</span>
@@ -1233,7 +1484,7 @@ Name: 0, dtype: object
 </div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>בשורה להלן בוצע ניסון לחלץ את השורה האחרונה מהטבלה</p></li>
+<li><p>בשורה להלן בוצע ניסיון לחלץ את השורה האחרונה מהטבלה</p></li>
 </ol>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
@@ -1241,64 +1492,1432 @@ Name: 0, dtype: object
 </pre></div>
 </div>
 </div>
+</div>
+<p>מדוע התקבלה שגיאה?</p>
+<div class="dropdown tip admonition">
+<p class="admonition-title"><strong>לחצו כאן כדי לצפות בתשובה</strong></p>
+<p>המתודה <code class="docutils literal notranslate"><span class="pre">loc</span></code> ניגשת לשורות לפי השמות שלהן. על מנת לגשת לפי מיקום (-1), יש להשתמש ב<code class="docutils literal notranslate"><span class="pre">iloc</span></code></p>
+</div>
+</section>
+<section id="id7">
+<h2><span class="section-number">12.4.7. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code><a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3><span class="section-number">12.4.7.1. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בטבלה<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>כאשר משתמשים בסוגריים מרובעים <code class="docutils literal notranslate"><span class="pre">[]</span></code> עם אובייקט מסוג <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, ברירת המחדל היא <strong>גישה לעמודה לפי שמה</strong>.<br />
+כמו ב<code class="docutils literal notranslate"><span class="pre">loc</span></code>, גם כאן ניתן להעביר שם בודד, רשימת שמות, או טווח של שמות.</p>
+<p>לדוגמא, השורה הבאה תחזיר את הציונים באמנות:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Art&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexes/range.py:413,</span> in <span class="ni">RangeIndex.get_loc</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">412</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">413</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_range</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">new_key</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">414</span> <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-
-<span class="ne">ValueError</span>: -1 is not in range
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1191,</span> in <span class="ni">_LocationIndexer.__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1189</span> <span class="n">maybe_callable</span> <span class="o">=</span> <span class="n">com</span><span class="o">.</span><span class="n">apply_if_callable</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1190</span> <span class="n">maybe_callable</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_deprecated_callable_usage</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">maybe_callable</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1191</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_axis</span><span class="p">(</span><span class="n">maybe_callable</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">)</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1431,</span> in <span class="ni">_LocIndexer._getitem_axis</span><span class="nt">(self, key, axis)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1429</span> <span class="c1"># fall thru to straight lookup</span>
-<span class="g g-Whitespace">   </span><span class="mi">1430</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_key</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">axis</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1431</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_label</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">)</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexing.py:1381,</span> in <span class="ni">_LocIndexer._get_label</span><span class="nt">(self, label, axis)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1379</span> <span class="k">def</span><span class="w"> </span><span class="nf">_get_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">axis</span><span class="p">:</span> <span class="n">AxisInt</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1380</span>     <span class="c1"># GH#5567 this will fail if the label is not present in the axis.</span>
-<span class="ne">-&gt; </span><span class="mi">1381</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">xs</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">)</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/generic.py:4320,</span> in <span class="ni">NDFrame.xs</span><span class="nt">(self, key, axis, level, drop_level)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4318</span>             <span class="n">new_index</span> <span class="o">=</span> <span class="n">index</span><span class="p">[</span><span class="n">loc</span><span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">4319</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">4320</span>     <span class="n">loc</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4322</span>     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">4323</span>         <span class="k">if</span> <span class="n">loc</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">bool_</span><span class="p">:</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/pandas/core/indexes/range.py:415,</span> in <span class="ni">RangeIndex.get_loc</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">413</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_range</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">new_key</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">414</span>     <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">415</span>         <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">err</span>
-<span class="g g-Whitespace">    </span><span class="mi">416</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">Hashable</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">417</span>     <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-
-<span class="ne">KeyError</span>: -1
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Name
+Yael     91
+Nadav    88
+         ..
+Tom      80
+Adi      70
+Name: Art, Length: 13, dtype: int64
 </pre></div>
 </div>
 </div>
 </div>
-<p>מדוע התגבלה שגיאה?</p>
-<div class="dropdown tip admonition">
-<p class="admonition-title"><strong>פתרון</strong></p>
-<p>המתודה <code class="docutils literal notranslate"><span class="pre">loc</span></code> ניגשת לשורות לפי השמות שלהן. על מנת לגשת לפי מיקום (-1), יש להשתמש ב<code class="docutils literal notranslate"><span class="pre">iloc</span></code></p>
+<p>והשורה שלהלן תחזיר את הציונים באמנות ובתכנות:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;Art&quot;</span><span class="p">,</span> <span class="s2">&quot;Programming&quot;</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Art</th>
+      <th>Programming</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Yael</th>
+      <td>91</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>Nadav</th>
+      <td>88</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Tom</th>
+      <td>80</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>Adi</th>
+      <td>70</td>
+      <td>76</td>
+    </tr>
+  </tbody>
+</table>
+<p>13 rows × 2 columns</p>
+</div></div></div>
+</div>
+<p>בדומה ל<code class="docutils literal notranslate"><span class="pre">loc</span></code> ו<code class="docutils literal notranslate"><span class="pre">iloc</span></code>, גם ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> יוחזר טיפוס <code class="docutils literal notranslate"><span class="pre">series</span></code> עבור שם בודד (עמודה בודדת) וטבלה עבור מספר עמודות.</p>
+<p>ואם נעביר ערך שאינו קיים?</p>
+<p>בדוגמא הבאה ננסה לגשת לעמודה שאינה קיימת בשם 1, וכפי שאנו רואים, מתקבלת שגיאה:</p>
+<div class="cell tag_raises-exception docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div id="qFyAxXoMfroL" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#qFyAxXoMfroL {
+   --jq-multiple-choice-bg: #6f78ffff;
+   --jq-mc-button-bg: #fafafa;
+   --jq-mc-button-border: #e0e0e0e0;
+   --jq-mc-button-inset-shadow: #555555;
+   --jq-many-choice-bg: #f75c03ff;
+   --jq-numeric-bg: #392061ff;
+   --jq-numeric-input-bg: #c0c0c0;
+   --jq-numeric-input-label: #101010;
+   --jq-numeric-input-shadow: #999999;
+   --jq-string-bg: #4c1a57;
+   --jq-incorrect-color: #c80202;
+   --jq-correct-color: #009113;
+   --jq-text-color: #fafafa;
+}
+
+.Quiz {
+    max-width: 600px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+/*    margin-bottom: 15px;*/
+/*    padding-bottom: 4px;*/
+    padding-top: 4px;
+    line-height: 1.1;
+    font-size: 16pt;
+    border-radius: inherit;
+}
+
+.QuizCode {
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.QuizCode>pre {
+    padding: 4px;
+}
+
+.Quiz code {
+    background-color: lightgray;
+    color: black;
+}
+
+.Quiz .QuizCode code {
+    background-color: inherit;
+    color: inherit;
+}
+
+
+.Quiz .MCButton code {
+    background-color: inherit;
+    color: inherit;
+}
+
+.MCButton .QuizCode {
+    text-align: left;
+}
+
+
+
+
+.Answer {
+    border-radius: inherit;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width:480px) {
+    .Answer {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.Feedback {
+    font-size: 16pt;
+    text-align: center;
+/*    min-height: 2em;*/
+}
+
+.Input {
+    align: left;
+    font-size: 20pt;
+}
+
+.Input-text {
+    display: block;
+    margin: 10px;
+    color: inherit;
+    width: unset;
+    min-width: 140px;
+    max-width: 93%;
+    field-sizing: content;
+    background-color: var(--jq-numeric-input-bg);
+    color: var(--jq-text-color);
+    padding: 5px;
+    padding-left: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: inherit;
+    line-height: 20pt;
+    border: none;
+    border-radius: 0.2rem;
+    transition: box-shadow 0.1s);
+}
+
+.Input-text:focus {
+    /*outline: none;*/
+    background-color: var(--jq-numeric-input-bg);
+    box-shadow: 0.6rem 0.8rem 1.4rem -0.5rem var(--jq-numeric-input-shadow);
+}
+
+.MCButton {
+    background: var(--jq-mc-button-bg);
+    border: 1px solid var(--jq-mc-button-border);
+    border-radius: inherit;
+    color: #333333;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MCButton p {
+    color: inherit;
+}
+
+.MultipleChoiceQn {
+    padding: 10px;
+    background: var(--jq-multiple-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
+}
+
+.ManyChoiceQn {
+    padding: 10px;
+    background: var(--jq-many-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
+}
+
+.NumericQn {
+    background: var(--jq-numeric-bg);
+    border-radius: inherit;
+    color: var(--jq-text-color);
+    padding: 10px;
+}
+
+.NumericQn p {
+    color: inherit;
+}
+
+.StringQn {
+    background: var(--jq-string-bg);
+    border-radius: inherit;
+    color: var(--jq-text-color);
+    padding: 10px;
+}
+
+.StringQn p {
+    color: inherit;
+}
+
+
+.InpLabel {
+    color: var(--jq-numeric-input-label);
+    float: left;
+    font-size: 15pt;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.incorrect {
+    color: var(--jq-incorrect-color);
+}
+
+.correct {
+    color: var(--jq-correct-color);
+}
+
+.correctButton {
+    /*
+    background: var(--jq-correct-color);
+   */
+    animation: correct-anim 0.6s ease;
+    animation-fill-mode: forwards;
+    box-shadow: inset 0 0 5px var(--jq-mc-button-inset-shadow);
+    color: var(--jq-text-color);
+    /*outline: none;*/
+}
+
+.incorrectButton {
+    animation: incorrect-anim 0.8s ease;
+    animation-fill-mode: forwards;
+    box-shadow: inset 0 0 5px var(--jq-mc-button-inset-shadow);
+    color: var(--jq-text-color);
+    /*outline: none;*/
+}
+
+@keyframes incorrect-anim {
+    100% {
+        background-color: var(--jq-incorrect-color);
+    }
+}
+
+@keyframes correct-anim {
+    100% {
+        background-color: var(--jq-correct-color);
+    }
+}
+</style></div><script type="application/javascript">var questionsqFyAxXoMfroL=[{"question": "\u05d1\u05d0\u05d9\u05d6\u05d4 \u05e2\u05d5\u05d3 \u05d8\u05d9\u05e4\u05d5\u05e1 \u05e9\u05e8\u05d0\u05d9\u05e0\u05d5 \u05e0\u05d9\u05ea\u05df \u05dc\u05e7\u05d1\u05dc key error?", "type": "many_choice", "answers": [{"answer": "int", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df."}, {"answer": "list", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05db\u05d0\u05e9\u05e8 \u05e0\u05d9\u05d2\u05e9 \u05dc\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05dc\u05d0 \u05d7\u05d5\u05e7\u05d9 \u05e0\u05e7\u05d1\u05dc index error."}, {"answer": "str", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05db\u05d0\u05e9\u05e8 \u05e0\u05d9\u05d2\u05e9 \u05dc\u05d0\u05d9\u05e0\u05d3\u05e7\u05e1 \u05dc\u05d0 \u05d7\u05d5\u05e7\u05d9 \u05e0\u05e7\u05d1\u05dc index error."}, {"answer": "dict", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df! \u05db\u05d0\u05e9\u05e8 \u05e0\u05d9\u05e1\u05d9\u05e0\u05d5 \u05dc\u05d2\u05e9\u05ea \u05dc\u05de\u05e4\u05ea\u05d7 \u05e9\u05dc\u05d0 \u05e7\u05d9\u05d9\u05dd \u05d1\u05de\u05d9\u05dc\u05d5\u05df, \u05e7\u05d9\u05d1\u05dc\u05e0\u05d5 key error"}]}];
+
+if (typeof Question === 'undefined') {
+// Make a random ID
+function makeid(length) {
+    var result = [];
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+        result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));
+    }
+    return result.join('');
+}
+// Convert LaTeX delimiters and markdown links to HTML
+function jaxify(string) {
+    let mystring = string;
+    let count = 0, count2 = 0;
+    let loc = mystring.search(/([^\\]|^)(\$)/);
+    let loc2 = mystring.search(/([^\\]|^)(\$\$)/);
+    while (loc >= 0 || loc2 >= 0) {
+        if (loc2 >= 0) {
+            mystring = mystring.replace(/([^\\]|^)(\$\$)/, count2 % 2 ? '$1\\]' : '$1\\[');
+            count2++;
+        } else {
+            mystring = mystring.replace(/([^\\]|^)(\$)/, count % 2 ? '$1\\)' : '$1\\(');
+            count++;
+        }
+        loc = mystring.search(/([^\\]|^)(\$)/);
+        loc2 = mystring.search(/([^\\]|^)(\$\$)/);
+    }
+    // Replace markdown links
+    mystring = mystring.replace(/<http(.*?)>/g, '<a href="http$1" target="_blank" class="Link">http$1</a>');
+    mystring = mystring.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="Link">$1</a>');
+    return mystring;
+}
+
+// Base class for question types
+class Question {
+    static registry = {};
+    static register(type, cls) {
+        Question.registry[type] = cls;
+    }
+    static create(qa, id, index, options, rootDiv) {
+        const Cls = Question.registry[qa.type];
+        if (!Cls) {
+            console.error(`No question class registered for type "${qa.type}"`);
+            return;
+        }
+        const q = new Cls(qa, id, index, options, rootDiv);
+        q.render();
+    }
+
+    constructor(qa, id, index, options, rootDiv) {
+        this.qa = qa;
+        this.id = id;
+        this.index = index;
+        this.options = options;
+        this.rootDiv = rootDiv;
+        // wrapper
+        this.wrapper = document.createElement('div');
+        this.wrapper.id = `quizWrap${id}`;
+        this.wrapper.className = 'Quiz';
+        this.wrapper.dataset.qnum = index;
+        this.wrapper.style.maxWidth = `${options.maxWidth}px`;
+        rootDiv.appendChild(this.wrapper);
+        // question container
+        this.outerqDiv = document.createElement('div');
+        this.outerqDiv.id = `OuterquizQn${id}${index}`;
+        this.wrapper.appendChild(this.outerqDiv);
+        // question text
+        this.qDiv = document.createElement('div');
+        this.qDiv.id = `quizQn${id}${index}`;
+        if (qa.question) {
+            this.qDiv.innerHTML = jaxify(qa.question);
+            this.outerqDiv.appendChild(this.qDiv);
+        }
+        // code block
+        if (qa.code) {
+            const codeDiv = document.createElement('div');
+            codeDiv.id = `code${id}${index}`;
+            codeDiv.className = 'QuizCode';
+            const pre = document.createElement('pre');
+            const codeEl = document.createElement('code');
+            codeEl.innerHTML = qa.code;
+            pre.appendChild(codeEl);
+            codeDiv.appendChild(pre);
+            this.outerqDiv.appendChild(codeDiv);
+        }
+        // answer container
+        this.aDiv = document.createElement('div');
+        this.aDiv.id = `quizAns${id}${index}`;
+        this.aDiv.className = 'Answer';
+        this.wrapper.appendChild(this.aDiv);
+        // feedback container (append after answers)
+        this.fbDiv = document.createElement('div');
+        this.fbDiv.id = `fb${id}`;
+        this.fbDiv.className = 'Feedback';
+        this.fbDiv.dataset.answeredcorrect = 0;
+    }
+
+    render() {
+        throw new Error('render() not implemented');
+    }
+
+    preserveResponse(val) {
+        if (!this.options.preserveResponses) return;
+        const resp = document.getElementById(`responses${this.rootDiv.id}`);
+        if (!resp) return;
+        const arr = JSON.parse(resp.dataset.responses);
+        arr[this.index] = val;
+        resp.dataset.responses = JSON.stringify(arr);
+        printResponses(resp);
+    }
+
+    typeset(container) {
+        if (typeof MathJax !== 'undefined') {
+            const v = MathJax.version;
+            if (v[0] === '2') {
+                MathJax.Hub.Queue(['Typeset', MathJax.Hub]);
+            } else {
+                MathJax.typeset([container]);
+            }
+        }
+    }
+}
+
+// Choose a random subset of an array. Can also be used to shuffle the array
+function getRandomSubarray(arr, size) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
+
+function printResponses(responsesContainer) {
+    var responses=JSON.parse(responsesContainer.dataset.responses);
+    var stringResponses='<B>IMPORTANT!</B>To preserve this answer sequence for submission, when you have finalized your answers: <ol> <li> Copy the text in this cell below "Answer String"</li> <li> Double click on the cell directly below the Answer String, labeled "Replace Me"</li> <li> Select the whole "Replace Me" text</li> <li> Paste in your answer string and press shift-Enter.</li><li>Save the notebook using the save icon or File->Save Notebook menu item</li></ul><br><br><br><b>Answer String:</b><br> ';
+    console.log(responses);
+    responses.forEach((response, index) => {
+        if (response) {
+            console.log(index + ': ' + response);
+            stringResponses+= index + ': ' + response +"<BR>";
+        }
+    });
+    responsesContainer.innerHTML=stringResponses;
+}
+/* Callback function to determine whether a selected multiple-choice
+   button corresponded to a correct answer and to provide feedback
+   based on the answer */
+function check_mc() {
+    var id = this.id.split('-')[0];
+    //var response = this.id.split('-')[1];
+    //console.log(response);
+    //console.log("In check_mc(), id="+id);
+    //console.log(event.srcElement.id)           
+    //console.log(event.srcElement.dataset.correct)   
+    //console.log(event.srcElement.dataset.feedback)
+
+    var label = event.srcElement;
+    //console.log(label, label.nodeName);
+    var depth = 0;
+    while ((label.nodeName != "LABEL") && (depth < 20)) {
+        label = label.parentElement;
+        console.log(depth, label);
+        depth++;
+    }
+
+
+
+    var answers = label.parentElement.children;
+    //console.log(answers);
+
+    // Split behavior based on multiple choice vs many choice:
+    var fb = document.getElementById("fb" + id);
+
+
+
+    /* Multiple choice (1 answer). Allow for 0 correct
+       answers as an edge case */
+    if (fb.dataset.numcorrect <= 1) {
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            //console.log(responsesContainer);
+            var response = label.firstChild.innerText;
+            if (label.querySelector(".QuizCode")){
+                response+= label.querySelector(".QuizCode").firstChild.innerText;
+            }
+            console.log(response);
+            //console.log(document.getElementById("quizWrap"+id));
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            console.log(responses);
+            responses[qnum]= response;
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End code to preserve responses
+
+        for (var i = 0; i < answers.length; i++) {
+            var child = answers[i];
+            //console.log(child);
+            child.className = "MCButton";
+        }
+
+
+
+        if (label.dataset.correct == "true") {
+            // console.log("Correct action");
+            if ("feedback" in label.dataset) {
+                fb.innerHTML = jaxify(label.dataset.feedback);
+            } else {
+                fb.innerHTML = "Correct!";
+            }
+            label.classList.add("correctButton");
+
+            fb.className = "Feedback";
+            fb.classList.add("correct");
+
+        } else {
+            if ("feedback" in label.dataset) {
+                fb.innerHTML = jaxify(label.dataset.feedback);
+            } else {
+                fb.innerHTML = "Incorrect -- try again.";
+            }
+            //console.log("Error action");
+            label.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+    }
+    else { /* Many choice (more than 1 correct answer) */
+        var reset = false;
+        var feedback;
+         if (label.dataset.correct == "true") {
+            if ("feedback" in label.dataset) {
+                feedback = jaxify(label.dataset.feedback);
+            } else {
+                feedback = "Correct!";
+            }
+            if (label.dataset.answered <= 0) {
+                if (fb.dataset.answeredcorrect < 0) {
+                    fb.dataset.answeredcorrect = 1;
+                    reset = true;
+                } else {
+                    fb.dataset.answeredcorrect++;
+                }
+                if (reset) {
+                    for (var i = 0; i < answers.length; i++) {
+                        var child = answers[i];
+                        child.className = "MCButton";
+                        child.dataset.answered = 0;
+                    }
+                }
+                label.classList.add("correctButton");
+                label.dataset.answered = 1;
+                fb.className = "Feedback";
+                fb.classList.add("correct");
+
+            }
+        } else {
+            if ("feedback" in label.dataset) {
+                feedback = jaxify(label.dataset.feedback);
+            } else {
+                feedback = "Incorrect -- try again.";
+            }
+            if (fb.dataset.answeredcorrect > 0) {
+                fb.dataset.answeredcorrect = -1;
+                reset = true;
+            } else {
+                fb.dataset.answeredcorrect--;
+            }
+
+            if (reset) {
+                for (var i = 0; i < answers.length; i++) {
+                    var child = answers[i];
+                    child.className = "MCButton";
+                    child.dataset.answered = 0;
+                }
+            }
+            label.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            //console.log(responsesContainer);
+            var response = label.firstChild.innerText;
+            if (label.querySelector(".QuizCode")){
+                response+= label.querySelector(".QuizCode").firstChild.innerText;
+            }
+            console.log(response);
+            //console.log(document.getElementById("quizWrap"+id));
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            if (label.dataset.correct == "true") {
+                if (typeof(responses[qnum]) == "object"){
+                    if (!responses[qnum].includes(response))
+                        responses[qnum].push(response);
+                } else{
+                    responses[qnum]= [ response ];
+                }
+            } else {
+                responses[qnum]= response;
+            }
+            console.log(responses);
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End save responses stuff
+
+
+
+        var numcorrect = fb.dataset.numcorrect;
+        var answeredcorrect = fb.dataset.answeredcorrect;
+        if (answeredcorrect >= 0) {
+            fb.innerHTML = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
+        } else {
+            fb.innerHTML = feedback + " [" + 0 + "/" + numcorrect + "]";
+        }
+
+
+    }
+
+    if (typeof MathJax != 'undefined') {
+        var version = MathJax.version;
+        console.log('MathJax version', version);
+        if (version[0] == "2") {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        } else if (version[0] == "3") {
+            MathJax.typeset([fb]);
+        }
+    } else {
+        console.log('MathJax not detected');
+    }
+
+}
+
+
+/* Function to produce the HTML buttons for a multiple choice/
+   many choice question  and to update the CSS tags based on
+   the question type */
+function make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id) {
+
+    var shuffled;
+    if (shuffle_answers == true) {
+        //console.log(shuffle_answers+" read as true");
+        shuffled = getRandomSubarray(qa.answers, qa.answers.length);
+    } else {
+        //console.log(shuffle_answers+" read as false");
+        shuffled = qa.answers;
+    }
+
+
+    var num_correct = 0;
+
+    shuffled.forEach((item, index, ans_array) => {
+        //console.log(answer);
+
+        // Make input element
+        var inp = document.createElement("input");
+        inp.type = "radio";
+        inp.id = "quizo" + id + index;
+        inp.style = "display:none;";
+        aDiv.append(inp);
+
+        //Make label for input element
+        var lab = document.createElement("label");
+        lab.className = "MCButton";
+        lab.id = id + '-' + index;
+        lab.onclick = check_mc;
+        var aSpan = document.createElement('span');
+        aSpan.classsName = "";
+        //qDiv.id="quizQn"+id+index;
+        if ("answer" in item) {
+            aSpan.innerHTML = jaxify(item.answer);
+            //aSpan.innerHTML=item.answer;
+        }
+        lab.append(aSpan);
+
+        // Create div for code inside question
+        var codeSpan;
+        if ("code" in item) {
+            codeSpan = document.createElement('span');
+            codeSpan.id = "code" + id + index;
+            codeSpan.className = "QuizCode";
+            var codePre = document.createElement('pre');
+            codeSpan.append(codePre);
+            var codeCode = document.createElement('code');
+            codePre.append(codeCode);
+            codeCode.innerHTML = item.code;
+            lab.append(codeSpan);
+            //console.log(codeSpan);
+        }
+
+        //lab.textContent=item.answer;
+
+        // Set the data attributes for the answer
+        lab.setAttribute('data-correct', item.correct);
+        if (item.correct) {
+            num_correct++;
+        }
+        if ("feedback" in item) {
+            lab.setAttribute('data-feedback', item.feedback);
+        }
+        lab.setAttribute('data-answered', 0);
+
+        aDiv.append(lab);
+
+    });
+
+    if (num_correct > 1) {
+        outerqDiv.className = "ManyChoiceQn";
+    } else {
+        outerqDiv.className = "MultipleChoiceQn";
+    }
+
+    return num_correct;
+
+}
+// Object-oriented wrapper for MC/MANY choice
+class MCQuestion extends Question {
+    constructor(qa, id, idx, opts, rootDiv) { super(qa, id, idx, opts, rootDiv); }
+    render() {
+        //console.log("options.shuffleAnswers " + this.options.shuffleAnswers);
+        const numCorrect = make_mc(
+            this.qa,
+            this.options.shuffleAnswers,
+            this.outerqDiv,
+            this.qDiv,
+            this.aDiv,
+            this.id
+        );
+        if ('answer_cols' in this.qa) {
+            this.aDiv.style.gridTemplateColumns =
+                'repeat(' + this.qa.answer_cols + ', 1fr)';
+        }
+        this.fbDiv.dataset.numcorrect = numCorrect;
+        this.wrapper.appendChild(this.fbDiv);
+    }
+}
+Question.register('multiple_choice', MCQuestion);
+Question.register('many_choice', MCQuestion);
+function check_numeric(ths, event) {
+
+    if (event.keyCode === 13) {
+        ths.blur();
+
+        var id = ths.id.split('-')[0];
+
+        var submission = ths.value;
+        if (submission.indexOf('/') != -1) {
+            var sub_parts = submission.split('/');
+            //console.log(sub_parts);
+            submission = sub_parts[0] / sub_parts[1];
+        }
+        //console.log("Reader entered", submission);
+
+        if ("precision" in ths.dataset) {
+            var precision = ths.dataset.precision;
+            submission = Number(Number(submission).toPrecision(precision));
+        }
+
+
+        //console.log("In check_numeric(), id="+id);
+        //console.log(event.srcElement.id)           
+        //console.log(event.srcElement.dataset.feedback)
+
+        var fb = document.getElementById("fb" + id);
+        fb.style.display = "none";
+        fb.innerHTML = "Incorrect -- try again.";
+
+        var answers = JSON.parse(ths.dataset.answers);
+        //console.log(answers);
+
+        var defaultFB = "Incorrect. Try again.";
+        var correct;
+        var done = false;
+        answers.every(answer => {
+            //console.log(answer.type);
+
+            correct = false;
+            // if (answer.type=="value"){
+            if ('value' in answer) {
+                var value;
+                if ("precision" in ths.dataset) {
+                    value = answer.value.toPrecision(ths.dataset.precision);
+                } else {
+                    value = answer.value;
+                }
+                if (submission == value) {
+                    if ("feedback" in answer) {
+                        fb.innerHTML = jaxify(answer.feedback);
+                    } else {
+                        fb.innerHTML = jaxify("Correct");
+                    }
+                    correct = answer.correct;
+                    //console.log(answer.correct);
+                    done = true;
+                }
+
+                // } else if (answer.type=="range") {
+            } else if ('range' in answer) {
+                console.log(answer.range);
+                console.log(submission, submission >=answer.range[0], submission < answer.range[1])
+                if ((submission >= answer.range[0]) && (submission < answer.range[1])) {
+                    fb.innerHTML = jaxify(answer.feedback);
+                    correct = answer.correct;
+                    console.log(answer.correct);
+                    done = true;
+                }
+            } else if (answer.type == "default") {
+                if ("feedback" in answer) {
+                    defaultFB = answer.feedback;
+                } 
+            }
+            if (done) {
+                return false; // Break out of loop if this has been marked correct
+            } else {
+                return true; // Keep looking for case that includes this as a correct answer
+            }
+        });
+        console.log("done:", done);
+
+        if ((!done) && (defaultFB != "")) {
+            fb.innerHTML = jaxify(defaultFB);
+            //console.log("Default feedback", defaultFB);
+        }
+
+        fb.style.display = "block";
+        if (correct) {
+            ths.className = "Input-text";
+            ths.classList.add("correctButton");
+            fb.className = "Feedback";
+            fb.classList.add("correct");
+        } else {
+            ths.className = "Input-text";
+            ths.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            console.log(submission);
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            //console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            console.log(responses);
+            if (submission == ths.value){
+                responses[qnum]= submission;
+            } else {
+                responses[qnum]= ths.value + "(" + submission +")";
+            }
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End code to preserve responses
+
+        if (typeof MathJax != 'undefined') {
+            var version = MathJax.version;
+            console.log('MathJax version', version);
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                MathJax.typeset([fb]);
+            }
+        } else {
+            console.log('MathJax not detected');
+        }
+        // After correct answer, if next JupyterQuiz question exists and has a text input, scroll by current question height
+        if (correct) {
+            // find the current question wrapper
+            var wrapper = ths.closest('.Quiz');
+            if (wrapper) {
+                var nextWrapper = wrapper.nextElementSibling;
+                if (nextWrapper && nextWrapper.classList.contains('Quiz')) {
+                    var nextInput = nextWrapper.querySelector('input.Input-text');
+                    if (nextInput) {
+                        var height = wrapper.getBoundingClientRect().height;
+                        console.log(height);
+                        nextInput.focus();
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+}
+// Object-oriented wrapper for numeric questions
+class NumericQuestion extends Question {
+    constructor(qa, id, idx, opts, rootDiv) {
+        super(qa, id, idx, opts, rootDiv);
+    }
+    render() {
+        make_numeric(this.qa, this.outerqDiv, this.qDiv, this.aDiv, this.id);
+        this.wrapper.appendChild(this.fbDiv);
+    }
+}
+Question.register('numeric', NumericQuestion);
+
+function isValid(el, charC) {
+    //console.log("Input char: ", charC);
+    if (charC == 46) {
+        if (el.value.indexOf('.') === -1) {
+            return true;
+        } else if (el.value.indexOf('/') != -1) {
+            var parts = el.value.split('/');
+            if (parts[1].indexOf('.') === -1) {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+    } else if (charC == 47) {
+        if (el.value.indexOf('/') === -1) {
+            if ((el.value != "") && (el.value != ".")) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    } else if (charC == 45) {
+        var edex = el.value.indexOf('e');
+        if (edex == -1) {
+            edex = el.value.indexOf('E');
+        }
+
+        if (el.value == "") {
+            return true;
+        } else if (edex == (el.value.length - 1)) { // If just after e or E
+            return true;
+        } else {
+            return false;
+        }
+    } else if (charC == 101) { // "e"
+        if ((el.value.indexOf('e') === -1) && (el.value.indexOf('E') === -1) && (el.value.indexOf('/') == -1)) {
+            // Prev symbol must be digit or decimal point:
+            if (el.value.slice(-1).search(/\d/) >= 0) {
+                return true;
+            } else if (el.value.slice(-1).search(/\./) >= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    } else {
+        if (charC > 31 && (charC < 48 || charC > 57))
+            return false;
+    }
+    return true;
+}
+
+function numeric_keypress(evnt) {
+    var charC = (evnt.which) ? evnt.which : evnt.keyCode;
+
+    if (charC == 13) {
+        check_numeric(this, evnt);
+    } else {
+        return isValid(this, charC);
+    }
+}
+
+
+
+
+
+function make_numeric(qa, outerqDiv, qDiv, aDiv, id) {
+
+
+
+    //console.log(answer);
+
+
+    outerqDiv.className = "NumericQn";
+    aDiv.style.display = 'block';
+
+    var lab = document.createElement("label");
+    lab.className = "InpLabel";
+    lab.innerHTML = "Type numeric answer here:";
+    aDiv.append(lab);
+
+    var inp = document.createElement("input");
+    inp.type = "text";
+    //inp.id="input-"+id;
+    inp.id = id + "-0";
+    inp.className = "Input-text";
+    inp.setAttribute('data-answers', JSON.stringify(qa.answers));
+    if ("precision" in qa) {
+        inp.setAttribute('data-precision', qa.precision);
+    }
+    aDiv.append(inp);
+    //console.log(inp);
+
+    //inp.addEventListener("keypress", check_numeric);
+    //inp.addEventListener("keypress", numeric_keypress);
+    /*
+    inp.addEventListener("keypress", function(event) {
+        return numeric_keypress(this, event);
+    }
+                        );
+                        */
+    //inp.onkeypress="return numeric_keypress(this, event)";
+    inp.onkeypress = numeric_keypress;
+    inp.onpaste = event => false;
+
+    inp.addEventListener("focus", function (event) {
+        this.value = "";
+        return false;
+    }
+    );
+
+
+}
+// Override show_questions to use object-oriented Question API
+function show_questions(json, container) {
+    // Accept container element or element ID
+    if (typeof container === 'string') {
+        container = document.getElementById(container);
+    }
+    if (!container) {
+        console.error('show_questions: invalid container', container);
+        return;
+    }
+
+    const shuffleQuestions = container.dataset.shufflequestions === 'True';
+    const shuffleAnswers = container.dataset.shuffleanswers === 'True';
+    const preserveResponses = container.dataset.preserveresponses === 'true';
+    const maxWidth = parseInt(container.dataset.maxwidth, 10) || 0;
+    let numQuestions = parseInt(container.dataset.numquestions, 10) || json.length;
+    if (numQuestions > json.length) numQuestions = json.length;
+
+    let questions = json;
+    if (shuffleQuestions || numQuestions < json.length) {
+        questions = getRandomSubarray(json, numQuestions);
+    }
+
+    questions.forEach((qa, index) => {
+        const id = makeid(8);
+        const options = {
+            shuffleAnswers: shuffleAnswers,
+            preserveResponses: preserveResponses,
+            maxWidth: maxWidth
+        };
+        Question.create(qa, id, index, options, container);
+    });
+
+    if (preserveResponses) {
+        const respDiv = document.createElement('div');
+        respDiv.id = 'responses' + container.id;
+        respDiv.className = 'JCResponses';
+        respDiv.dataset.responses = JSON.stringify([]);
+        respDiv.innerHTML = '<b>Select your answers and then follow the directions that will appear here.</b>';
+        container.appendChild(respDiv);
+    }
+
+    // Trigger MathJax typesetting if available
+    if (typeof MathJax != 'undefined') {
+        console.log("MathJax version", MathJax.version);
+        var version = MathJax.version;
+        setTimeout(function(){
+            var version = MathJax.version;
+            console.log('After sleep, MathJax version', version);
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                if (MathJax.hasOwnProperty('typeset') ) {
+                    MathJax.typeset([container]);
+                } else {
+                    console.log('WARNING: Trying to force load MathJax 3');
+                    window.MathJax = {
+                        tex: {
+                            inlineMath: [['$', '$'], ['\\(', '\\)']]
+                        },
+                        svg: {
+                            fontCache: 'global'
+                        }
+                    };
+
+                    (function () {
+                        var script = document.createElement('script');
+                        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+                        script.async = true;
+                        document.head.appendChild(script);
+                    })();
+                }
+            }
+        }, 500);
+if (typeof version == 'undefined') {
+        } else
+        {
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                if (MathJax.hasOwnProperty('typeset') ) {
+                    MathJax.typeset([container]);
+                } else {
+                    console.log('WARNING: Trying to force load MathJax 3');
+                    window.MathJax = {
+                        tex: {
+                            inlineMath: [['$', '$'], ['\\(', '\\)']]
+                        },
+                        svg: {
+                            fontCache: 'global'
+                        }
+                    };
+
+                    (function () {
+                        var script = document.createElement('script');
+                        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+                        script.async = true;
+                        document.head.appendChild(script);
+                    })();
+                }
+            } else {
+                console.log("MathJax not found");
+            }
+        }
+    }
+    // if (typeof MathJax !== 'undefined') {
+    //     const v = MathJax.version;
+    //     if (v[0] === '2') {
+    //         MathJax.Hub.Queue(['Typeset', MathJax.Hub]);
+    //     } else if (v[0] === '3') {
+    //         MathJax.typeset([container]);
+    //     }
+    // }
+
+    // Prevent link clicks from bubbling up
+    Array.from(container.getElementsByClassName('Link')).forEach(link => {
+        link.addEventListener('click', e => e.stopPropagation());
+    });
+}
+function levenshteinDistance(a, b) {
+    if (a.length === 0) return b.length;
+    if (b.length === 0) return a.length;
+
+    const matrix = Array(b.length + 1).fill(null).map(() => Array(a.length + 1).fill(null));
+
+    for (let i = 0; i <= a.length; i++) {
+        matrix[0][i] = i;
+    }
+
+    for (let j = 0; j <= b.length; j++) {
+        matrix[j][0] = j;
+    }
+
+    for (let j = 1; j <= b.length; j++) {
+        for (let i = 1; i <= a.length; i++) {
+            const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+            matrix[j][i] = Math.min(
+                matrix[j - 1][i] + 1, // Deletion
+                matrix[j][i - 1] + 1, // Insertion
+                matrix[j - 1][i - 1] + cost // Substitution
+            );
+        }
+    }
+    return matrix[b.length][a.length];
+}
+// Object-oriented wrapper for string input questions
+class StringQuestion extends Question {
+    constructor(qa, id, idx, opts, rootDiv) {
+        super(qa, id, idx, opts, rootDiv);
+    }
+    render() {
+        make_string(this.qa, this.outerqDiv, this.qDiv, this.aDiv, this.id);
+        this.wrapper.appendChild(this.fbDiv);
+    }
+}
+Question.register('string', StringQuestion);
+
+function check_string(ths, event) {
+    if (event.keyCode === 13) {
+        ths.blur();
+
+        var id = ths.id.split('-')[0];
+        var submission = ths.value.trim();
+        var fb = document.getElementById("fb" + id);
+        fb.style.display = "none";
+        fb.innerHTML = "Incorrect -- try again.";
+
+        var answers = JSON.parse(ths.dataset.answers);
+        var defaultFB = "Incorrect. Try again.";
+        var correct;
+        var done = false;
+
+        // Handle default answer pattern: filter out and capture default feedback
+        var filteredAnswers = [];
+        answers.forEach(answer => {
+            if (answer.type === "default") {
+                defaultFB = answer.feedback;
+            } else {
+                filteredAnswers.push(answer);
+            }
+        });
+        answers = filteredAnswers;
+
+        answers.every(answer => {
+            correct = false;
+
+            let match = false;
+            if (answer.match_case) {
+                match = submission === answer.answer;
+            } else {
+                match = submission.toLowerCase() === answer.answer.toLowerCase();
+            }
+            console.log(submission);
+            console.log(answer.answer);
+            console.log(match);
+
+            if (match) {
+                if ("feedback" in answer) {
+                    fb.innerHTML = jaxify(answer.feedback);
+                } else {
+                    fb.innerHTML = jaxify("Correct");
+                }
+                correct = answer.correct;
+                done = true;
+            } else if (answer.fuzzy_threshold) {
+                var max_length = Math.max(submission.length, answer.answer.length);
+                var ratio;
+                if (answer.match_case) {
+                    ratio = 1- (levenshteinDistance(submission, answer.answer) / max_length);
+                } else {
+                    ratio = 1- (levenshteinDistance(submission.toLowerCase(),
+                                                    answer.answer.toLowerCase()) / max_length);
+                }
+                if (ratio >= answer.fuzzy_threshold) {
+                    if ("feedback" in answer) {
+                        fb.innerHTML = jaxify("(Fuzzy) " + answer.feedback);
+                    } else {
+                        fb.innerHTML = jaxify("Correct");
+                    }
+                    correct = answer.correct;
+                    done = true;
+                }
+
+            }
+
+            if (done) {
+                return false;
+            } else {
+                return true;
+            }
+        });
+
+        if ((!done) && (defaultFB != "")) {
+            fb.innerHTML = jaxify(defaultFB);
+        }
+
+        fb.style.display = "block";
+        if (correct) {
+            ths.className = "Input-text";
+            ths.classList.add("correctButton");
+            fb.className = "Feedback";
+            fb.classList.add("correct");
+        } else {
+            ths.className = "Input-text";
+            ths.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            var qnum = document.getElementById("quizWrap" + id).dataset.qnum;
+            var responses = JSON.parse(responsesContainer.dataset.responses);
+            responses[qnum] = submission;
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+
+        if (typeof MathJax != 'undefined') {
+            var version = MathJax.version;
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                MathJax.typeset([fb]);
+            }
+        } else {
+            console.log('MathJax not detected');
+        }
+        // After correct answer, if next JupyterQuiz question exists and has a text input, scroll by current question height
+        if (correct) {
+            var wrapper = ths.closest('.Quiz');
+            if (wrapper) {
+                var nextWrapper = wrapper.nextElementSibling;
+                if (nextWrapper && nextWrapper.classList.contains('Quiz')) {
+                    var nextInput = nextWrapper.querySelector('input.Input-text');
+                    if (nextInput) {
+                        var height = wrapper.getBoundingClientRect().height;
+                        nextInput.focus();
+                    }
+                }
+            }
+        }
+        return false;
+    }
+}
+
+function string_keypress(evnt) {
+    var charC = (evnt.which) ? evnt.which : evnt.keyCode;
+
+    if (charC == 13) {
+        check_string(this, evnt);
+    } 
+}
+
+
+function make_string(qa, outerqDiv, qDiv, aDiv, id) {
+    outerqDiv.className = "StringQn";
+    aDiv.style.display = 'block';
+
+    var lab = document.createElement("label");
+    lab.className = "InpLabel";
+    lab.innerHTML = "Type your answer here:";
+    aDiv.append(lab);
+
+    var inp = document.createElement("input");
+    inp.type = "text";
+    inp.id = id + "-0";
+    inp.className = "Input-text";
+    inp.setAttribute('data-answers', JSON.stringify(qa.answers));
+    // Apply optional input width (approx. number of characters, in em units)
+    if (qa.input_width != null) {
+        inp.style['min-width'] = qa.input_width + 'em';
+    }
+    aDiv.append(inp);
+
+    inp.onkeypress = string_keypress;
+    inp.onpaste = event => false;
+
+    inp.addEventListener("focus", function (event) {
+        this.value = "";
+        return false;
+    });
+}
+/*
+ * Handle asynchrony issues when re-running quizzes in Jupyter notebooks.
+ * Ensures show_questions is called after the container div is in the DOM.
+ */
+function try_show() {
+  if (document.getElementById("qFyAxXoMfroL")) {
+    show_questions(questionsqFyAxXoMfroL, qFyAxXoMfroL);
+  } else {
+    setTimeout(try_show, 200);
+  }
+};
+// Invoke immediately
+{
+  try_show();
+}
+}
+</script></div>
 </div>
 </section>
-<section id="id4">
-<h2>שמות שורות ועמודות בטבלאות וסדרות<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h3><span class="section-number">12.4.7.2. </span>שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בסדרה<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>אם נפעיל את <code class="docutils literal notranslate"><span class="pre">[]</span></code> על סדרה (<code class="docutils literal notranslate"><span class="pre">Series</span></code>), לדוגמא, <code class="docutils literal notranslate"><span class="pre">s[x]</span></code>,  נקבל ערך שנמצא בתא <strong>בשם</strong> <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Art&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+91
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id10">
+<h3><span class="section-number">12.4.7.3. </span>שמות שורות ועמודות בטבלאות וסדרות<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>ב-DataFrame שמות השורות ושמות העמודות נשמרים בשדות ייעודיים:</p>
 <ul class="simple">
 <li><p>שמות השורות נשמרים בשדה <code class="docutils literal notranslate"><span class="pre">index</span></code></p></li>
@@ -1339,6 +2958,7 @@ Index([&#39;Name&#39;, &#39;Programming&#39;, &#39;Marine Biology&#39;, &#39;Ste
 </div>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1370,6 +2990,24 @@ Index([&#39;Name&#39;, &#39;Programming&#39;, &#39;Marine Biology&#39;, &#39;Ste
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="19_2_create-df.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12.3. </span>יצירת טבלה חדשה</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="19_4_basic_editing.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">12.5. </span>עריכה בסיסית של טבלאות וסדרות</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -1386,13 +3024,22 @@ Index([&#39;Name&#39;, &#39;Programming&#39;, &#39;Marine Biology&#39;, &#39;Ste
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-loc">גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">iloc[,]</span></code> ו-<code class="docutils literal notranslate"><span class="pre">loc[,]</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">חילוץ ערכים מטבלה</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">חילוץ ערכים מסדרה</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.4.1. בדיקת נתונים בסיסיים על הטבלה</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-loc">12.4.2. גישה לערכים בטבלאות וסדרות: <code class="docutils literal notranslate"><span class="pre">[]</span></code>, <code class="docutils literal notranslate"><span class="pre">[,]iloc</span></code> ו-<code class="docutils literal notranslate"><span class="pre">[,]loc</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-x-y">12.4.3. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.4.3.1. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בטבלה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.4.3.2. שימוש ב<code class="docutils literal notranslate"><span class="pre">iloc[x,y]</span></code> בסדרה</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iloc-vs-loc">תרגול: <code class="docutils literal notranslate"><span class="pre">iloc</span></code>  vs. <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">שמות שורות ועמודות בטבלאות וסדרות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-x-y">12.4.4. שימוש ב<code class="docutils literal notranslate"><span class="pre">loc[x,y]</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.4.5. השוואה בין <code class="docutils literal notranslate"><span class="pre">iloc</span></code> ל<code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.4.6. תרגול</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">12.4.7. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">12.4.7.1. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בטבלה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">12.4.7.2. שימוש ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> בסדרה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">12.4.7.3. שמות שורות ועמודות בטבלאות וסדרות</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

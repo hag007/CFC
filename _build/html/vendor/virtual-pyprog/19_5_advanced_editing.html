@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,7 +564,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-pandas">מיסוך (Masking) בPandas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-pandas">מיסוך (Masking) ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply">מתודת <code class="docutils literal notranslate"><span class="pre">apply</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגיל</a></li>
 </ul>
@@ -600,30 +580,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>עריכת טבלאות מתקדמת<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="masking-pandas">
-<h2>מיסוך (Masking) בPandas<a class="headerlink" href="#masking-pandas" title="Link to this heading">#</a></h2>
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספרית <code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הרצת השורת הראשונה בתא למטה.<br />
+בנוסף, נגביל את מספר השורות והעמודות שתופענה בהדפסת הטבלאות ע”י שורות הקוד השניה והשלישית:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="err">```</span><span class="p">{</span><span class="n">admonition</span><span class="p">}</span> <span class="o">**</span><span class="n">שימו</span> <span class="n">לב</span><span class="o">**</span>
-<span class="p">:</span><span class="n">class</span><span class="p">:</span> <span class="n">warning</span>
-
-<span class="n">במקרה</span> <span class="n">זה</span> <span class="n">אין</span> <span class="n">צורך</span> <span class="n">לפרט</span> <span class="err">`</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="err">`</span> <span class="n">מכיוון</span> <span class="n">שאנו</span> <span class="n">מוסיפים</span> <span class="n">עמודה</span><span class="p">,</span> <span class="n">ואנו</span> <span class="n">מניחים</span> <span class="n">שאין</span> <span class="n">עמודה</span> <span class="n">בעלת</span> <span class="n">שם</span> <span class="n">זהה</span> <span class="n">בטבלה</span><span class="o">.</span>
-
-<span class="err">```</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span><span class="o">=</span><span class="mi">5</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="err">```</span><span class="p">{</span><span class="n">admonition</span><span class="p">}</span> <span class="o">**</span><span class="n">שימו</span> <span class="n">לב</span><span class="o">**</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
 </pre></div>
 </div>
 </div>
 </div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>עריכת טבלאות מתקדמת<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>בפרק זה נעמיק עוד את היכרותנו עם פעולות העריכה ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code> ונלמד שתי טכניקות מתקדמות יותר לעבודה עם טבלאות.
+הראשונה היא שימוש במיסוך (Masking), המאפשר לסנן ולעדכן נתונים בטבלה לפי תנאים מסוימים.</p>
+<p>לאחר מכן נכיר את המתודה החזקה <code class="docutils literal notranslate"><span class="pre">apply</span></code>, המאפשרת לבצע חישובים מורכבים או ליצור עמודות חדשות מבלי להשתמש בלולאות מפורשות, על-ידי הפעלת פונקציה על שורות או עמודות שלמות.</p>
 <p>הפעולות להלן יודגמו טבלת הציונים <code class="docutils literal notranslate"><span class="pre">&quot;files/StudentsGrades.csv&quot;</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -654,10 +632,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -667,10 +642,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -678,10 +650,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -692,18 +661,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -711,10 +674,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -723,9 +683,17 @@ document.write(`
 <p>13 rows × 8 columns</p>
 </div></div></div>
 </div>
-<p>Mask (מסכה) היא <strong>טבלה או סדרה בוליאנית</strong> המסמנת אילו <strong>תאים</strong> ב<strong>טבלה (או סדרה) אחרת</strong> רלוונטיים לשימוש ואילו תאים צריכים להישאר מוסתרים או מחוץ לחישוב. אפשר לדמיין מערך זה כמו מסננת או שכבה אטומה עם חורים : החורים חושפים חלק מהמידע, בעוד שאר האזורים מכוסים. לדוגמא, עבור הטבלה שלנו <code class="docutils literal notranslate"><span class="pre">df</span></code> ניתן לייצר מסיכה מאחת העמודות  (לדוגמא, <code class="docutils literal notranslate"><span class="pre">m=df[&quot;Art&quot;]&gt;90</span></code>)’ ולבצע מיסוך <code class="docutils literal notranslate"><span class="pre">df[m]</span></code> או <code class="docutils literal notranslate"><span class="pre">df.loc[m]</span></code>. משמעות מיסוך זה הוא ששורות בהם קיים הערך <code class="docutils literal notranslate"><span class="pre">True</span></code> להכלל בחישוב וערכי <code class="docutils literal notranslate"><span class="pre">False</span></code> תואמים לשורות שיש להתעלם מהם.</p>
-<p>ביצוע הMasking יכול לשמש אותנו כדי להחזיר תת-טבלה , או כדי לבצע פעולה על תת-טבלה.</p>
-<p>נבחן למטה כמה דוגמאות:</p>
+<section id="masking-pandas">
+<h2>מיסוך (Masking) ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code><a class="headerlink" href="#masking-pandas" title="Link to this heading">#</a></h2>
+<div class="dropdown note admonition">
+<p class="admonition-title"><strong>העמקה:</strong>  מה זה Masking?</p>
+<p>Mask (מסכה) היא מערך בוליאני (של ערכי <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code>) שמשמש כדי לבחור אילו איברים ממערך אחר (בעל אותם ממדים) ייכללו בפעולה מסוימת, ואילו יישארו מוסתרים או יתעלמו מהם.
+אפשר לחשוב על המסכה כעל שכבת פילטר שמכסה חלקים מהנתונים וחושפת רק את מה שצריך, כמו מסננת או שכבת שקף עם חורים.</p>
+<p>לדוגמא, עבור הטבלה שלנו <code class="docutils literal notranslate"><span class="pre">df</span></code> ניתן לייצר מסיכה מאחת העמודות  (לדוגמא, <code class="docutils literal notranslate"><span class="pre">m=df[&quot;Art&quot;]&gt;90</span></code>)’ ולבצע מיסוך <code class="docutils literal notranslate"><span class="pre">df[m]</span></code> או <code class="docutils literal notranslate"><span class="pre">df.loc[m]</span></code>.
+במיסוך זה, שורות בהן <code class="docutils literal notranslate"><span class="pre">m</span></code> מכיל את הערך <code class="docutils literal notranslate"><span class="pre">True</span></code> ייכללו בחישוב, ונתעלם משורות בהן <code class="docutils literal notranslate"><span class="pre">m</span></code> מכיל את הערך <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>ביצוע Masking יכול לשמש אותנו כדי להחזיר תת-טבלה, או כדי לבצע פעולה על תת-טבלה.</p>
+</div>
+<p>כעת נבחן כמה דוגמאות לשימוש ב-Masking על <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>:</p>
 <p>נניח כי נרצה להסיר את כל הסטודנטיות ששמן יעל.</p>
 <p>תחילה ניצור מסיכה:</p>
 <div class="cell docutils container">
@@ -774,34 +742,25 @@ Name: Name, Length: 13, dtype: bool
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>Yael</td>
-      <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
-      <td>91</td>
+      <th>1</th>
+      <td>Nadav</td>
+      <td>61</td>
+      <td>...</td>
+      <td>52</td>
+      <td>88</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Michal</td>
       <td>81</td>
-      <td>72</td>
-      <td>76</td>
-      <td>94</td>
-      <td>67</td>
+      <td>...</td>
       <td>81</td>
       <td>78</td>
     </tr>
@@ -812,18 +771,12 @@ Name: Name, Length: 13, dtype: bool
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -831,10 +784,7 @@ Name: Name, Length: 13, dtype: bool
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -872,10 +822,7 @@ Name: Name, Length: 13, dtype: bool
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -885,19 +832,17 @@ Name: Name, Length: 13, dtype: bool
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
   </tbody>
 </table>
+<p>1 rows × 8 columns</p>
 </div></div></div>
 </div>
 <p>בדומה לאופרטורים אריתמטיים, ניתן להפעיל פעולות <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> ו-<code class="docutils literal notranslate"><span class="pre">not</span></code> עבור סדרות וטבלאות בוליאניות (או במילים אחרות, עבור מסיכות).<br />
-אך בשונה מערכים בוליאניים רגילים, כאן לאופרטורים אלו יש סימון אחר:</p>
+אך בשונה מערכים בוליאניים רגילים, כאן <strong>לאופרטורים אלו יש סימון אחר</strong>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">and</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">or</span></code> –&gt; <code class="docutils literal notranslate"><span class="pre">|</span></code></p></li>
@@ -931,10 +876,7 @@ Name: Name, Length: 13, dtype: bool
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -944,10 +886,7 @@ Name: Name, Length: 13, dtype: bool
       <th>6</th>
       <td>Yarden</td>
       <td>63</td>
-      <td>62</td>
-      <td>70</td>
-      <td>74</td>
-      <td>92</td>
+      <td>...</td>
       <td>98</td>
       <td>94</td>
     </tr>
@@ -955,22 +894,20 @@ Name: Name, Length: 13, dtype: bool
       <th>7</th>
       <td>Avi</td>
       <td>78</td>
-      <td>64</td>
-      <td>54</td>
-      <td>88</td>
-      <td>97</td>
+      <td>...</td>
       <td>76</td>
       <td>100</td>
     </tr>
   </tbody>
 </table>
+<p>2 rows × 8 columns</p>
 </div></div></div>
 </div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
-<p>בPandas האופרטורים הלוגיים <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> <code class="docutils literal notranslate"><span class="pre">|</span></code> <code class="docutils literal notranslate"><span class="pre">~</span></code> קודמים להשוואתיים (כמו <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <code class="docutils literal notranslate"><span class="pre">==</span></code>). לכן חשוב לעטוף כל מסיכה בסוגריים על מנת למנוע מהאופרטור הלוגי לפעול לפני האופרטור ההשוואתי.</p>
+<p>ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code> האופרטורים הלוגיים <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> <code class="docutils literal notranslate"><span class="pre">|</span></code> <code class="docutils literal notranslate"><span class="pre">~</span></code> קודמים להשוואתיים (כמו <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <code class="docutils literal notranslate"><span class="pre">==</span></code>). לכן חשוב לעטוף כל מסיכה בסוגריים על מנת למנוע מהאופרטור הלוגי לפעול לפני האופרטור ההשוואתי.</p>
 </div>
-<p>באמצעות Masking ניתן גם לבצע השמה מותנית, כלומר, לבצע השמה רק במקומות בהם יש במסיכה <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+<p>באמצעות Masking ניתן גם לבצע <strong>השמה מותנית</strong>, כלומר, לבצע השמה רק במקומות בהם יש במסיכה <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 <p>לדוגמא, בשורה הבאה “נעביר” את כל הסטודנטים שנכשלו בתכנות, וניתן להם את הציון 60 (אתם יכולים לראות שהציון של יעל התחלף מ50 ל60).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1000,10 +937,7 @@ Name: Name, Length: 13, dtype: bool
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1013,10 +947,7 @@ Name: Name, Length: 13, dtype: bool
       <th>0</th>
       <td>Yael</td>
       <td>60</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -1024,10 +955,7 @@ Name: Name, Length: 13, dtype: bool
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -1038,18 +966,12 @@ Name: Name, Length: 13, dtype: bool
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1057,10 +979,7 @@ Name: Name, Length: 13, dtype: bool
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -1073,41 +992,120 @@ Name: Name, Length: 13, dtype: bool
 <section id="apply">
 <h2>מתודת <code class="docutils literal notranslate"><span class="pre">apply</span></code><a class="headerlink" href="#apply" title="Link to this heading">#</a></h2>
 <p>המתודה <code class="docutils literal notranslate"><span class="pre">apply</span></code> מאפשרת להפעיל פונקציה על עמודה או על כל שורה ב-DataFrame. במקום להשתמש בלולאות, <code class="docutils literal notranslate"><span class="pre">apply</span></code> מאפשרת לנו לבצע חישוב או שינוי על כל השורות או העמודות של הטבלה בבת אחת.<br />
-עבור סדרה, <code class="docutils literal notranslate"><span class="pre">apply</span></code> תבצע את הפעולה על כל ערכים בסדרה בבת אחת.</p>
-<p>לדוגמא, אם נרצה להעלות את כל הציונים בעמודה <code class="docutils literal notranslate"><span class="pre">Art</span></code> ב10, אבל לוודא שלא יהיו ציונים גבוהים מ10, נוכל לעשות זאת באופן הבא:</p>
-<p><code class="docutils literal notranslate"><span class="pre">df[&quot;Art&quot;]=df[&quot;Art&quot;].apply(lambda</span> <span class="pre">a:</span> <span class="pre">min(100,</span> <span class="pre">a+10)</span></code></p>
+באופן דומה, עבור סדרה, <code class="docutils literal notranslate"><span class="pre">apply</span></code> תבצע את הפעולה על כל ערכים בסדרה <strong>בבת אחת</strong>.</p>
+<p>לדוגמא, אם נרצה להעלות את כל הציונים בעמודה <code class="docutils literal notranslate"><span class="pre">Art</span></code> ב10, אבל לוודא שלא יהיו ציונים גבוהים מ100, נוכל לעשות זאת באופן הבא:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="mi">10</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Art&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Art&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      70
-1      71
-     ... 
-11    100
-12     86
-Name: Programming, Length: 13, dtype: int64
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Programming</th>
+      <th>...</th>
+      <th>Planet Survival</th>
+      <th>Art</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Yael</td>
+      <td>60</td>
+      <td>...</td>
+      <td>65</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Nadav</td>
+      <td>61</td>
+      <td>...</td>
+      <td>52</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tom</td>
+      <td>98</td>
+      <td>...</td>
+      <td>92</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Adi</td>
+      <td>76</td>
+      <td>...</td>
+      <td>84</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
+<p>13 rows × 8 columns</p>
+</div></div></div>
+</div>
+<p>בדומה לחישוב ממוצע המקצועות שראינו קודם, גם ל<code class="docutils literal notranslate"><span class="pre">apply</span></code>, יש פרמטר בשם <code class="docutils literal notranslate"><span class="pre">axis</span></code>:<br />
+בברירת מחדל, <code class="docutils literal notranslate"><span class="pre">apply</span></code> מופעל עם הקלט <code class="docutils literal notranslate"><span class="pre">axis=0</span></code>. כלומר, מתבצעת פעולה <strong>בין השורות השונות</strong>, או במילים אחרות - <strong>על כל עמודה בנפרד</strong>.
+ולהיפך, הפעלת <code class="docutils literal notranslate"><span class="pre">apply</span></code> עם <code class="docutils literal notranslate"><span class="pre">axis=1</span></code> תבצע פעולה <strong>בין העמודות השונות</strong>, או במילים אחרות - <strong>על כל שורה בנפרד</strong>.</p>
+<p>נדגים זאת באמצעות ממוצע באמצעות <code class="docutils literal notranslate"><span class="pre">apply</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     71.142857
+1     71.571429
+        ...    
+11    93.142857
+12    77.000000
+Length: 13, dtype: float64
 </pre></div>
 </div>
 </div>
 </div>
-<p>בדומה לחישוב ממוצע המקצועות שראינו קודם, גם ל<code class="docutils literal notranslate"><span class="pre">apply</span></code>, יש פרמטר בשם <code class="docutils literal notranslate"><span class="pre">axis</span></code>:
-בברירת מחדל, <code class="docutils literal notranslate"><span class="pre">apply</span></code> מופעל עם הקלט <code class="docutils literal notranslate"><span class="pre">axis=0</span></code>. כלומר, מתבצעת פעולה <strong>בין השורות השונות</strong>, או במילים אחרות - <strong>על כל עמודה בנפרד</strong>.
-ולהיפך, הפעלת <code class="docutils literal notranslate"><span class="pre">apply</span></code> עם <code class="docutils literal notranslate"><span class="pre">axis=1</span></code>. יבצע פעולה <strong>בין העמודות השונות</strong>, או במילים אחרות - <strong>על כל שורה בנפרד</strong>.</p>
-<p>נדגים זאת באמצעות ממוצע באמצעות <code class="docutils literal notranslate"><span class="pre">apply</span></code>:
-`df.iloc[:,1:].apply(lambda a: a.mean(), axis=1)</p>
-<p>שימו לב ש<code class="docutils literal notranslate"><span class="pre">apply</span></code> מחלץ ממוצע עבור כל סטודנט בנפרד (כלומר, עבור כל שורה), והתוצאה היא <strong>סדרה במבנה על עמודה בטבלה</strong>, בה קיים ממוצע כל סטודנט.</p>
+<p>שימו לב ש<code class="docutils literal notranslate"><span class="pre">apply</span></code> מחלץ ממוצע עבור <strong>כל סטודנט בנפרד</strong> (כלומר, עבור כל שורה), והתוצאה היא <strong>סדרה במבנה על עמודה בטבלה</strong>, בה קיים ממוצע כל סטודנט.</p>
 <p>מה היה קורה אם היינו מפעילים את אותה השורה עם <code class="docutils literal notranslate"><span class="pre">axis=0</span></code>?</p>
-<p>היינו מחלצים ממוצע עבור כל <strong>מקצוע</strong> בנפרד (כלומר, עבור כל טור) מה שהיה מסתכם לכדי שורה חדשה (ללא עמודת שם הסטודנט, אותה חתכנו באמצעות <code class="docutils literal notranslate"><span class="pre">iloc</span></code>)</p>
-<p>נחזור למשימת הוספת פקטור של 10 נקודות. מה אם במקום להוסיף זאת רק עבוא אומנות, היינו מוסיפים זאת <strong>לכלל המקצועות</strong>?<br />
+<p>היינו מחלצים ממוצע עבור כל <strong>מקצוע</strong> בנפרד (כלומר, עבור כל טור), מה שהיה מסתכם לכדי שורה חדשה (ללא עמודת שם הסטודנט, אותה חתכנו באמצעות <code class="docutils literal notranslate"><span class="pre">iloc</span></code>).</p>
+<p>נחזור למשימת הוספת פקטור של 10 נקודות. מה אם במקום להוסיף זאת רק עבור אומנות, היינו מוסיפים זאת <strong>לכלל המקצועות</strong>?<br />
 היינו חושבים אולי לבצע משהו כזה:</p>
-<p><code class="docutils literal notranslate"><span class="pre">(df.iloc[:,1:]=df.iloc[:,1:].apply(lambda</span> <span class="pre">a:</span> <span class="pre">min(100,</span> <span class="pre">a+10)</span></code></p>
-<p>אבל מכיוון שאנו פועלים כעת על טבלה (ולא על סדרה כמו בדוגמא הראשונה), איננו יכולים להפעיל כך את <code class="docutils literal notranslate"><span class="pre">min</span></code>.</p>
-<p>לכן, נשנה את המימוש באופן הבא:</p>
-<p><code class="docutils literal notranslate"><span class="pre">(df.iloc[:,1:]=df.iloc[:,1:].apply(lambda</span> <span class="pre">a:</span> <span class="pre">(a+10).clip(upper=100)</span></code></p>
-<p>המתודה <code class="docutils literal notranslate"><span class="pre">clip</span></code> של Pandas משתמש כדי לקטום את הערכים שלנו. במקרה שלנו, היינו צריכים רק להגביל את הערכים למעלה, ולכן השתמש רק בפרמטר <code class="docutils literal notranslate"><span class="pre">upper=100</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>אבל מכיוון שאנו פועלים כעת על טבלה (ולא על סדרה כמו בדוגמא הראשונה), <code class="docutils literal notranslate"><span class="pre">a</span></code> בפונקציית ה<code class="docutils literal notranslate"><span class="pre">lambda</span></code> ייצג שורה שלמה. כלומר פעולת המינימום לא תתבצע עבור כל תא בנפרד, כפי שהיינו רוצים.</p>
+<p>לכן, נעזר במתודה <code class="docutils literal notranslate"><span class="pre">clip</span></code> של <code class="docutils literal notranslate"><span class="pre">pandas</span></code> המאפשרת לקטום ערכים בכל תא בנפרד. במקרה שלנו, היינו צריכים להגביל את הערכים רק מלמעלה, ולכן נשתמש בפרמטר <code class="docutils literal notranslate"><span class="pre">upper=100</span></code>.</p>
+<p>כעת המימוש יראה כך:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span><span class="o">+</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">upper</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
@@ -1135,9 +1133,7 @@ Name: Programming, Length: 13, dtype: int64
       <th></th>
       <th>Programming</th>
       <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1147,9 +1143,7 @@ Name: Programming, Length: 13, dtype: int64
       <th>0</th>
       <td>70</td>
       <td>66</td>
-      <td>80</td>
-      <td>70</td>
-      <td>97</td>
+      <td>...</td>
       <td>75</td>
       <td>100</td>
     </tr>
@@ -1157,16 +1151,12 @@ Name: Programming, Length: 13, dtype: int64
       <th>1</th>
       <td>71</td>
       <td>87</td>
-      <td>85</td>
-      <td>85</td>
-      <td>73</td>
+      <td>...</td>
       <td>62</td>
-      <td>98</td>
+      <td>100</td>
     </tr>
     <tr>
       <th>...</th>
-      <td>...</td>
-      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -1177,34 +1167,30 @@ Name: Programming, Length: 13, dtype: int64
       <th>11</th>
       <td>100</td>
       <td>86</td>
+      <td>...</td>
       <td>100</td>
       <td>100</td>
-      <td>100</td>
-      <td>100</td>
-      <td>90</td>
     </tr>
     <tr>
       <th>12</th>
       <td>86</td>
       <td>97</td>
-      <td>44</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>94</td>
-      <td>80</td>
+      <td>90</td>
     </tr>
   </tbody>
 </table>
 <p>13 rows × 7 columns</p>
 </div></div></div>
 </div>
-<div class="warning admonition">
-<p class="admonition-title"><strong>שימו לב</strong></p>
+<div class="info admonition">
+<p class="admonition-title"><strong>הערה</strong></p>
 <p>במקרה הזה, אין חשיבות לפרמטר <code class="docutils literal notranslate"><span class="pre">axis</span></code> ב<code class="docutils literal notranslate"><span class="pre">apply</span></code> מכיוון שהפעולה נעשית בסופו של דבר על כל ערך בנפרד, והם אינם “נסכמים” ביחד.</p>
 </div>
 <section id="id2">
 <h3>תרגיל<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>בשורה אחת בלבד, שנו אמצעות המתודה apply את שמות הסטודנטים כך שכולם יהיו באותיות גדולות</p>
+<p>בשורה אחת בלבד, שנו באמצעות המתודה <code class="docutils literal notranslate"><span class="pre">apply</span></code> את שמות הסטודנטים כך שכולם יהיו באותיות גדולות.</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Write your code here</span>
@@ -1263,7 +1249,7 @@ Name: Programming, Length: 13, dtype: int64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-pandas">מיסוך (Masking) בPandas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#masking-pandas">מיסוך (Masking) ב<code class="docutils literal notranslate"><span class="pre">pandas</span></code></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply">מתודת <code class="docutils literal notranslate"><span class="pre">apply</span></code></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">תרגיל</a></li>
 </ul>

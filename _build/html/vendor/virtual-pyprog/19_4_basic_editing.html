@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>עריכה בסיסית של טבלאות וסדרות &#8212; Computers For physics</title>
+    <title>12.5. עריכה בסיסית של טבלאות וסדרות &#8212; Computers For physics</title>
   
   
   
@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -61,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'vendor/virtual-pyprog/19_4_basic_editing';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="12.4. גישה בסיסית לטבלה" href="19_3_access-df.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -185,7 +185,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../0_intro.html">מנהלות</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">שבועות הלמידה</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_1.html">1. שבוע 1 — טיפוסים ותנאים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="0_0_objectives.html">1.2. מבוא</a></li>
 <li class="toctree-l2"><a class="reference internal" href="0_1_hardware-to-software.html">1.3. חומרה, תוכנה והשיטה הבינארית</a></li>
@@ -235,7 +235,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +246,59 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_1_tuples.html">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -584,9 +563,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">פעולות אריתמטיות בין טבלאות וסדרות</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">הסרת שורות ועמודות</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">הוספה והסרת שורות ועמודות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.5.1. פעולות אריתמטיות בין טבלאות וסדרות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.5.2. הסרת שורות ועמודות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.5.3. הוספת שורות ועמודות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.5.3.1. הוספת שורה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.5.3.2. הוספת עמודה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-iloc">12.5.3.3. השמה ב<code class="docutils literal notranslate"><span class="pre">loc</span></code>/<code class="docutils literal notranslate"><span class="pre">iloc</span></code>/<code class="docutils literal notranslate"><span class="pre">[]</span></code></a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -598,8 +582,29 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>עריכה בסיסית של טבלאות וסדרות<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+  <p><strong>שימו לב</strong>: על מנת להריץ את התאים ב-Live Code, יש לייבא תחילה את ספרית <code class="docutils literal notranslate"><span class="pre">pandas</span></code> ע”י הרצת השורת הראשונה בתא למטה.<br />
+בנוסף, נגביל את מספר השורות והעמודות שתופענה בהדפסת הטבלאות ע”י שורות הקוד השניה והשלישית:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span><span class="o">=</span><span class="mi">5</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">utils.load_auxilary_files</span> <span class="c1"># This will load the files used for this notebook</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dog_noised.png&#39;, &#39;sunday.txt&#39;, &#39;orders_3_2024.csv&#39;, &#39;dialation_2.png&#39;, &#39;woman_noised.png&#39;, &#39;erosion_2.png&#39;, &#39;infile1.txt&#39;, &#39;notebook_resources.zip&#39;, &#39;countries-of-the-world.csv&#39;, &#39;ex1.csv&#39;, &#39;StudentsGrades.csv&#39;, &#39;out.txt&#39;, &#39;dog.png&#39;, &#39;foods.txt&#39;, &#39;dialation.png&#39;, &#39;__MACOSX&#39;, &#39;evil_morty_segmentation.png&#39;, &#39;products2.csv&#39;, &#39;orders_2_2024.csv&#39;, &#39;evil_morty_1.png&#39;, &#39;monday.txt&#39;, &#39;ship.png&#39;, &#39;koala.png&#39;, &#39;baby.png&#39;, &#39;erosion.png&#39;, &#39;evil_morty_change_noised.png&#39;, &#39;orders_4_2024.csv&#39;, &#39;ex2.csv&#39;, &#39;evil_morty_change.png&#39;, &#39;evil_morty_change_3.png&#39;, &#39;infile2.txt&#39;, &#39;witcher_1.csv&#39;, &#39;witcher_2.csv&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><span class="section-number">12.5. </span>עריכה בסיסית של טבלאות וסדרות<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>בשלב זה כבר למדנו כיצד ליצור טבלאות (<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>) וסדרות (<code class="docutils literal notranslate"><span class="pre">Series</span></code>), ולגשת לערכים שבתוכן. כעת נתקדם צעד נוסף — נראה כיצד לערוך ולעבד את הנתונים עצמם.
+בפרק זה נלמד לבצע פעולות בסיסיות אך חיוניות: חיבור וחיסור בין עמודות, חישוב ממוצעים, הוספה והסרה של עמודות מטבלה ועוד.</p>
+<p>יכולות אלה מהוות את הבסיס לעבודה אמיתית עם נתונים — כאשר לעיתים קרובות נרצה לגזור מידע חדש מהקיים, לעדכן את הנתונים בהתאם לצורך, או לצמצם את הטבלה רק לעמודות הרלוונטיות לנו.</p>
+<p>הפעולות להלן יודגמו טבלת הציונים <code class="docutils literal notranslate"><span class="pre">&quot;files/StudentsGrades.csv&quot;</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -629,10 +634,7 @@ document.write(`
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -642,10 +644,7 @@ document.write(`
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -653,10 +652,7 @@ document.write(`
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -667,18 +663,12 @@ document.write(`
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -686,10 +676,7 @@ document.write(`
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -699,11 +686,11 @@ document.write(`
 </div></div></div>
 </div>
 <section id="id2">
-<h2>פעולות אריתמטיות בין טבלאות וסדרות<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.5.1. </span>פעולות אריתמטיות בין טבלאות וסדרות<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>ניתן לבצע מגוון פעולות אריתמטיות בין טבלאות וסדרות.<br />
-הפעולות מבוצעות עבור כל זוג ערכים נמצאים בתא בעל שם תואם ב2 העמודות (element-wise).</p>
+הפעולות מבוצעות איבר-איבר (element-wise), כלומר, עבור כל זוג ערכים נמצאים בתא בעל שם תואם ב2 העמודות.</p>
 <p>נראה כאן כמה דוגמאות:</p>
-<p>החסרת עמודות</p>
+<p>בדוגמא הזאת ביצענו חיסור בין עמודות:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Math&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Art&#39;</span><span class="p">])</span>
@@ -721,7 +708,8 @@ Length: 13, dtype: int64
 </div>
 </div>
 </div>
-<p>ממוצע בין זוג עמודות ציונים</p>
+<p>התוצאה של פעולת החיסור היא <strong>סדרה חדשה</strong> המכילה את ערכי ההפרש בין העמודות.</p>
+<p>ניתן לבצע גם פעולה אריתמטית בין סדרה לסקאלר. לדוגמא, חישוב ממוצע בין שתי עמודות:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Math&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Art&#39;</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
@@ -739,10 +727,11 @@ Length: 13, dtype: float64
 </div>
 </div>
 </div>
-<p>ממוצע בין כל הציונים</p>
+<p>ומה אם נרצה לחשב ממוצע כל טבלה בעלת 10 עמודות?</p>
+<p>בשביל פעולות כאלו יצרו מתודות יעודיות. לדוגמא, על מנת לחשב ממוצע נוכל להשתמש במתודת <code class="docutils literal notranslate"><span class="pre">mean</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -757,18 +746,36 @@ Length: 13, dtype: float64
 </div>
 </div>
 </div>
+<p>וכדי לחשב סכום, נשתמש במתודת <code class="docutils literal notranslate"><span class="pre">sum</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     479
+1     491
+     ... 
+11    642
+12    529
+Length: 13, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
 <div class="info admonition">
+<p class="admonition-title"><strong>הערה</strong></p>
+<p>הקלט <code class="docutils literal notranslate"><span class="pre">axis=1</span></code> אומר שיש לחשב <strong>עמודת ממוצעים</strong>. במילים אחרות, לחשב <strong>ממוצע על כל שורה בנפרד שמסתכם לכדי עמודה בודדת</strong></p>
+</div>
+<div class="caution admonition">
 <p class="admonition-title"><strong>חשבו</strong></p>
 <p>מדוע השתמשנו כאן ב<code class="docutils literal notranslate"><span class="pre">iloc[:,1:]</span></code>?</p>
 </div>
-<div class="admonition- admonition">
-<p class="admonition-title"><strong>שימו לב</strong></p>
-<p>הקלט <code class="docutils literal notranslate"><span class="pre">axis=1</span></code> בעמודת הממוצעים אומר שבעצם אנו מחשבים <strong>עמודת ממוצעים</strong>, או במילים אחרות, <strong>ממוצע על כל שורה בנפרד שמסתכם לכדי עמודה בודדת</strong></p>
-</div>
 </section>
 <section id="id3">
-<h2>הסרת שורות ועמודות<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>על מנת <strong>להסיר שורות או עמודות, נשתמש בפונקציה <code class="docutils literal notranslate"><span class="pre">pd.drop</span></code></strong>, המחזירה טבלה חדשה ללא השורות/עמודות בעלות השמות שצוינו. ניתן להעביר שם בודד או מספר שמות של שורות/עמודות אותם אנו רוצים להסיר.</p>
+<h2><span class="section-number">12.5.2. </span>הסרת שורות ועמודות<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>על מנת <strong>להסיר שורות או עמודות, נשתמש במתודה <code class="docutils literal notranslate"><span class="pre">drop</span></code></strong> של <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>**, המחזירה <strong>טבלה חדשה</strong> ללא השורות/עמודות בעלות השמות שצוינו. ניתן להעביר שם בודד או מספר שמות של שורות/עמודות אותם אנו רוצים להסיר.</p>
 <p>הפרמטר <code class="docutils literal notranslate"><span class="pre">axis</span></code> קובע היכן תתבצע ההסרה - בשורות (<code class="docutils literal notranslate"><span class="pre">axis=0</span></code>) או בעמודות (<code class="docutils literal notranslate"><span class="pre">axis=1</span></code>).</p>
 <p>דוגמא להסרת העמודה Name:</p>
 <div class="cell docutils container">
@@ -798,9 +805,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Programming</th>
       <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -810,9 +815,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>50</td>
       <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -820,9 +823,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>61</td>
       <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -833,16 +834,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>98</td>
       <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -850,9 +847,7 @@ Length: 13, dtype: float64
       <th>12</th>
       <td>76</td>
       <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -889,10 +884,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -902,10 +894,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -913,10 +902,7 @@ Length: 13, dtype: float64
       <th>2</th>
       <td>Michal</td>
       <td>81</td>
-      <td>72</td>
-      <td>76</td>
-      <td>94</td>
-      <td>67</td>
+      <td>...</td>
       <td>81</td>
       <td>78</td>
     </tr>
@@ -927,18 +913,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>10</th>
       <td>Yaniv</td>
       <td>100</td>
-      <td>64</td>
-      <td>62</td>
-      <td>95</td>
-      <td>61</td>
+      <td>...</td>
       <td>88</td>
       <td>90</td>
     </tr>
@@ -946,10 +926,7 @@ Length: 13, dtype: float64
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -958,13 +935,13 @@ Length: 13, dtype: float64
 <p>11 rows × 8 columns</p>
 </div></div></div>
 </div>
-<div class="warning admonition">
-<p class="admonition-title"><strong>שימו לב</strong></p>
-<p>בברירת המחדל הערך של <code class="docutils literal notranslate"><span class="pre">axis</span></code> הוא תמיד 0 - כלומר, הפעולה תתייחס לשורות</p>
-</div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
 <p>אם השם לא מופיע בציר שצוין, <code class="docutils literal notranslate"><span class="pre">drop</span></code> תקפיץ שגיאה</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title"><strong>הערה</strong></p>
+<p>בברירת המחדל הערך של <code class="docutils literal notranslate"><span class="pre">axis</span></code> הוא תמיד 0 - כלומר, הפעולה תתייחס לשורות</p>
 </div>
 <p>ואם נרצה להסיר את השורות או העמודות מהטבלה המקורית?</p>
 <p>במקרה זה, נוכל להשתמש בפרמטר <code class="docutils literal notranslate"><span class="pre">in_place=True</span></code>:</p>
@@ -996,10 +973,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1009,10 +983,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -1020,10 +991,7 @@ Length: 13, dtype: float64
       <th>2</th>
       <td>Michal</td>
       <td>81</td>
-      <td>72</td>
-      <td>76</td>
-      <td>94</td>
-      <td>67</td>
+      <td>...</td>
       <td>81</td>
       <td>78</td>
     </tr>
@@ -1034,18 +1002,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1053,10 +1015,7 @@ Length: 13, dtype: float64
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -1094,10 +1053,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1107,10 +1063,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -1118,10 +1071,7 @@ Length: 13, dtype: float64
       <th>2</th>
       <td>Michal</td>
       <td>81</td>
-      <td>72</td>
-      <td>76</td>
-      <td>94</td>
-      <td>67</td>
+      <td>...</td>
       <td>81</td>
       <td>78</td>
     </tr>
@@ -1132,18 +1082,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>10</th>
       <td>Yaniv</td>
       <td>100</td>
-      <td>64</td>
-      <td>62</td>
-      <td>95</td>
-      <td>61</td>
+      <td>...</td>
       <td>88</td>
       <td>90</td>
     </tr>
@@ -1151,10 +1095,7 @@ Length: 13, dtype: float64
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1166,8 +1107,8 @@ Length: 13, dtype: float64
 <p><strong>בהמשך נלמד על דרכים נוספות להסרת שורות ועמודות מטבלה</strong></p>
 </section>
 <section id="id4">
-<h2>הוספה והסרת שורות ועמודות<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>הפעולות להלן יודגמו טבלת הציונים <code class="docutils literal notranslate"><span class="pre">&quot;files/StudentsGrades.csv&quot;</span></code>:</p>
+<h2><span class="section-number">12.5.3. </span>הוספת שורות ועמודות<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>נחזור שוב לטבלה המקורית שלנו:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -1197,10 +1138,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1210,10 +1148,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
+      <td>...</td>
       <td>65</td>
       <td>91</td>
     </tr>
@@ -1221,10 +1156,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
+      <td>...</td>
       <td>52</td>
       <td>88</td>
     </tr>
@@ -1235,18 +1167,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
+      <td>...</td>
       <td>92</td>
       <td>80</td>
     </tr>
@@ -1254,10 +1180,7 @@ Length: 13, dtype: float64
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
+      <td>...</td>
       <td>84</td>
       <td>70</td>
     </tr>
@@ -1266,6 +1189,8 @@ Length: 13, dtype: float64
 <p>13 rows × 8 columns</p>
 </div></div></div>
 </div>
+<section id="id5">
+<h3><span class="section-number">12.5.3.1. </span>הוספת שורה<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>כדי להוסיף שורה או עמודה חדשה ל-<code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> קיים (במקרה שלנו, שורה מייצגת סטודנט חדש), ניצור <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> המכיל שורה או עמודה בודדת, ונשרשר אותה לסוף הטבלה באמצעות פונקצית <code class="docutils literal notranslate"><span class="pre">pd.concat</span></code>.<br />
 פונקציה זו יודעת לחבר מספר טבלאות - המועברות ב<code class="docutils literal notranslate"><span class="pre">tuple</span></code> או ב<code class="docutils literal notranslate"><span class="pre">list</span></code> כפרמטר ראשון לפונקציה - בדרכים שונות. נרחיב על מגוון פעולות חיבור הטבלאות שניתן לעשות באמצעות <code class="docutils literal notranslate"><span class="pre">concat</span></code> ביחידות הבאות.</p>
 <p>לצורך <strong>הוספת שורה</strong>, נשתמש בפונקציה <code class="docutils literal notranslate"><span class="pre">pd.concat</span></code> על מנת ליצור <strong>טבלה חדשה</strong>, שהיא למעשה בין הטבלה המקורית ובין הטבלה בעלת השורה הבודדת שיצרנו.</p>
@@ -1300,10 +1225,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1313,10 +1235,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Yael</td>
       <td>50.0</td>
-      <td>56.0</td>
-      <td>70.0</td>
-      <td>60.00</td>
-      <td>87.0</td>
+      <td>...</td>
       <td>65.0</td>
       <td>91.0</td>
     </tr>
@@ -1324,10 +1243,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61.0</td>
-      <td>77.0</td>
-      <td>75.0</td>
-      <td>75.00</td>
-      <td>63.0</td>
+      <td>...</td>
       <td>52.0</td>
       <td>88.0</td>
     </tr>
@@ -1338,18 +1254,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>12</th>
       <td>Adi</td>
       <td>76.0</td>
-      <td>87.0</td>
-      <td>34.0</td>
-      <td>90.00</td>
-      <td>88.0</td>
+      <td>...</td>
       <td>84.0</td>
       <td>70.0</td>
     </tr>
@@ -1357,10 +1267,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Dana</td>
       <td>76.0</td>
-      <td>65.0</td>
-      <td>98.0</td>
-      <td>8.07</td>
-      <td>65.0</td>
+      <td>...</td>
       <td>89.0</td>
       <td>100.0</td>
     </tr>
@@ -1369,7 +1276,7 @@ Length: 13, dtype: float64
 <p>14 rows × 8 columns</p>
 </div></div></div>
 </div>
-<div class="warning admonition">
+<div class="error admonition">
 <p class="admonition-title"><strong>שימו לב</strong></p>
 <p>לשורה הראשונה והאחרונה יש אותו שם (0). עניין זה יכול ליצור לנו הרבה בפעולות שנרצה לעשות בהמשך (כמו גישה שורות לפי שם).</p>
 <p>על מנת להתגבר על בעיה זו, יש להוסיף <code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code> לפונקציה <code class="docutils literal notranslate"><span class="pre">concat</span></code>. פרמטר זה למעשה “מאפס” את שמות הטבלה ומאתחלן לאידקס רץ מ0 כפי שנעשה כאשר יוצרים טבלה חדשה לחלוטין.</p>
@@ -1403,10 +1310,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
+      <th>...</th>
       <th>Planet Survival</th>
       <th>Art</th>
     </tr>
@@ -1416,10 +1320,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Yael</td>
       <td>50.0</td>
-      <td>56.0</td>
-      <td>70.0</td>
-      <td>60.00</td>
-      <td>87.0</td>
+      <td>...</td>
       <td>65.0</td>
       <td>91.0</td>
     </tr>
@@ -1427,10 +1328,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61.0</td>
-      <td>77.0</td>
-      <td>75.0</td>
-      <td>75.00</td>
-      <td>63.0</td>
+      <td>...</td>
       <td>52.0</td>
       <td>88.0</td>
     </tr>
@@ -1441,18 +1339,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>12</th>
       <td>Adi</td>
       <td>76.0</td>
-      <td>87.0</td>
-      <td>34.0</td>
-      <td>90.00</td>
-      <td>88.0</td>
+      <td>...</td>
       <td>84.0</td>
       <td>70.0</td>
     </tr>
@@ -1460,10 +1352,7 @@ Length: 13, dtype: float64
       <th>13</th>
       <td>Dana</td>
       <td>76.0</td>
-      <td>65.0</td>
-      <td>98.0</td>
-      <td>8.07</td>
-      <td>65.0</td>
+      <td>...</td>
       <td>89.0</td>
       <td>100.0</td>
     </tr>
@@ -1472,8 +1361,12 @@ Length: 13, dtype: float64
 <p>14 rows × 8 columns</p>
 </div></div></div>
 </div>
-<p>נשתמש בטכניקה דומה על מנת <strong>להוסיף עמודה</strong> בסוף הטבלה, עם הוספת פרמטר ל<code class="docutils literal notranslate"><span class="pre">concat</span></code> - <code class="docutils literal notranslate"><span class="pre">axis=1</span></code>. פרמטר מנחה את הפונקציה לפעול על ציר העמודות, או המילים אחרות, להוסיף <strong>עמודה</strong>.</p>
-<p>לדוגמא להלן השתמשנו ב<code class="docutils literal notranslate"><span class="pre">concat</span></code> על מנת להוסיף את המקצוע גלישה:</p>
+</section>
+<section id="id6">
+<h3><span class="section-number">12.5.3.2. </span>הוספת עמודה<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>נשתמש בטכניקה דומה על מנת <strong>להוסיף עמודה</strong> בסוף הטבלה.<br />
+מכיוון שמדובר בעמודה, נשנה בפונקציה <code class="docutils literal notranslate"><span class="pre">concat</span></code> את הערך של הפרמטר ל<code class="docutils literal notranslate"><span class="pre">axis=1</span></code>. פרמטר מנחה את הפונקציה לפעול על ציר העמודות, או במילים אחרות, להוסיף <strong>עמודה</strong>.</p>
+<p>בדוגמא להלן השתמשנו ב<code class="docutils literal notranslate"><span class="pre">concat</span></code> על מנת להוסיף את המקצוע גלישה:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inputFileName</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
@@ -1506,11 +1399,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
+      <th>...</th>
       <th>Art</th>
       <th>Surfing</th>
     </tr>
@@ -1520,11 +1409,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
+      <td>...</td>
       <td>91</td>
       <td>60</td>
     </tr>
@@ -1532,11 +1417,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
-      <td>52</td>
+      <td>...</td>
       <td>88</td>
       <td>65</td>
     </tr>
@@ -1547,20 +1428,12 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
+      <td>...</td>
       <td>80</td>
       <td>52</td>
     </tr>
@@ -1568,11 +1441,7 @@ Length: 13, dtype: float64
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
+      <td>...</td>
       <td>70</td>
       <td>70</td>
     </tr>
@@ -1581,8 +1450,8 @@ Length: 13, dtype: float64
 <p>13 rows × 9 columns</p>
 </div></div></div>
 </div>
-<div class="warning admonition">
-<p class="admonition-title"><strong>שימו לב</strong></p>
+<div class="info admonition">
+<p class="admonition-title"><strong>הערה</strong></p>
 <p>במקרה זה אין צורך לפרט <code class="docutils literal notranslate"><span class="pre">ignore_index=True</span></code> מכיוון שאנו מוסיפים עמודה, ואנו מניחים שאין עמודה בעלת שם זהה בטבלה.</p>
 </div>
 <p>כפי שראינו בהסרת שורות ועמודות, ניתן לבצע השמה למשתנה הטבלה המקורית על מנת להפנות את המשתנה המקורי לטבלה החדשה:</p>
@@ -1614,11 +1483,7 @@ Length: 13, dtype: float64
       <th></th>
       <th>Name</th>
       <th>Programming</th>
-      <th>Marine Biology</th>
-      <th>Stellar Cartography</th>
-      <th>Math</th>
-      <th>History</th>
-      <th>Planet Survival</th>
+      <th>...</th>
       <th>Art</th>
       <th>Surfing</th>
     </tr>
@@ -1628,11 +1493,7 @@ Length: 13, dtype: float64
       <th>0</th>
       <td>Yael</td>
       <td>50</td>
-      <td>56</td>
-      <td>70</td>
-      <td>60</td>
-      <td>87</td>
-      <td>65</td>
+      <td>...</td>
       <td>91</td>
       <td>60</td>
     </tr>
@@ -1640,11 +1501,7 @@ Length: 13, dtype: float64
       <th>1</th>
       <td>Nadav</td>
       <td>61</td>
-      <td>77</td>
-      <td>75</td>
-      <td>75</td>
-      <td>63</td>
-      <td>52</td>
+      <td>...</td>
       <td>88</td>
       <td>65</td>
     </tr>
@@ -1655,6 +1512,99 @@ Length: 13, dtype: float64
       <td>...</td>
       <td>...</td>
       <td>...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Tom</td>
+      <td>98</td>
+      <td>...</td>
+      <td>80</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Adi</td>
+      <td>76</td>
+      <td>...</td>
+      <td>70</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+<p>13 rows × 9 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="loc-iloc">
+<h3><span class="section-number">12.5.3.3. </span>השמה ב<code class="docutils literal notranslate"><span class="pre">loc</span></code>/<code class="docutils literal notranslate"><span class="pre">iloc</span></code>/<code class="docutils literal notranslate"><span class="pre">[]</span></code><a class="headerlink" href="#loc-iloc" title="Link to this heading">#</a></h3>
+<p>ניתן גם <strong>להוסיף או לעדכן</strong> שורות ועמודות בטבלה במקורית באמצעות <strong>השמה ישירה לפי שם או מיקום</strong>.
+בדומה לגישה ברשימות ובמילונים, גם כאן סוג האינדקס קובע את ההתנהגות:</p>
+<ul class="simple">
+<li><p>בעת שימוש ב־<code class="docutils literal notranslate"><span class="pre">loc</span></code> (או ב<code class="docutils literal notranslate"><span class="pre">[]</span></code> עם שם עמודה), יתבצע עדכון או יצירה, בדומה למילון:</p>
+<ul>
+<li><p>אם העמודה שצוינה לא קיימת, <strong>תתווסף עמודה חדשה</strong> לטבלה.</p></li>
+<li><p>אם הייתה עמודה בשם זה, הערכים שבה <strong>יוחלפו בהתאם לערכים החדשים</strong>.</p></li>
+</ul>
+</li>
+<li><p>לעומת זאת, בעבודה עם <code class="docutils literal notranslate"><span class="pre">iloc</span></code>, לא ניתן ליצור עמודות חדשות, אלא רק לעדכן ערכים קיימים לפי מיקומם. מדובר בהתנהגות דומה להתנהגות של רשימה בפייתון. ניתן לבצע <code class="docutils literal notranslate"><span class="pre">l[i]=value</span></code> רק אם <code class="docutils literal notranslate"><span class="pre">i</span></code> הוא כבר אינדקס חוקי ברשימה.</p></li>
+</ul>
+<p>לדוגמה, הקוד הבא יוסיף עמודה חדשה בשם “Grade Average” שתכיל את ממוצע הציונים בכל סטודנט בטבלה:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">input_file_name</span> <span class="o">=</span> <span class="s2">&quot;files/StudentsGrades.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">input_file_name</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Grade Average&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Programming</th>
+      <th>...</th>
+      <th>Art</th>
+      <th>Grade Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Yael</td>
+      <td>50</td>
+      <td>...</td>
+      <td>91</td>
+      <td>68.428571</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Nadav</td>
+      <td>61</td>
+      <td>...</td>
+      <td>88</td>
+      <td>70.142857</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -1664,55 +1614,24 @@ Length: 13, dtype: float64
       <th>11</th>
       <td>Tom</td>
       <td>98</td>
-      <td>76</td>
-      <td>98</td>
-      <td>100</td>
-      <td>98</td>
-      <td>92</td>
+      <td>...</td>
       <td>80</td>
-      <td>52</td>
+      <td>91.714286</td>
     </tr>
     <tr>
       <th>12</th>
       <td>Adi</td>
       <td>76</td>
-      <td>87</td>
-      <td>34</td>
-      <td>90</td>
-      <td>88</td>
-      <td>84</td>
+      <td>...</td>
       <td>70</td>
-      <td>70</td>
+      <td>75.571429</td>
     </tr>
   </tbody>
 </table>
 <p>13 rows × 9 columns</p>
 </div></div></div>
 </div>
-<p>לחלופין, ניתן גם <strong>להוסיף או לעדכן</strong> שורות ועמודות את הטבלה במקורית באמצעות <strong>השמה לפי שם שורה או עמודה</strong>, בדומה למה שעשינו ברשימות (עם <code class="docutils literal notranslate"><span class="pre">[]iloc</span></code>) ובמילונים (עם <code class="docutils literal notranslate"><span class="pre">[]loc</span></code> ו-<code class="docutils literal notranslate"><span class="pre">[]</span></code>).</p>
-<ul class="simple">
-<li><p>עבור <code class="docutils literal notranslate"><span class="pre">[]loc</span></code> ו-<code class="docutils literal notranslate"><span class="pre">[]</span></code> תיווצר עמודה חדשה, במידה לא קיימת כבר עמודה באותו שם. אחרת, העמודה הנוכחית תדרס לפי ערכי עמודה החדשה (כמו במילון).</p></li>
-<li><p>עבור <code class="docutils literal notranslate"><span class="pre">[]iloc</span></code> ניתן רק לעדכן ערכי שורה/עמודה קיימת (כמו ברשימה)</p></li>
-</ul>
-<p>לדוגמא, הפעולה למטה תוסיף את ממוצע המקצועות כעמודה חדשה לטבלה המקורית</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     67.375
-1     69.500
-       ...  
-11    86.750
-12    74.875
-Length: 13, dtype: float64
-</pre></div>
-</div>
-</div>
-</div>
+</section>
 </section>
 </section>
 
@@ -1746,6 +1665,15 @@ Length: 13, dtype: float64
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="19_3_access-df.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12.4. </span>גישה בסיסית לטבלה</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -1762,9 +1690,14 @@ Length: 13, dtype: float64
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">פעולות אריתמטיות בין טבלאות וסדרות</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">הסרת שורות ועמודות</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">הוספה והסרת שורות ועמודות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">12.5.1. פעולות אריתמטיות בין טבלאות וסדרות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12.5.2. הסרת שורות ועמודות</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">12.5.3. הוספת שורות ועמודות</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">12.5.3.1. הוספת שורה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">12.5.3.2. הוספת עמודה</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loc-iloc">12.5.3.3. השמה ב<code class="docutils literal notranslate"><span class="pre">loc</span></code>/<code class="docutils literal notranslate"><span class="pre">iloc</span></code>/<code class="docutils literal notranslate"><span class="pre">[]</span></code></a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

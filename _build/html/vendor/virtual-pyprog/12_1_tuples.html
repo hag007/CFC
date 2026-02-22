@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=ec42b4e3" />
     <link rel="stylesheet" type="text/css" href="../../_static/rtl.css?v=dc79e408" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -62,7 +63,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="6.4. מילונים (dict)" href="12_2_dicts.html" />
-    <link rel="prev" title="6.2. מבני נתונים" href="12_0_data_structures.html" />
+    <link rel="prev" title="6.2. רשימה כמבנה נתונים" href="12_0_data_structures.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -235,7 +236,6 @@
 <li class="toctree-l2"><a class="reference internal" href="8_0_while_vs_for.html">4.9. while לעומת for</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_1_break_and_continue.html">4.10. break ו־continue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="8_2_nested_loops.html">4.11. לולאות מקוננות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="8_3_list-comprehensions.html">4.12. List Comprehensions</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_5.html">5. שבוע 5 — זיכרון, פונקציות מתקדמות ומבנים בלתי־משתנים</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -247,79 +247,59 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../course/weeks/week_6.html">6. שבוע 6 — מבני נתונים וקריאה וכתיבה של מידע</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="12_0_data_structures.html">6.2. מבני נתונים</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">6.3. Tuples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. מילונים (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.6. עיצוב מחרוזות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_1_files.html">6.7. קריאה וכתיבה לקבצים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_2_dicts.html">6.4. Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_0_string-formats.html">6.5. עיצוב מחרוזות</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_0_intro_libs.html">7.2. ספריות בפייתון</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_1_arrays.html">7.4. Arrays</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_2_arrays_indexing.html">7.5. Arrays — Indexing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_3_datatypes.html">7.6. Datatypes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_4_array_math.html">7.7. Array Math</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_7/7_5_broadcasting.html">7.8. Broadcasting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_7.html">7. שבוע 7 — OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">7.2. מבוא ל־OOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">7.3. מימוש עקרונות OOP</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_matplotlib.html">8.2. Matplotlib</a></li>
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_example_matplotlib.html">8.5. דוגמה מסכמת — Matplotlib</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_prob_hists.html">8.6. Probabilities &amp; Histograms</a></li>
-
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_8.html">8. שבוע 8 — Numpy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_0_intro_libs.html">8.2. Intro: Setup &amp; libs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_0_numpy-intro.html">8.3. Intro: NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="18_1_create-array.html">8.4. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_1_arrays.html">8.5. Arrays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_2_arrays_indexing.html">8.6. Arrays — Indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_3_datatypes.html">8.7. Datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_4_array_math.html">8.8. Array Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_8/8_5_broadcasting.html">8.9. Broadcasting</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matrix_operations.html">9.2. פעולות מטריציוניות מתקדמות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_linear_system.html">9.3. פתרון מערכות ליניאריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_eigen_values.html">9.4. ערכים ווקטורים עצמיים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_4_SVD.html">9.5. SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_7_exercises.html">9.6. תרגול עצמי</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_5_example_image_SVD.html">9.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_6_example_PI_MC.html">9.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — SciPy ומבוא לPandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_physical_consts.html">10.2. קבועים פיזיקליים ויחידות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_integration.html">10.3. אינטגרציה נומרית</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_optimization.html">10.4. אופטימיזציה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_0_intro.html">10.5. מבוא - Pandas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_9.html">9. שבוע 9 — Matplotlib, Probabilities &amp; Histograms</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_1_matplotlib.html">9.2. Matplotlib</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_data_structures.html">10.7. Series ו־DataFrame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_io.html">10.8. טעינה וכתיבה של נתונים (I/O)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_MB.html">10.9. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_2_example_matplotlib.html">9.5. דוגמה מסכמת — Matplotlib</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_9/9_3_prob_hists.html">9.6. Probabilities &amp; Histograms</a></li>
+
 
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — Pandas מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_indexing_select_filter.html">11.2. מיון, סינון ואינדוקס נתונים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_4_cleaning_type_handling.html">11.3. ניקוי נתונים וטיפוסים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_vector_transform.html">11.4. טרנספורמציות ווקטוריות</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_6_grouping_aggregation.html">11.5. קיבוץ וצבירה בנתונים ניסיוניים (Grouping &amp; Aggregation)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_7_reshaping_dataframes.html">11.7. Reshaping DataFrames</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_8_merging_joining.html">11.8. Merging &amp; Joining</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_9_time_series.html">11.9. ניתוח סדרות זמן בניסויים פיזיקליים (Time Series Essentials)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_10_exploration_quick_plots.html">11.11. Exploration &amp; Quick Plots</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_10.html">10. שבוע 10 — Numpy מתקדם</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_1_matrix_operations.html">10.2. פעולות מטריציוניות מתקדמות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_2_linear_system.html">10.3. פתרון מערכות ליניאריות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_3_eigen_values.html">10.4. ערכים ווקטורים עצמיים</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_4_SVD.html">10.5. SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_7_exercises.html">10.6. תרגול עצמי</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_5_example_image_SVD.html">10.7. תרגול: דחיסת תמונה באמצעות SVD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_10/10_6_example_PI_MC.html">10.8. תרגול: הערכת π בשיטת מונטה־קרלו</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — OOP &amp; Unittesting</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="17_0_oop-intro.html">12.2. מבוא ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="17_1_oop-implementation.html">12.3. תחביר מחלקה בפייתון</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_11.html">11. שבוע 11 — SciPy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_1_physical_consts.html">11.2. קבועים פיזיקליים ויחידות</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_2_integration.html">11.3. אינטגרציה נומרית</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_3_optimization.html">11.4. אופטימיזציה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_11/11_5_example_MB.html">11.5. תרגול: התפלגות מהירות מקסוול–בולצמן (MB)</a></li>
 
-
-
-
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_1_unittesting_intro.html">12.8. מבוא ל־Unit Testing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_2_setup_teardown_edges.html">12.9. setUp/tearDown ושוליים</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_3_unittesting_oop.html">12.10. בדיקות ל־OOP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_4_physicsl_unittesting.html">12.11. בדיקות לקוד נומרי בפיזיקה</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course/weeks/week_12/12_5_Pandas_tutorial.html">12.12. תרגול מסכם</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../course/weeks/week_12.html">12. שבוע 12 — Pandas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="19_1_pandas-intro.html">12.2. מבוא לעבודה עם Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_2_create-df.html">12.3. יצירת טבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_3_access-df.html">12.4. גישה לנתונים בטבלה</a></li>
+<li class="toctree-l2"><a class="reference internal" href="19_4_basic_editing.html">12.5. עריכת טבלה</a></li>
 </ul>
 </details></li>
 </ul>
@@ -588,56 +568,59 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="tuple">
 <h1><span class="section-number">6.3. </span>טאפלים (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>)<a class="headerlink" href="#tuple" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">tuple</span></code> (טאפל) הוא טיפוס מאוד דומה לרשימה - גם הוא אוסף של איברים שיש להם סדר קבוע, ואפשר לגשת לכל איבר לפי האינדקס שלו או לעבור עליהם בלולאה.
-אבל, לעומת רשימה שהיא ניתנת לשינוי (mutable), <strong>טאפל הוא immutable</strong>. כלומר, לא ניתן לשנות טאפל אחרי שיצרנו אותו.</p>
-<p>בדומה לרשימות - ניתן להגדיר טאפל חדש על ידי כתיבת האיברים שלו. הפעם, במקום סוגריים מרובעים <code class="docutils literal notranslate"><span class="pre">[]</span></code>, נכתוב עם סוגריים עגולים <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
-<div class="cell docutils container">
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/jlObCdDnaLo" title="tuples" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></div>
+</div>
+<div class="custom-text admonition">
+<p class="admonition-title">טקסט המופיע למטה בסגול מציין קטעים המופיעים בסרטון</p>
+<p>ניתן להיעזר בו כדי לחזור על התכנים או לעיין בהם שוב.</p>
+</div>
+<span class=custom-text-content> 
+<p>נכיר כעת טיפוס נתונים נוסף בפייתון - טאפל.<br />
+מאיפה מגיעה המילה המוזרה הזו?<br />
+זו בעצם מילה שמקורה בלטינית שהיא הכללה של מילים כמו דאבל לזוג וטרפיל לשלישיה עבור מספר כללי של איברים - או בקיצור, טאפל.<br />
+לפעמים קוראים לטאפל גם n-יה סדורה.</p>
+<p><code class="docutils literal notranslate"><span class="pre">tuple</span></code> (טאפל) הוא טיפוס מאוד דומה לרשימה - גם הוא אוסף של איברים שיש להם סדר, ואפשר לגשת לכל איבר לפי האינדקס שלו או לעבור עליהם בלולאה.<br />
+אבל, בניגוד לרשימה שהיא ניתנת לשינוי (mutable), <strong>טאפל הוא immutable</strong>. כלומר, לא ניתן לשנות טאפל אחרי שיצרנו אותו.</p>
+</span><span class=custom-text-content> 
+<p>בדומה לרשימות - ניתן להגדיר טאפל חדש ישירות על ידי כתיבת האיברים שלו.<br />
+אך הפעם, נעטוף את האיברים בסוגריים עגולים <code class="docutils literal notranslate"><span class="pre">()</span></code> במקום בסוגריים מרובעים <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
+</span><span class=custom-text-content> 
+<p>לדוגמא, הטאפל הבא מכיל את ארבע
+המחרוזות: <code class="docutils literal notranslate"><span class="pre">&quot;dont&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">&quot;worry&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">&quot;be&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">&quot;happy&quot;</span></code>:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;don&#39;t&quot;</span><span class="p">,</span> <span class="s2">&quot;worry&quot;</span><span class="p">,</span> <span class="s2">&quot;be&quot;</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">)</span> <span class="c1"># definition</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;don&#39;t&quot;</span><span class="p">,</span> <span class="s2">&quot;worry&quot;</span><span class="p">,</span> <span class="s2">&quot;be&quot;</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
 </div>
-<p>בדומה לרשימות - ניתן לגשת לאיברים בטאפל באמצעות אינדקסים (חיוביים ושליליים), ואפילו לבצע slicing!</p>
-<div class="cell docutils container">
+<span class=custom-text-content> 
+<p>בדומה לרשימות או מחרוזות, ניתן לגשת לאיברי הטאפל באמצעות אינדקסים (חיוביים ושליליים), ואפילו לבצע slicing, .<br />
+לדוגמא, בקוד זה נדפיס את האיבר הראשון, האיבר האחרון, וכל שאר האיברים בטאפל, בעזרת שימוש באינדקסים כפי שלמדנו בנושאים הקודמים:</p>
+</span><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># indexing</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;don&#39;t&quot;</span><span class="p">,</span> <span class="s2">&quot;worry&quot;</span><span class="p">,</span> <span class="s2">&quot;be&quot;</span><span class="p">,</span> <span class="s2">&quot;happy&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># backwords indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># slicing</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;don&#39;t&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>don&#39;t
+happy
+(&#39;worry&#39;, &#39;be&#39;)
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># backwords indexing</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;happy&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> 	<span class="c1"># slicing</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;worry&#39;, &#39;be&#39;)
-</pre></div>
-</div>
-</div>
-</div>
-<p>אז היכן מתבטא ההבדל בין טאפלים לסתם רשימות?</p>
-<p>נבחן את קטע הקוד הבא:</p>
-<div class="cell tag_raises-exception docutils container">
+<span class=custom-text-content> 
+<p>אז היכן מתבטא ההבדל בין טאפלים לרשימות?</p>
+<p>כדי לענות על כך,  נבחן את קטע הקוד הבא, בו נבצע השמה בתוך <code class="docutils literal notranslate"><span class="pre">tuple</span></code>:</p>
+</span><div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 </pre></div>
@@ -646,7 +629,7 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="ne">TypeError</span>: &#39;tuple&#39; object does not support item assignment
@@ -654,13 +637,19 @@ document.write(`
 </div>
 </div>
 </div>
+<span class=custom-text-content> 
 <p>מדוע קיבלנו שגיאה?</p>
-<p>בקטע הקוד לעיל ניסינו לבצע <strong>השמה</strong> של הערך 10 לתוך המקום השני של הטאפל <code class="docutils literal notranslate"><span class="pre">t</span></code>, אך פעולת השמת איבר ל<code class="docutils literal notranslate"><span class="pre">tuple</span></code> קיים <strong>אינה חוקית</strong> מכיוון שהיא משנה את אובייקט <code class="docutils literal notranslate"><span class="pre">tuple</span></code> שכבר יצרנו, וכפי שאמרנו, <strong>הטיפוס <code class="docutils literal notranslate"><span class="pre">tuple</span></code> הוא immutable</strong>.</p>
-<p>למעשה, ניתן להכליל ולהגיד כי כל פעולה שראינו עד כה עבור רשימות קיימת גם עבור טאפלים <strong>אם ורק אם</strong> פעולה זו אינה משנה את הרשימה</p>
-<div class="cell tag_remove-input docutils container">
+<p>בקטע הקוד ניסינו לבצע <strong>השמה</strong> של הערך 10 לתוך המקום השני של הטאפל <code class="docutils literal notranslate"><span class="pre">t</span></code>, אך פעולת ההשמה <strong>אינה חוקית</strong>, מכיוון שהיא משנה אובייקט <code class="docutils literal notranslate"><span class="pre">tuple</span></code> שכבר יצרנו, וכפי שאמרנו, <strong>הטיפוס <code class="docutils literal notranslate"><span class="pre">tuple</span></code> הוא immutable</strong>.</p>
+<p>למעשה, ניתן להכליל ולהגיד שכל פעולה שראינו עד כה עבור רשימות קיימת גם עבור טאפלים <strong>אם ורק אם</strong> פעולה זו אינה משנה את הרשימה.</p>
+<p>חשבו לדוגמא על מתודת <code class="docutils literal notranslate"><span class="pre">append</span></code>: פעולה זו מוסיפה אלמנט לרשימה קיימת, כלומר משנה את הרשימה, ולכן לא תהיה מתודה מקבילה כזו עבור <code class="docutils literal notranslate"><span class="pre">tuple</span></code>.</p>
+<p>לעומת זאת, המתודה <code class="docutils literal notranslate"><span class="pre">count</span></code> שראינו עבור רשימה, מחזירה כמה פעמים מופיע איבר כלשהו, ולא משנה את מבנה הנתונים המקורי. ואכן, קיימת מתודה כזו גם עבור טאפל.</p>
+</span><span class=custom-text-content> 
+<p>אז מדוע בעצם הטיפוס <code class="docutils literal notranslate"><span class="pre">tuple</span></code> נחוץ? נראה ש <code class="docutils literal notranslate"><span class="pre">tuple</span></code> ו <code class="docutils literal notranslate"><span class="pre">list</span></code> מאוד דומים.</p>
+<p>מסתבר שהעובדה ש<code class="docutils literal notranslate"><span class="pre">tuple</span></code> הוא immutable הופכת אותו לשימושי. ביחידה הבאה נראה תרחיש בו נוכל להשתמש ב<code class="docutils literal notranslate"><span class="pre">tuple</span></code> אך לא ב<code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+</span><div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ErQPbJOBroSg" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
-#ErQPbJOBroSg {
+<div class="output text_html"><div id="sQBmGAeBbJkH" data-shufflequestions="False" data-shuffleanswers="True" data-preserveresponses="false" data-numquestions="1000000" data-maxwidth="600" style="border-radius: 10px; text-align: left"><style>
+#sQBmGAeBbJkH {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -877,7 +866,7 @@ document.write(`
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsErQPbJOBroSg=[{"question": "\u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e4\u05d5\u05e0\u05e7\u05e6\u05d9\u05d5\u05ea/\u05de\u05ea\u05d5\u05d3\u05d5\u05ea \u05d4\u05d1\u05d0\u05d5\u05ea \u05d4\u05d2\u05d9\u05d5\u05e0\u05d9 \u05e9\u05d9\u05d4\u05d9\u05d4 \u05dc\u05d8\u05d0\u05e4\u05dc?", "type": "many_choice", "answers": [{"answer": "append", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d4\u05de\u05ea\u05d5\u05d3\u05d4 \u05e2\u05d5\u05e8\u05db\u05ea \u05d8\u05d0\u05e4\u05dc \u05e7\u05d9\u05d9\u05dd."}, {"answer": "remove", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d4\u05de\u05ea\u05d5\u05d3\u05d4 \u05e2\u05d5\u05e8\u05db\u05ea \u05d8\u05d0\u05e4\u05dc \u05e7\u05d9\u05d9\u05dd."}, {"answer": "len", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "sorted (\u05d4\u05e4\u05d5\u05e0\u05e7\u05e6\u05d9\u05d4)", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
+</style></div><script type="application/javascript">var questionssQBmGAeBbJkH=[{"question": "\u05d0\u05d9\u05dc\u05d5 \u05de\u05d4\u05e4\u05d5\u05e0\u05e7\u05e6\u05d9\u05d5\u05ea/\u05de\u05ea\u05d5\u05d3\u05d5\u05ea \u05d4\u05d1\u05d0\u05d5\u05ea \u05d4\u05d2\u05d9\u05d5\u05e0\u05d9 \u05e9\u05d9\u05d4\u05d9\u05d4 \u05dc\u05d8\u05d0\u05e4\u05dc?", "type": "many_choice", "answers": [{"answer": "append", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d4\u05de\u05ea\u05d5\u05d3\u05d4 \u05e2\u05d5\u05e8\u05db\u05ea \u05d8\u05d0\u05e4\u05dc \u05e7\u05d9\u05d9\u05dd."}, {"answer": "remove", "correct": false, "feedback": "\u05dc\u05d0 \u05e0\u05db\u05d5\u05df. \u05d4\u05de\u05ea\u05d5\u05d3\u05d4 \u05e2\u05d5\u05e8\u05db\u05ea \u05d8\u05d0\u05e4\u05dc \u05e7\u05d9\u05d9\u05dd."}, {"answer": "len", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}, {"answer": "sorted (\u05d4\u05e4\u05d5\u05e0\u05e7\u05e6\u05d9\u05d4)", "correct": true, "feedback": "\u05e0\u05db\u05d5\u05df!"}]}];
 
 if (typeof Question === 'undefined') {
 // Make a random ID
@@ -1940,8 +1929,8 @@ function make_string(qa, outerqDiv, qDiv, aDiv, id) {
  * Ensures show_questions is called after the container div is in the DOM.
  */
 function try_show() {
-  if (document.getElementById("ErQPbJOBroSg")) {
-    show_questions(questionsErQPbJOBroSg, ErQPbJOBroSg);
+  if (document.getElementById("sQBmGAeBbJkH")) {
+    show_questions(questionssQBmGAeBbJkH, sQBmGAeBbJkH);
   } else {
     setTimeout(try_show, 200);
   }
@@ -1953,8 +1942,6 @@ function try_show() {
 }
 </script></div>
 </div>
-<p>למה בעצם בעצם הטיפוס <code class="docutils literal notranslate"><span class="pre">tuple</span></code> נחוץ? נראה שכל דבר שנרצה לעשות עם <code class="docutils literal notranslate"><span class="pre">tuple</span></code> אפשר לעשות גם עם רשימה!</p>
-<p>מסתבר שהעובדה ש<code class="docutils literal notranslate"><span class="pre">tuple</span></code> הוא immutable הופכת אותו לשימושי. במודול הבא נראה תרחיש בו מתאפשר שימוש ב<code class="docutils literal notranslate"><span class="pre">tuple</span></code> אך לא ב<code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 <div class="dropdown note admonition">
 <p class="admonition-title"><strong>כדאי לדעת!</strong>  טאפל משמש גם כדי להחזיר מפונקציה יותר מערך אחד.</p>
 <p>כשלמדנו על פונקציות, ראינו שלאחר פקודת <code class="docutils literal notranslate"><span class="pre">return</span></code> הפונקציה מסיימת את ריצתה. לכן, באופן טבעי, לא ניתן לבצע שתי פקודות <code class="docutils literal notranslate"><span class="pre">return</span></code> אחת אחרי השנייה.
@@ -1998,7 +1985,7 @@ function try_show() {
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6.2. </span>מבני נתונים</p>
+        <p class="prev-next-title"><span class="section-number">6.2. </span>רשימה כמבנה נתונים</p>
       </div>
     </a>
     <a class="right-next"
