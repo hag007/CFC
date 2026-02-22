@@ -33,5 +33,13 @@ parts:
           - file: course/weeks/week_8/8_5_broadcasting
             title: "Broadcasting"
 
-
+      - file: course/weeks/week_9
+        title: "שבוע 9 — Matplotlib, Probabilities & Histograms"
+        sections:
+          - file: course/weeks/week_9/9_1_matplotlib
+            title: "Matplotlib — Basics"
+          - file: course/weeks/week_9/9_2_example_matplotlib
+            title: "דוגמה מסכמת — Matplotlib"
+          - file: course/weeks/week_9/9_3_prob_hists
+            title: "Probabilities & Histograms"
 
