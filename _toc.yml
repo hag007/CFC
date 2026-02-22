@@ -40,5 +40,4 @@ parts:
         sections:
           - file: vendor/virtual-pyprog/2_0_intro-conditions
             title: "מבוא לתנאים"
-          - file: vendor/virtual-pyprog/2_1_if-else-statements
-            title: "פקודות if ו-else"
+
