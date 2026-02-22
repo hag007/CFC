@@ -37,6 +37,12 @@ sphinx:
     html_static_path:
       - "utils"
 
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    mathjax3_config:
+      tex:
+        inlineMath: [["$", "$"], ["\\(", "\\)"]]
+        processEscapes: true
+
 
 # Define the name of the latex output file for PDF builds
 latex:
