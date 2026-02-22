@@ -13,30 +13,14 @@ parts:
   - caption: "שבועות הלמידה"
     numbered: true
     chapters:
-
-
-      - file: course/weeks/week_11
-        title: "שבוע 11 — SciPy"
+      - file: course/weeks/week_9
+        title: "שבוע 9 — Matplotlib, Probabilities & Histograms"
         sections:
-          - file: course/weeks/week_11/11_1_physical_consts
-            title: "קבועים פיזיקליים ויחידות"
-          - file: course/weeks/week_11/11_2_integration
-            title: "אינטגרציה נומרית"
-          - file: course/weeks/week_11/11_3_optimization
-            title: "אופטימיזציה"
-          - file: course/weeks/week_11/11_5_example_MB.ipynb
-            title: "תרגול: התפלגות Maxwell-Boltzmann" 
-
-      - file: course/weeks/week_12
-        title: "שבוע 12 — Pandas"
-        sections:
-          - file: vendor/virtual-pyprog/19_1_pandas-intro
-            title: "מבוא לעבודה עם Pandas"
-          - file: vendor/virtual-pyprog/19_2_create-df
-            title: "יצירת טבלה"
-          - file: vendor/virtual-pyprog/19_3_access-df
-            title: "גישה לנתונים בטבלה"
-          - file: vendor/virtual-pyprog/19_4_basic_editing
-            title: "עריכת טבלה"
+          - file: course/weeks/week_9/9_1_matplotlib
+            title: "Matplotlib — Basics"
+          - file: course/weeks/week_9/9_2_example_matplotlib
+            title: "דוגמה מסכמת — Matplotlib"
+          - file: course/weeks/week_9/9_3_prob_hists
+            title: "Probabilities & Histograms"
 
 
