@@ -41,7 +41,7 @@ parts:
           - file: vendor/virtual-pyprog/2_0_intro-conditions
             title: "מבוא לתנאים"
           - file: vendor/virtual-pyprog/2_1_if-else-statements
-            title: "פקודות if ו-else"
+            title: "פקודות if ו־else"
           - file: vendor/virtual-pyprog/2_2_nested-ifs
             title: "תנאים מקוננים"
           - file: vendor/virtual-pyprog/2_3_elif
@@ -60,3 +60,44 @@ parts:
             title: "קריאה הדדית בין פונקציות"
           - file: vendor/virtual-pyprog/3_4_advanced-examples
             title: "דוגמאות מתקדמות"
+
+      - file: course/weeks/week_3
+        title: "שבוע 3 — רשימות ולולאות"
+        sections:
+          - file: vendor/virtual-pyprog/4_0_intro-list
+            title: "מבוא לרשימות"
+          - file: vendor/virtual-pyprog/4_1_list-operators-indices
+            title: "אופרטורים ואינדקסים"
+          - file: vendor/virtual-pyprog/4_2_built-in-functions-in-list
+            title: "פונקציות מובנות לרשימות"
+          - file: vendor/virtual-pyprog/4_3_list-methods
+            title: "מתודות של רשימות"
+          - file: vendor/virtual-pyprog/4_4_nested_lists
+            title: "רשימות מקוננות"
+          - file: vendor/virtual-pyprog/4_5_list-examples
+            title: "דוגמאות מעשיות"
+
+      - file: course/weeks/week_4
+        title: "שבוע 4 — לולאות וזרימת בקרה"
+        sections:
+          - file: vendor/virtual-pyprog/5_0_intro-loops
+            title: "מבוא ללולאות"
+          - file: vendor/virtual-pyprog/6_0_for_loops
+            title: "לולאות for"
+          - file: vendor/virtual-pyprog/6_1_ranges-and-for
+            title: "range ולולאות for"
+          - file: vendor/virtual-pyprog/6_2_for-examples
+            title: "דוגמאות ל־for"
+          - file: vendor/virtual-pyprog/6_3_for-summary
+            title: "סיכום לולאות for"
+          - file: vendor/virtual-pyprog/7_0_while_loops
+            title: "לולאות while"
+          - file: vendor/virtual-pyprog/7_1_while-examples
+            title: "דוגמאות ל־while"
+          - file: vendor/virtual-pyprog/8_0_while_vs_for
+            title: "while לעומת for"
+          - file: vendor/virtual-pyprog/8_1_break_and_continue
+            title: "break ו־continue"
+          - file: vendor/virtual-pyprog/8_2_nested_loops
+            title: "לולאות מקוננות"
+
